@@ -1,0 +1,7969 @@
+"AST.ml" 3 9 9 "AST.ml" 28 419 443
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+type(
+  (('inh, 'syn) #t_tt -> 'inh -> t -> 'syn, < show : t -> GT.string >) GT.t
+)
+type(
+  < show : t -> GT.string >
+)
+type(
+  < show : t -> GT.string > -> t -> GT.string
+)
+type(
+  t -> GT.string
+)
+type(
+  t -> GT.string
+)
+type(
+  GT.unit
+)
+type(
+  show_t_t
+)
+type(
+  (show_t_t -> GT.unit -> t -> GT.string, GT.unit) GT.t
+)
+ident(
+  int_ref t "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (show_t_t -> GT.unit -> t -> GT.string, GT.unit) GT.t ->
+  show_t_t -> GT.unit -> t -> GT.string
+)
+ident(
+  ext_ref GT.transform
+)
+type(
+  < show : t -> GT.string >
+)
+type(
+  (('inh, 'syn) #t_tt as 'a) -> 'inh -> t -> 'syn
+)
+type(
+  ('a -> 'inh -> t -> 'syn, GT.unit) GT.t
+)
+ident(
+  int_ref t "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('a -> 'inh -> t -> 'syn, < show : t -> GT.string >) GT.t
+)
+ident(
+  def t "AST.ml" 30 445 445 "AST.ml" 1 0 -1
+)
+type(
+  < c_App : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Assn : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Binop : GT.unit ->
+              (GT.unit, t, GT.string, <  >) GT.a ->
+              GT.string ->
+              (GT.unit, t, GT.string, <  >) GT.a ->
+              (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Const : GT.unit ->
+              (GT.unit, t, GT.string, <  >) GT.a -> GT.int -> GT.string;
+    c_Deref : GT.unit ->
+              (GT.unit, t, GT.string, <  >) GT.a ->
+              (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_False_ : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Fix : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Grab : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_If : GT.unit ->
+           (GT.unit, t, GT.string, <  >) GT.a ->
+           (GT.unit, t, GT.string, <  >) GT.a ->
+           (GT.unit, t, GT.string, <  >) GT.a ->
+           (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Lam : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_New : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Par : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Release : GT.unit ->
+                (GT.unit, t, GT.string, <  >) GT.a ->
+                (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Sema : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Seq : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_True_ : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Unop : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Var : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string -> GT.string;
+    t_t : GT.unit -> t -> GT.string; .. > ->
+  unit
+)
+type(
+  unit
+)
+type(
+  show_t_t
+)
+type(
+  < c_App : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Assn : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Binop : GT.unit ->
+              (GT.unit, t, GT.string, <  >) GT.a ->
+              GT.string ->
+              (GT.unit, t, GT.string, <  >) GT.a ->
+              (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Const : GT.unit ->
+              (GT.unit, t, GT.string, <  >) GT.a -> GT.int -> GT.string;
+    c_Deref : GT.unit ->
+              (GT.unit, t, GT.string, <  >) GT.a ->
+              (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_False_ : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Fix : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Grab : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_If : GT.unit ->
+           (GT.unit, t, GT.string, <  >) GT.a ->
+           (GT.unit, t, GT.string, <  >) GT.a ->
+           (GT.unit, t, GT.string, <  >) GT.a ->
+           (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Lam : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_New : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Par : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Release : GT.unit ->
+                (GT.unit, t, GT.string, <  >) GT.a ->
+                (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Sema : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Seq : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_True_ : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Unop : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Var : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string -> GT.string;
+    t_t : GT.unit -> t -> GT.string; .. >
+  as 'b
+)
+ident(
+  int_ref this "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  show_t_t ref
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  show_t_t ref -> show_t_t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+type(
+  '_c
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'b
+)
+type(
+  'd
+)
+type(
+  unit ref
+)
+type(
+  unit
+)
+type(
+  unit -> unit ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+type(
+  unit ref -> 'd
+)
+ident(
+  ext_ref Obj.magic
+)
+type(
+  'd
+)
+type(
+  < c_App : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Assn : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Binop : GT.unit ->
+              (GT.unit, t, GT.string, <  >) GT.a ->
+              GT.string ->
+              (GT.unit, t, GT.string, <  >) GT.a ->
+              (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Const : GT.unit ->
+              (GT.unit, t, GT.string, <  >) GT.a -> GT.int -> GT.string;
+    c_Deref : GT.unit ->
+              (GT.unit, t, GT.string, <  >) GT.a ->
+              (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_False_ : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Fix : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Grab : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_If : GT.unit ->
+           (GT.unit, t, GT.string, <  >) GT.a ->
+           (GT.unit, t, GT.string, <  >) GT.a ->
+           (GT.unit, t, GT.string, <  >) GT.a ->
+           (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Lam : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_New : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Par : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Release : GT.unit ->
+                (GT.unit, t, GT.string, <  >) GT.a ->
+                (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Sema : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Seq : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_True_ : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Unop : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Var : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string -> GT.string;
+    t_t : GT.unit -> t -> GT.string; .. > ->
+  GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string -> GT.string
+)
+type(
+  GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string -> GT.string
+)
+type(
+  GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string -> GT.string
+)
+type(
+  GT.string -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.string
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  unit
+)
+type(
+  GT.string -> GT.string
+)
+type(
+  < compare : GT.string -> GT.string -> GT.comparison;
+    eq : GT.string -> GT.string -> GT.bool; foldl : '_e -> GT.string -> '_e;
+    foldr : '_e -> GT.string -> '_e; gmap : GT.string -> GT.string;
+    html : GT.string -> HTML.viewer; show : GT.string -> GT.string >
+)
+type(
+  (('_f, '_g) _#GT.string_tt -> '_f -> GT.string -> '_g,
+   < compare : GT.string -> GT.string -> GT.comparison;
+     eq : GT.string -> GT.string -> GT.bool; foldl : '_e -> GT.string -> '_e;
+     foldr : '_e -> GT.string -> '_e; gmap : GT.string -> GT.string;
+     html : GT.string -> HTML.viewer; show : GT.string -> GT.string >)
+  GT.t
+)
+ident(
+  ext_ref GT.string
+)
+type(
+  (GT.string -> GT.string) -> unit -> GT.string -> GT.string
+)
+ident(
+  ext_ref GT.lift
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  GT.string
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (< c_App : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_Assn : GT.unit ->
+              (GT.unit, t, GT.string, <  >) GT.a ->
+              GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_Binop : GT.unit ->
+               (GT.unit, t, GT.string, <  >) GT.a ->
+               GT.string ->
+               (GT.unit, t, GT.string, <  >) GT.a ->
+               (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_Const : GT.unit ->
+               (GT.unit, t, GT.string, <  >) GT.a -> GT.int -> GT.string;
+     c_Deref : GT.unit ->
+               (GT.unit, t, GT.string, <  >) GT.a ->
+               (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_False_ : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_Fix : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_Grab : GT.unit ->
+              (GT.unit, t, GT.string, <  >) GT.a ->
+              (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_If : GT.unit ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a ->
+            (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_Lam : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_New : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_Par : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_Release : GT.unit ->
+                 (GT.unit, t, GT.string, <  >) GT.a ->
+                 (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_Sema : GT.unit ->
+              (GT.unit, t, GT.string, <  >) GT.a ->
+              GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_Seq : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             (GT.unit, t, GT.string, <  >) GT.a ->
+             (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_True_ : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_Unop : GT.unit ->
+              (GT.unit, t, GT.string, <  >) GT.a ->
+              GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_Var : GT.unit ->
+             (GT.unit, t, GT.string, <  >) GT.a -> GT.string -> GT.string;
+     t_t : GT.unit -> t -> GT.string; .. >
+   as 'h) ->
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.string
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  unit
+)
+type(
+  GT.string -> GT.string
+)
+type(
+  < compare : GT.string -> GT.string -> GT.comparison;
+    eq : GT.string -> GT.string -> GT.bool; foldl : '_i -> GT.string -> '_i;
+    foldr : '_i -> GT.string -> '_i; gmap : GT.string -> GT.string;
+    html : GT.string -> HTML.viewer; show : GT.string -> GT.string >
+)
+type(
+  (('_j, '_k) _#GT.string_tt -> '_j -> GT.string -> '_k,
+   < compare : GT.string -> GT.string -> GT.comparison;
+     eq : GT.string -> GT.string -> GT.bool; foldl : '_i -> GT.string -> '_i;
+     foldr : '_i -> GT.string -> '_i; gmap : GT.string -> GT.string;
+     html : GT.string -> HTML.viewer; show : GT.string -> GT.string >)
+  GT.t
+)
+ident(
+  ext_ref GT.string
+)
+type(
+  (GT.string -> GT.string) -> unit -> GT.string -> GT.string
+)
+ident(
+  ext_ref GT.lift
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.string
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h ->
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h ->
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.string
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  unit
+)
+type(
+  GT.string -> GT.string
+)
+type(
+  < compare : GT.string -> GT.string -> GT.comparison;
+    eq : GT.string -> GT.string -> GT.bool; foldl : '_l -> GT.string -> '_l;
+    foldr : '_l -> GT.string -> '_l; gmap : GT.string -> GT.string;
+    html : GT.string -> HTML.viewer; show : GT.string -> GT.string >
+)
+type(
+  (('_m, '_n) _#GT.string_tt -> '_m -> GT.string -> '_n,
+   < compare : GT.string -> GT.string -> GT.comparison;
+     eq : GT.string -> GT.string -> GT.bool; foldl : '_l -> GT.string -> '_l;
+     foldr : '_l -> GT.string -> '_l; gmap : GT.string -> GT.string;
+     html : GT.string -> HTML.viewer; show : GT.string -> GT.string >)
+  GT.t
+)
+ident(
+  ext_ref GT.string
+)
+type(
+  (GT.string -> GT.string) -> unit -> GT.string -> GT.string
+)
+ident(
+  ext_ref GT.lift
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.string
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h ->
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.string
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  unit
+)
+type(
+  GT.string -> GT.string
+)
+type(
+  < compare : GT.string -> GT.string -> GT.comparison;
+    eq : GT.string -> GT.string -> GT.bool; foldl : '_o -> GT.string -> '_o;
+    foldr : '_o -> GT.string -> '_o; gmap : GT.string -> GT.string;
+    html : GT.string -> HTML.viewer; show : GT.string -> GT.string >
+)
+type(
+  (('_p, '_q) _#GT.string_tt -> '_p -> GT.string -> '_q,
+   < compare : GT.string -> GT.string -> GT.comparison;
+     eq : GT.string -> GT.string -> GT.bool; foldl : '_o -> GT.string -> '_o;
+     foldr : '_o -> GT.string -> '_o; gmap : GT.string -> GT.string;
+     html : GT.string -> HTML.viewer; show : GT.string -> GT.string >)
+  GT.t
+)
+ident(
+  ext_ref GT.string
+)
+type(
+  (GT.string -> GT.string) -> unit -> GT.string -> GT.string
+)
+ident(
+  ext_ref GT.lift
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.string
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h -> GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h -> GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h -> GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.int -> GT.string
+)
+type(
+  GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.int -> GT.string
+)
+type(
+  GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.int -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.int -> GT.string
+)
+type(
+  GT.int -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.int
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  unit
+)
+type(
+  GT.int -> string
+)
+type(
+  < compare : GT.int -> GT.int -> GT.comparison;
+    eq : GT.int -> GT.int -> GT.bool; foldl : '_r -> GT.int -> '_r;
+    foldr : '_r -> GT.int -> '_r; gmap : GT.int -> GT.int;
+    html : GT.int -> HTML.viewer; show : GT.int -> string >
+)
+type(
+  (('_s, '_t) _#GT.int_tt -> '_s -> GT.int -> '_t,
+   < compare : GT.int -> GT.int -> GT.comparison;
+     eq : GT.int -> GT.int -> GT.bool; foldl : '_r -> GT.int -> '_r;
+     foldr : '_r -> GT.int -> '_r; gmap : GT.int -> GT.int;
+     html : GT.int -> HTML.viewer; show : GT.int -> string >)
+  GT.t
+)
+ident(
+  ext_ref GT.int
+)
+type(
+  (GT.int -> string) -> unit -> GT.int -> string
+)
+ident(
+  ext_ref GT.lift
+)
+type(
+  string
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  GT.int
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h ->
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h ->
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h ->
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.string
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  unit
+)
+type(
+  GT.string -> GT.string
+)
+type(
+  < compare : GT.string -> GT.string -> GT.comparison;
+    eq : GT.string -> GT.string -> GT.bool; foldl : '_u -> GT.string -> '_u;
+    foldr : '_u -> GT.string -> '_u; gmap : GT.string -> GT.string;
+    html : GT.string -> HTML.viewer; show : GT.string -> GT.string >
+)
+type(
+  (('_v, '_w) _#GT.string_tt -> '_v -> GT.string -> '_w,
+   < compare : GT.string -> GT.string -> GT.comparison;
+     eq : GT.string -> GT.string -> GT.bool; foldl : '_u -> GT.string -> '_u;
+     foldr : '_u -> GT.string -> '_u; gmap : GT.string -> GT.string;
+     html : GT.string -> HTML.viewer; show : GT.string -> GT.string >)
+  GT.t
+)
+ident(
+  ext_ref GT.string
+)
+type(
+  (GT.string -> GT.string) -> unit -> GT.string -> GT.string
+)
+ident(
+  ext_ref GT.lift
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.string
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h ->
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h ->
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.string
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  unit
+)
+type(
+  GT.string -> GT.string
+)
+type(
+  < compare : GT.string -> GT.string -> GT.comparison;
+    eq : GT.string -> GT.string -> GT.bool; foldl : '_x -> GT.string -> '_x;
+    foldr : '_x -> GT.string -> '_x; gmap : GT.string -> GT.string;
+    html : GT.string -> HTML.viewer; show : GT.string -> GT.string >
+)
+type(
+  (('_y, '_z) _#GT.string_tt -> '_y -> GT.string -> '_z,
+   < compare : GT.string -> GT.string -> GT.comparison;
+     eq : GT.string -> GT.string -> GT.bool; foldl : '_x -> GT.string -> '_x;
+     foldr : '_x -> GT.string -> '_x; gmap : GT.string -> GT.string;
+     html : GT.string -> HTML.viewer; show : GT.string -> GT.string >)
+  GT.t
+)
+ident(
+  ext_ref GT.string
+)
+type(
+  (GT.string -> GT.string) -> unit -> GT.string -> GT.string
+)
+ident(
+  ext_ref GT.lift
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.string
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h ->
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h ->
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h ->
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.string
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  unit
+)
+type(
+  GT.string -> GT.string
+)
+type(
+  < compare : GT.string -> GT.string -> GT.comparison;
+    eq : GT.string -> GT.string -> GT.bool;
+    foldl : '_a1 -> GT.string -> '_a1; foldr : '_a1 -> GT.string -> '_a1;
+    gmap : GT.string -> GT.string; html : GT.string -> HTML.viewer;
+    show : GT.string -> GT.string >
+)
+type(
+  (('_b1, '_c1) _#GT.string_tt -> '_b1 -> GT.string -> '_c1,
+   < compare : GT.string -> GT.string -> GT.comparison;
+     eq : GT.string -> GT.string -> GT.bool;
+     foldl : '_a1 -> GT.string -> '_a1; foldr : '_a1 -> GT.string -> '_a1;
+     gmap : GT.string -> GT.string; html : GT.string -> HTML.viewer;
+     show : GT.string -> GT.string >)
+  GT.t
+)
+ident(
+  ext_ref GT.string
+)
+type(
+  (GT.string -> GT.string) -> unit -> GT.string -> GT.string
+)
+ident(
+  ext_ref GT.lift
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.string
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h ->
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h ->
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit ->
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a ->
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  GT.string
+)
+type(
+  GT.unit
+)
+type(
+  GT.unit -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  string
+)
+type(
+  string -> GT.string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h
+)
+type(
+  'd1
+)
+type(
+  < c_App : 'inh0 ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Assn : 'inh0 ->
+             ('inh0, t, 'syn0, <  >) GT.a ->
+             GT.string -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Binop : 'inh0 ->
+              ('inh0, t, 'syn0, <  >) GT.a ->
+              GT.string ->
+              ('inh0, t, 'syn0, <  >) GT.a ->
+              ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Const : 'inh0 -> ('inh0, t, 'syn0, <  >) GT.a -> GT.int -> 'syn0;
+    c_Deref : 'inh0 ->
+              ('inh0, t, 'syn0, <  >) GT.a ->
+              ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_False_ : 'inh0 -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Fix : 'inh0 ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Grab : 'inh0 ->
+             ('inh0, t, 'syn0, <  >) GT.a ->
+             ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_If : 'inh0 ->
+           ('inh0, t, 'syn0, <  >) GT.a ->
+           ('inh0, t, 'syn0, <  >) GT.a ->
+           ('inh0, t, 'syn0, <  >) GT.a ->
+           ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Lam : 'inh0 ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            GT.string -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_New : 'inh0 ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            GT.string -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Par : 'inh0 ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Release : 'inh0 ->
+                ('inh0, t, 'syn0, <  >) GT.a ->
+                ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Sema : 'inh0 ->
+             ('inh0, t, 'syn0, <  >) GT.a ->
+             GT.string -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Seq : 'inh0 ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_True_ : 'inh0 -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Unop : 'inh0 ->
+             ('inh0, t, 'syn0, <  >) GT.a ->
+             GT.string -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Var : 'inh0 -> ('inh0, t, 'syn0, <  >) GT.a -> GT.string -> 'syn0;
+    t_t : 'inh0 -> t -> 'syn0; .. > ->
+  'inh0 -> t -> 'syn0
+)
+type(
+  'inh0 -> t -> 'syn0
+)
+type(
+  'inh0 -> t -> 'syn0
+)
+type(
+  < c_App : 'inh0 ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Assn : 'inh0 ->
+             ('inh0, t, 'syn0, <  >) GT.a ->
+             GT.string -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Binop : 'inh0 ->
+              ('inh0, t, 'syn0, <  >) GT.a ->
+              GT.string ->
+              ('inh0, t, 'syn0, <  >) GT.a ->
+              ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Const : 'inh0 -> ('inh0, t, 'syn0, <  >) GT.a -> GT.int -> 'syn0;
+    c_Deref : 'inh0 ->
+              ('inh0, t, 'syn0, <  >) GT.a ->
+              ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_False_ : 'inh0 -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Fix : 'inh0 ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Grab : 'inh0 ->
+             ('inh0, t, 'syn0, <  >) GT.a ->
+             ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_If : 'inh0 ->
+           ('inh0, t, 'syn0, <  >) GT.a ->
+           ('inh0, t, 'syn0, <  >) GT.a ->
+           ('inh0, t, 'syn0, <  >) GT.a ->
+           ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Lam : 'inh0 ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            GT.string -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_New : 'inh0 ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            GT.string -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Par : 'inh0 ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Release : 'inh0 ->
+                ('inh0, t, 'syn0, <  >) GT.a ->
+                ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Sema : 'inh0 ->
+             ('inh0, t, 'syn0, <  >) GT.a ->
+             GT.string -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Seq : 'inh0 ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            ('inh0, t, 'syn0, <  >) GT.a ->
+            ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_True_ : 'inh0 -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Unop : 'inh0 ->
+             ('inh0, t, 'syn0, <  >) GT.a ->
+             GT.string -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Var : 'inh0 -> ('inh0, t, 'syn0, <  >) GT.a -> GT.string -> 'syn0;
+    t_t : 'inh0 -> t -> 'syn0; .. >
+  as 'e1
+)
+ident(
+  int_ref this "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('e1 -> 'inh0 -> t -> 'syn0, GT.unit) GT.t
+)
+ident(
+  int_ref t "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('e1 -> 'inh0 -> t -> 'syn0, GT.unit) GT.t -> 'e1 -> 'inh0 -> t -> 'syn0
+)
+ident(
+  ext_ref GT.transform
+)
+type(
+  'e1
+)
+type(
+  (('inh1, 'syn1) #t_tt -> 'inh1 -> t -> 'syn1, GT.unit) GT.t
+)
+type(
+  ((('inh1, 'syn1) #t_tt as 'f1) -> 'inh1 -> t -> 'syn1, GT.unit) GT.t
+)
+type(
+  GT.unit
+)
+type(
+  'f1 -> 'inh1 -> t -> 'syn1
+)
+ident(
+  int_ref t_gcata "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  < c_App : 'g1 ->
+            ('g1, t, 'h1, <  >) GT.a ->
+            ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Assn : 'g1 ->
+             ('g1, t, 'h1, <  >) GT.a ->
+             GT.string -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Binop : 'g1 ->
+              ('g1, t, 'h1, <  >) GT.a ->
+              GT.string ->
+              ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Const : 'g1 -> ('g1, t, 'h1, <  >) GT.a -> GT.int -> 'h1;
+    c_Deref : 'g1 ->
+              ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_False_ : 'g1 -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Fix : 'g1 ->
+            ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Grab : 'g1 ->
+             ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_If : 'g1 ->
+           ('g1, t, 'h1, <  >) GT.a ->
+           ('g1, t, 'h1, <  >) GT.a ->
+           ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Lam : 'g1 ->
+            ('g1, t, 'h1, <  >) GT.a ->
+            GT.string -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_New : 'g1 ->
+            ('g1, t, 'h1, <  >) GT.a ->
+            GT.string -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Par : 'g1 ->
+            ('g1, t, 'h1, <  >) GT.a ->
+            ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Release : 'g1 ->
+                ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Sema : 'g1 ->
+             ('g1, t, 'h1, <  >) GT.a ->
+             GT.string -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Seq : 'g1 ->
+            ('g1, t, 'h1, <  >) GT.a ->
+            ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_True_ : 'g1 -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Unop : 'g1 ->
+             ('g1, t, 'h1, <  >) GT.a ->
+             GT.string -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Var : 'g1 -> ('g1, t, 'h1, <  >) GT.a -> GT.string -> 'h1; .. > ->
+  'g1 -> t -> 'h1
+)
+type(
+  'g1 -> t -> 'h1
+)
+type(
+  t -> 'h1
+)
+type(
+  'h1
+)
+type(
+  'h1
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  < c_App : 'g1 ->
+            ('g1, t, 'h1, <  >) GT.a ->
+            ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Assn : 'g1 ->
+             ('g1, t, 'h1, <  >) GT.a ->
+             GT.string -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Binop : 'g1 ->
+              ('g1, t, 'h1, <  >) GT.a ->
+              GT.string ->
+              ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Const : 'g1 -> ('g1, t, 'h1, <  >) GT.a -> GT.int -> 'h1;
+    c_Deref : 'g1 ->
+              ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_False_ : 'g1 -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Fix : 'g1 ->
+            ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Grab : 'g1 ->
+             ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_If : 'g1 ->
+           ('g1, t, 'h1, <  >) GT.a ->
+           ('g1, t, 'h1, <  >) GT.a ->
+           ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Lam : 'g1 ->
+            ('g1, t, 'h1, <  >) GT.a ->
+            GT.string -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_New : 'g1 ->
+            ('g1, t, 'h1, <  >) GT.a ->
+            GT.string -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Par : 'g1 ->
+            ('g1, t, 'h1, <  >) GT.a ->
+            ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Release : 'g1 ->
+                ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Sema : 'g1 ->
+             ('g1, t, 'h1, <  >) GT.a ->
+             GT.string -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Seq : 'g1 ->
+            ('g1, t, 'h1, <  >) GT.a ->
+            ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_True_ : 'g1 -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Unop : 'g1 ->
+             ('g1, t, 'h1, <  >) GT.a ->
+             GT.string -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Var : 'g1 -> ('g1, t, 'h1, <  >) GT.a -> GT.string -> 'h1; .. >
+  as 'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  GT.string
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 ->
+  ('g1, t, 'h1, <  >) GT.a -> GT.string -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 ->
+  ('g1, t, 'h1, <  >) GT.a ->
+  ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  GT.string
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 ->
+  ('g1, t, 'h1, <  >) GT.a -> GT.string -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 ->
+  ('g1, t, 'h1, <  >) GT.a ->
+  ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  GT.string
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 ->
+  ('g1, t, 'h1, <  >) GT.a -> GT.string -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 ->
+  ('g1, t, 'h1, <  >) GT.a ->
+  ('g1, t, 'h1, <  >) GT.a ->
+  ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  GT.int
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> ('g1, t, 'h1, <  >) GT.a -> GT.int -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  GT.string
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 ->
+  ('g1, t, 'h1, <  >) GT.a -> GT.string -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  GT.string
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 ->
+  ('g1, t, 'h1, <  >) GT.a ->
+  GT.string -> ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 ->
+  ('g1, t, 'h1, <  >) GT.a ->
+  ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  GT.string
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 ->
+  ('g1, t, 'h1, <  >) GT.a -> GT.string -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'h1
+)
+type(
+  GT.string
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> ('g1, t, 'h1, <  >) GT.a -> GT.string -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.string
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.string
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.string
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  GT.int
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  t
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.string
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.string
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  GT.string
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+type(
+  GT.string
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  <  >
+)
+type(
+  <  >
+)
+type(
+  'g1 -> t -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'i1 -> 'g1 -> t -> 'h1
+)
+ident(
+  int_ref t_gcata "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  <  >
+)
+ident(
+  def tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  def self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  t
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'g1
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'i1
+)
+ident(
+  def trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  'i1 -> 'g1 -> t -> 'h1
+)
+ident(
+  def t_gcata "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+type(
+  ('f1 -> 'inh1 -> t -> 'syn1, GT.unit) GT.t
+)
+ident(
+  def t "AST.ml" 3 9 9 "AST.ml" 1 0 -1
+)
+"AST.ml" 33 470 478 "AST.ml" 33 470 486
+type(
+  string list
+)
+ident(
+  def keywords "AST.ml" 37 601 605 "AST.ml" 78 1993 1998
+)
+"AST.ml" 34 491 497 "AST.ml" 34 491 502
+type(
+  string
+)
+"AST.ml" 34 491 504 "AST.ml" 34 491 509
+type(
+  string
+)
+"AST.ml" 34 491 511 "AST.ml" 34 491 515
+type(
+  string
+)
+"AST.ml" 34 491 517 "AST.ml" 34 491 528
+type(
+  string
+)
+"AST.ml" 34 491 530 "AST.ml" 34 491 534
+type(
+  string
+)
+"AST.ml" 34 491 536 "AST.ml" 34 491 542
+type(
+  string
+)
+"AST.ml" 34 491 544 "AST.ml" 34 491 550
+type(
+  string
+)
+"AST.ml" 34 491 552 "AST.ml" 34 491 557
+type(
+  string
+)
+"AST.ml" 34 491 559 "AST.ml" 34 491 565
+type(
+  string
+)
+"AST.ml" 34 491 567 "AST.ml" 34 491 576
+type(
+  string
+)
+"AST.ml" 34 491 578 "AST.ml" 34 491 584
+type(
+  string
+)
+"AST.ml" 34 491 586 "AST.ml" 34 491 593
+type(
+  string
+)
+"AST.ml" 33 470 489 "AST.ml" 35 594 599
+type(
+  string list
+)
+type(
+  string list
+)
+type(
+  string list
+)
+type(
+  string list
+)
+type(
+  string list
+)
+type(
+  string list
+)
+type(
+  string list
+)
+type(
+  string list
+)
+type(
+  string list
+)
+type(
+  string list
+)
+type(
+  string list
+)
+type(
+  string list
+)
+type(
+  string list
+)
+"AST.ml" 37 601 609 "AST.ml" 37 601 610
+type(
+  Ostap.Matcher.Token.t -> string
+)
+ident(
+  def r "AST.ml" 39 639 643 "AST.ml" 78 1993 1998
+)
+"AST.ml" 37 601 613 "AST.ml" 37 601 637
+type(
+  Ostap.Matcher.Token.t -> string
+)
+ident(
+  ext_ref Ostap.Matcher.Token.repr
+)
+"AST.ml" 39 639 647 "AST.ml" 39 639 657
+type(
+  String.t -> bool
+)
+ident(
+  def is_keyword "AST.ml" 44 808 812 "AST.ml" 78 1993 1998
+)
+"AST.ml" 40 661 682 "AST.ml" 40 661 699
+call(
+  stack
+)
+"AST.ml" 41 703 713 "AST.ml" 41 703 714
+type(
+  S.t
+)
+ident(
+  def s "AST.ml" 42 775 781 "AST.ml" 42 775 801
+)
+"AST.ml" 41 703 717 "AST.ml" 41 703 731
+type(
+  (S.t -> S.elt -> S.t) -> S.t -> S.elt list -> S.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"AST.ml" 41 703 737 "AST.ml" 41 703 738
+type(
+  S.t
+)
+ident(
+  def s "AST.ml" 41 703 739 "AST.ml" 41 703 753
+)
+"AST.ml" 41 703 739 "AST.ml" 41 703 740
+type(
+  S.elt
+)
+ident(
+  def k "AST.ml" 41 703 744 "AST.ml" 41 703 753
+)
+"AST.ml" 41 703 744 "AST.ml" 41 703 749
+type(
+  S.elt -> S.t -> S.t
+)
+ident(
+  ext_ref S.add
+)
+"AST.ml" 41 703 750 "AST.ml" 41 703 751
+type(
+  S.elt
+)
+ident(
+  int_ref k "AST.ml" 41 703 739 "AST.ml" 41 703 740
+)
+"AST.ml" 41 703 752 "AST.ml" 41 703 753
+type(
+  S.t
+)
+ident(
+  int_ref s "AST.ml" 41 703 737 "AST.ml" 41 703 738
+)
+"AST.ml" 41 703 744 "AST.ml" 41 703 753
+call(
+  tail
+)
+type(
+  S.t
+)
+"AST.ml" 41 703 739 "AST.ml" 41 703 753
+type(
+  S.elt -> S.t
+)
+"AST.ml" 41 703 732 "AST.ml" 41 703 754
+type(
+  S.t -> S.elt -> S.t
+)
+"AST.ml" 41 703 755 "AST.ml" 41 703 762
+type(
+  S.t
+)
+ident(
+  ext_ref S.empty
+)
+"AST.ml" 41 703 763 "AST.ml" 41 703 771
+type(
+  S.elt list
+)
+ident(
+  int_ref keywords "AST.ml" 33 470 478 "AST.ml" 33 470 486
+)
+"AST.ml" 41 703 717 "AST.ml" 41 703 771
+call(
+  stack
+)
+type(
+  S.t
+)
+"AST.ml" 42 775 786 "AST.ml" 42 775 787
+type(
+  String.t
+)
+ident(
+  def i "AST.ml" 42 775 791 "AST.ml" 42 775 800
+)
+"AST.ml" 42 775 791 "AST.ml" 42 775 796
+type(
+  String.t -> S.t -> bool
+)
+ident(
+  ext_ref S.mem
+)
+"AST.ml" 42 775 797 "AST.ml" 42 775 798
+type(
+  String.t
+)
+ident(
+  int_ref i "AST.ml" 42 775 786 "AST.ml" 42 775 787
+)
+"AST.ml" 42 775 799 "AST.ml" 42 775 800
+type(
+  S.t
+)
+ident(
+  int_ref s "AST.ml" 41 703 713 "AST.ml" 41 703 714
+)
+"AST.ml" 42 775 791 "AST.ml" 42 775 800
+call(
+  tail
+)
+type(
+  bool
+)
+"AST.ml" 42 775 781 "AST.ml" 42 775 801
+type(
+  String.t -> bool
+)
+"AST.ml" 41 703 709 "AST.ml" 42 775 801
+type(
+  String.t -> bool
+)
+"AST.ml" 40 661 667 "AST.ml" 42 775 801
+type(
+  String.t -> bool
+)
+"AST.ml" 45 820 835 "AST.ml" 45 820 837
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def x "AST.ml" 45 820 846 "AST.ml" 45 820 868
+)
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def x "AST.ml" 45 820 873 "AST.ml" 45 820 876
+)
+"AST.ml" 45 820 837 "AST.ml" 45 820 842
+call(
+  tail
+)
+type(
+  (< getIDENT : ('a, Ostap.Matcher.Token.t, 'b) Ostap.Combinators.result;
+     .. >
+   as 'a, Ostap.Matcher.Token.t, 'b)
+  Ostap.Combinators.parse
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 45 820 837 "AST.ml" 45 820 842
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "AST.ml" 45 820 837 "AST.ml" 45 820 842
+)
+"AST.ml" 45 820 846 "AST.ml" 45 820 849
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"AST.ml" 45 820 851 "AST.ml" 45 820 861
+type(
+  String.t -> bool
+)
+ident(
+  int_ref is_keyword "AST.ml" 39 639 647 "AST.ml" 39 639 657
+)
+"AST.ml" 45 820 863 "AST.ml" 45 820 864
+type(
+  Ostap.Matcher.Token.t -> String.t
+)
+ident(
+  int_ref r "AST.ml" 37 601 609 "AST.ml" 37 601 610
+)
+"AST.ml" 45 820 865 "AST.ml" 45 820 866
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref x "AST.ml" 45 820 835 "AST.ml" 45 820 837
+)
+"AST.ml" 45 820 862 "AST.ml" 45 820 867
+call(
+  stack
+)
+type(
+  String.t
+)
+"AST.ml" 45 820 850 "AST.ml" 45 820 868
+call(
+  stack
+)
+type(
+  bool
+)
+"AST.ml" 45 820 846 "AST.ml" 45 820 868
+type(
+  bool
+)
+"AST.ml" 45 820 873 "AST.ml" 45 820 874
+type(
+  Ostap.Matcher.Token.t -> string
+)
+ident(
+  int_ref r "AST.ml" 37 601 609 "AST.ml" 37 601 610
+)
+"AST.ml" 45 820 875 "AST.ml" 45 820 876
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref x "AST.ml" 45 820 835 "AST.ml" 45 820 837
+)
+"AST.ml" 45 820 873 "AST.ml" 45 820 876
+call(
+  tail
+)
+type(
+  string
+)
+"AST.ml" 45 820 835 "AST.ml" 45 820 877
+call(
+  stack
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Combinators.parse
+)
+type(
+  (Ostap.Matcher.Token.t -> 'b) option
+)
+type(
+  Ostap.Matcher.Token.t -> bool
+)
+type(
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Combinators.parse ->
+  (Ostap.Matcher.Token.t -> bool) ->
+  (Ostap.Matcher.Token.t -> 'b) option ->
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.guard
+)
+type(
+  Ostap.Matcher.Token.t -> string
+)
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def _0 "AST.ml" 45 820 873 "AST.ml" 45 820 876
+)
+type(
+  (Ostap.Matcher.Token.t -> string) ->
+  ('a, Ostap.Matcher.Token.t, 'b) Ostap.Combinators.parse ->
+  ('a, string, 'b) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"AST.ml" 45 820 826 "AST.ml" 45 820 877
+call(
+  tail
+)
+type(
+  'a -> ('a, string, 'b) Ostap.Combinators.result
+)
+type(
+  ('a, string, 'b) Ostap.Combinators.result
+)
+type(
+  'a
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 45 820 826 "AST.ml" 45 820 877
+)
+type(
+  'a
+)
+ident(
+  def _ostap_stream "AST.ml" 45 820 826 "AST.ml" 45 820 877
+)
+"AST.ml" 46 879 894 "AST.ml" 46 879 896
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def x "AST.ml" 46 879 905 "AST.ml" 46 879 924
+)
+"AST.ml" 46 879 896 "AST.ml" 46 879 903
+call(
+  tail
+)
+type(
+  (< getLITERAL : ('c, Ostap.Matcher.Token.t, 'd) Ostap.Combinators.result;
+     .. >
+   as 'c, Ostap.Matcher.Token.t, 'd)
+  Ostap.Combinators.parse
+)
+type(
+  ('c, Ostap.Matcher.Token.t, 'd) Ostap.Combinators.result
+)
+type(
+  'c
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 46 879 896 "AST.ml" 46 879 903
+)
+type(
+  'c
+)
+ident(
+  def _ostap_stream "AST.ml" 46 879 896 "AST.ml" 46 879 903
+)
+"AST.ml" 46 879 905 "AST.ml" 46 879 918
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"AST.ml" 46 879 920 "AST.ml" 46 879 921
+type(
+  Ostap.Matcher.Token.t -> string
+)
+ident(
+  int_ref r "AST.ml" 37 601 609 "AST.ml" 37 601 610
+)
+"AST.ml" 46 879 922 "AST.ml" 46 879 923
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  int_ref x "AST.ml" 46 879 894 "AST.ml" 46 879 896
+)
+"AST.ml" 46 879 919 "AST.ml" 46 879 924
+call(
+  stack
+)
+type(
+  string
+)
+"AST.ml" 46 879 905 "AST.ml" 46 879 924
+type(
+  int
+)
+"AST.ml" 46 879 894 "AST.ml" 46 879 925
+type(
+  Ostap.Matcher.Token.t -> int
+)
+type(
+  Ostap.Matcher.Token.t
+)
+ident(
+  def _0 "AST.ml" 46 879 905 "AST.ml" 46 879 924
+)
+type(
+  (Ostap.Matcher.Token.t -> int) ->
+  ('c, Ostap.Matcher.Token.t, 'd) Ostap.Combinators.parse ->
+  ('c, int, 'd) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"AST.ml" 46 879 885 "AST.ml" 46 879 925
+call(
+  tail
+)
+type(
+  'c -> ('c, int, 'd) Ostap.Combinators.result
+)
+type(
+  ('c, int, 'd) Ostap.Combinators.result
+)
+type(
+  'c
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 46 879 885 "AST.ml" 46 879 925
+)
+type(
+  'c
+)
+ident(
+  def _ostap_stream "AST.ml" 46 879 885 "AST.ml" 46 879 925
+)
+"AST.ml" 45 820 826 "AST.ml" 46 879 925
+type(
+  'c -> ('c, int, 'd) Ostap.Combinators.result
+)
+ident(
+  def literal "AST.ml" 44 808 812 "AST.ml" 78 1993 1998
+)
+type(
+  'a -> ('a, string, 'b) Ostap.Combinators.result
+)
+ident(
+  def ident "AST.ml" 44 808 812 "AST.ml" 78 1993 1998
+)
+"AST.ml" 49 934 946 "AST.ml" 49 934 947
+type(
+  string
+)
+"AST.ml" 50 951 961 "AST.ml" 50 951 965
+type(
+  string ->
+  int ->
+  Ostap.Msg.Coord.t ->
+  [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
+)
+"AST.ml" 50 951 968 "AST.ml" 50 951 993
+type(
+  Ostap.Matcher.Skip.t list ->
+  string ->
+  int ->
+  Ostap.Msg.Coord.t ->
+  [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
+)
+ident(
+  ext_ref Ostap.Matcher.Skip.create
+)
+"AST.ml" 51 996 1015 "AST.ml" 51 996 1045
+type(
+  string -> Ostap.Matcher.Skip.t
+)
+ident(
+  ext_ref Ostap.Matcher.Skip.whitespaces
+)
+"AST.ml" 51 996 1046 "AST.ml" 51 996 1055
+type(
+  string
+)
+"AST.ml" 51 996 1015 "AST.ml" 51 996 1055
+call(
+  stack
+)
+type(
+  Ostap.Matcher.Skip.t
+)
+"AST.ml" 52 1058 1077 "AST.ml" 52 1058 1109
+type(
+  string -> string -> Ostap.Matcher.Skip.t
+)
+ident(
+  ext_ref Ostap.Matcher.Skip.nestedComment
+)
+"AST.ml" 52 1058 1110 "AST.ml" 52 1058 1114
+type(
+  string
+)
+"AST.ml" 52 1058 1115 "AST.ml" 52 1058 1119
+type(
+  string
+)
+"AST.ml" 52 1058 1077 "AST.ml" 52 1058 1119
+call(
+  stack
+)
+type(
+  Ostap.Matcher.Skip.t
+)
+"AST.ml" 53 1121 1140 "AST.ml" 53 1121 1170
+type(
+  string -> Ostap.Matcher.Skip.t
+)
+ident(
+  ext_ref Ostap.Matcher.Skip.lineComment
+)
+"AST.ml" 53 1121 1171 "AST.ml" 53 1121 1175
+type(
+  string
+)
+"AST.ml" 53 1121 1140 "AST.ml" 53 1121 1175
+call(
+  stack
+)
+type(
+  Ostap.Matcher.Skip.t
+)
+"AST.ml" 50 951 994 "AST.ml" 54 1176 1194
+type(
+  Ostap.Matcher.Skip.t list
+)
+type(
+  Ostap.Matcher.Skip.t list
+)
+type(
+  Ostap.Matcher.Skip.t list
+)
+type(
+  Ostap.Matcher.Skip.t list
+)
+"AST.ml" 50 951 968 "AST.ml" 54 1176 1194
+call(
+  stack
+)
+type(
+  string ->
+  int ->
+  Ostap.Msg.Coord.t ->
+  [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
+)
+"AST.ml" 57 1206 1216 "AST.ml" 57 1206 1221
+type(
+  Re_str.regexp
+)
+"AST.ml" 57 1206 1226 "AST.ml" 57 1206 1239
+type(
+  string -> Re_str.regexp
+)
+ident(
+  ext_ref Re_str.regexp
+)
+"AST.ml" 57 1206 1240 "AST.ml" 57 1206 1271
+type(
+  string
+)
+"AST.ml" 57 1206 1226 "AST.ml" 57 1206 1271
+call(
+  stack
+)
+type(
+  Re_str.regexp
+)
+"AST.ml" 58 1276 1286 "AST.ml" 58 1276 1293
+type(
+  Re_str.regexp
+)
+"AST.ml" 58 1276 1296 "AST.ml" 58 1276 1309
+type(
+  string -> Re_str.regexp
+)
+ident(
+  ext_ref Re_str.regexp
+)
+"AST.ml" 58 1276 1310 "AST.ml" 58 1276 1320
+type(
+  string
+)
+"AST.ml" 58 1276 1296 "AST.ml" 58 1276 1320
+call(
+  stack
+)
+type(
+  Re_str.regexp
+)
+"AST.ml" 59 1324 1338 "AST.ml" 59 1324 1342
+type(
+  < col : int; coord : Ostap.Msg.Coord.t;
+    get : string ->
+          Re_str.regexp ->
+          ('e, Ostap.Matcher.Token.t, Ostap.Reason.t)
+          Ostap.Combinators.result;
+    getEOF : ('e, Ostap.Matcher.Token.t, Ostap.Reason.t)
+             Ostap.Combinators.result;
+    getIDENT : ('e, Ostap.Matcher.Token.t, Ostap.Reason.t)
+               Ostap.Combinators.result;
+    getLITERAL : ('e, Ostap.Matcher.Token.t, Ostap.Reason.t)
+                 Ostap.Combinators.result;
+    line : int; loc : Ostap.Msg.Locator.t;
+    look : string ->
+           ('e, Ostap.Matcher.Token.t, Ostap.Reason.t)
+           Ostap.Combinators.result;
+    pos : int; prefix : int -> string;
+    regexp : string ->
+             string ->
+             ('e, Ostap.Matcher.Token.t, Ostap.Reason.t)
+             Ostap.Combinators.result;
+    skip : int ->
+           Ostap.Msg.Coord.t ->
+           [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ];
+    .. >
+  as 'e
+)
+"AST.ml" 60 1344 1376 "AST.ml" 60 1344 1377
+type(
+  string
+)
+ident(
+  int_ref s "AST.ml" 49 934 946 "AST.ml" 49 934 947
+)
+"AST.ml" 61 1379 1399 "AST.ml" 61 1379 1400
+type(
+  int
+)
+ident(
+  def p "AST.ml" 61 1379 1401 "AST.ml" 61 1379 1423
+)
+"AST.ml" 61 1379 1401 "AST.ml" 61 1379 1406
+type(
+  Ostap.Msg.Coord.t
+)
+ident(
+  def coord "AST.ml" 61 1379 1409 "AST.ml" 61 1379 1423
+)
+"AST.ml" 61 1379 1409 "AST.ml" 61 1379 1413
+type(
+  string ->
+  int ->
+  Ostap.Msg.Coord.t ->
+  [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
+)
+ident(
+  int_ref skip "AST.ml" 50 951 961 "AST.ml" 50 951 965
+)
+"AST.ml" 61 1379 1414 "AST.ml" 61 1379 1415
+type(
+  string
+)
+ident(
+  int_ref s "AST.ml" 49 934 946 "AST.ml" 49 934 947
+)
+"AST.ml" 61 1379 1416 "AST.ml" 61 1379 1417
+type(
+  int
+)
+ident(
+  int_ref p "AST.ml" 61 1379 1399 "AST.ml" 61 1379 1400
+)
+"AST.ml" 61 1379 1418 "AST.ml" 61 1379 1423
+type(
+  Ostap.Msg.Coord.t
+)
+ident(
+  int_ref coord "AST.ml" 61 1379 1401 "AST.ml" 61 1379 1406
+)
+"AST.ml" 61 1379 1409 "AST.ml" 61 1379 1423
+call(
+  tail
+)
+type(
+  [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
+)
+"AST.ml" 61 1379 1401 "AST.ml" 61 1379 1423
+type(
+  Ostap.Msg.Coord.t ->
+  [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
+)
+"AST.ml" 61 1379 1399 "AST.ml" 61 1379 1423
+type(
+  int ->
+  Ostap.Msg.Coord.t ->
+  [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
+)
+type(
+  int ->
+  Ostap.Msg.Coord.t ->
+  [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
+)
+"AST.ml" 61 1379 1387 "AST.ml" 61 1379 1423
+type(
+  'e ->
+  int ->
+  Ostap.Msg.Coord.t ->
+  [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
+)
+"AST.ml" 62 1424 1454 "AST.ml" 62 1424 1458
+type(
+  'e
+)
+ident(
+  int_ref self "AST.ml" 59 1324 1338 "AST.ml" 59 1324 1342
+)
+"AST.ml" 62 1424 1454 "AST.ml" 62 1424 1462
+call(
+  tail
+)
+type(
+  string ->
+  Re_str.regexp ->
+  ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
+)
+"AST.ml" 62 1424 1463 "AST.ml" 62 1424 1475
+type(
+  string
+)
+"AST.ml" 62 1424 1476 "AST.ml" 62 1424 1481
+type(
+  Re_str.regexp
+)
+ident(
+  int_ref ident "AST.ml" 57 1206 1216 "AST.ml" 57 1206 1221
+)
+"AST.ml" 62 1424 1454 "AST.ml" 62 1424 1481
+type(
+  ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
+)
+"AST.ml" 62 1424 1432 "AST.ml" 62 1424 1481
+type(
+  'e -> ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
+)
+"AST.ml" 63 1482 1512 "AST.ml" 63 1482 1516
+type(
+  'e
+)
+ident(
+  int_ref self "AST.ml" 59 1324 1338 "AST.ml" 59 1324 1342
+)
+"AST.ml" 63 1482 1512 "AST.ml" 63 1482 1520
+call(
+  tail
+)
+type(
+  string ->
+  Re_str.regexp ->
+  ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
+)
+"AST.ml" 63 1482 1521 "AST.ml" 63 1482 1530
+type(
+  string
+)
+"AST.ml" 63 1482 1534 "AST.ml" 63 1482 1541
+type(
+  Re_str.regexp
+)
+ident(
+  int_ref literal "AST.ml" 58 1276 1286 "AST.ml" 58 1276 1293
+)
+"AST.ml" 63 1482 1512 "AST.ml" 63 1482 1541
+type(
+  ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
+)
+type(
+  ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
+)
+"AST.ml" 63 1482 1490 "AST.ml" 63 1482 1541
+type(
+  'e -> ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
+)
+"AST.ml" 68 1593 1601 "AST.ml" 68 1593 1611
+type(
+  (t ->
+   ('f, 'g,
+    < retrieve : [> `First of int ] ->
+                 [> `Desc ] ->
+                 (Ostap.Msg.Locator.t *
+                  [< `Comment of string * 'h | `Msg of Ostap.Msg.t ] list)
+                 list;
+      .. >)
+   Ostap.Combinators.result) ->
+  string -> ('g, Ostap.Msg.t) Checked.t
+)
+ident(
+  def fromString "AST.ml" 76 1936 1991 "AST.ml" 78 1993 1998
+)
+"AST.ml" 68 1593 1612 "AST.ml" 68 1593 1613
+type(
+  t ->
+  ('f, 'g,
+   < retrieve : [> `First of int ] ->
+                [> `Desc ] ->
+                (Ostap.Msg.Locator.t *
+                 [< `Comment of string * 'h | `Msg of Ostap.Msg.t ] list)
+                list;
+     .. >
+   as 'i)
+  Ostap.Combinators.result
+)
+ident(
+  def p "AST.ml" 68 1593 1614 "AST.ml" 76 1936 1991
+)
+"AST.ml" 68 1593 1614 "AST.ml" 68 1593 1615
+type(
+  string
+)
+ident(
+  def s "AST.ml" 69 1618 1624 "AST.ml" 76 1936 1991
+)
+"AST.ml" 70 1628 1636 "AST.ml" 70 1628 1660
+type(
+  ('f, 'g, 'i) Ostap.Combinators.result ->
+  ('g -> ('g, Ostap.Msg.t) Checked.t) ->
+  ('i option -> ('g, Ostap.Msg.t) Checked.t) -> ('g, Ostap.Msg.t) Checked.t
+)
+ident(
+  ext_ref Ostap.Combinators.unwrap
+)
+"AST.ml" 70 1628 1662 "AST.ml" 70 1628 1663
+type(
+  t -> ('f, 'g, 'i) Ostap.Combinators.result
+)
+ident(
+  int_ref p "AST.ml" 68 1593 1612 "AST.ml" 68 1593 1613
+)
+"AST.ml" 70 1628 1665 "AST.ml" 70 1628 1670
+type(
+  string -> t
+)
+"AST.ml" 70 1628 1671 "AST.ml" 70 1628 1672
+type(
+  string
+)
+ident(
+  int_ref s "AST.ml" 68 1593 1614 "AST.ml" 68 1593 1615
+)
+"AST.ml" 70 1628 1664 "AST.ml" 70 1628 1673
+call(
+  stack
+)
+type(
+  t
+)
+"AST.ml" 70 1628 1661 "AST.ml" 70 1628 1674
+call(
+  stack
+)
+type(
+  ('f, 'g, 'i) Ostap.Combinators.result
+)
+"AST.ml" 70 1628 1680 "AST.ml" 70 1628 1681
+type(
+  'g
+)
+ident(
+  def x "AST.ml" 70 1628 1685 "AST.ml" 70 1628 1697
+)
+"AST.ml" 70 1628 1696 "AST.ml" 70 1628 1697
+type(
+  'g
+)
+ident(
+  int_ref x "AST.ml" 70 1628 1680 "AST.ml" 70 1628 1681
+)
+"AST.ml" 70 1628 1685 "AST.ml" 70 1628 1697
+type(
+  ('g, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 70 1628 1675 "AST.ml" 70 1628 1698
+type(
+  'g -> ('g, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 71 1700 1721 "AST.ml" 71 1700 1724
+type(
+  'i
+)
+ident(
+  def err "AST.ml" 72 1729 1742 "AST.ml" 74 1894 1923
+)
+"AST.ml" 71 1700 1716 "AST.ml" 71 1700 1724
+type(
+  'i option
+)
+"AST.ml" 72 1729 1747 "AST.ml" 72 1729 1750
+type(
+  Ostap.Msg.Locator.t
+)
+ident(
+  def loc "AST.ml" 73 1797 1810 "AST.ml" 74 1894 1923
+)
+"AST.ml" 72 1729 1752 "AST.ml" 72 1729 1753
+type(
+  [< `Comment of string * 'h | `Msg of Ostap.Msg.t ] as 'j
+)
+ident(
+  def m "AST.ml" 73 1797 1810 "AST.ml" 74 1894 1923
+)
+"AST.ml" 72 1729 1757 "AST.ml" 72 1729 1758
+type(
+  'j list
+)
+"AST.ml" 72 1729 1752 "AST.ml" 72 1729 1758
+type(
+  'j list
+)
+"AST.ml" 72 1729 1747 "AST.ml" 72 1729 1758
+type(
+  Ostap.Msg.Locator.t * 'j list
+)
+"AST.ml" 72 1729 1746 "AST.ml" 72 1729 1759
+type(
+  (Ostap.Msg.Locator.t * 'j list) list
+)
+type(
+  (Ostap.Msg.Locator.t * 'j list) list
+)
+"AST.ml" 72 1729 1762 "AST.ml" 72 1729 1765
+type(
+  'i
+)
+ident(
+  int_ref err "AST.ml" 71 1700 1721 "AST.ml" 71 1700 1724
+)
+"AST.ml" 72 1729 1762 "AST.ml" 72 1729 1774
+call(
+  stack
+)
+type(
+  ([> `First of int ] as 'k) ->
+  ([> `Desc ] as 'l) -> (Ostap.Msg.Locator.t * 'j list) list
+)
+"AST.ml" 72 1729 1783 "AST.ml" 72 1729 1784
+type(
+  int
+)
+"AST.ml" 72 1729 1775 "AST.ml" 72 1729 1785
+type(
+  'k
+)
+"AST.ml" 72 1729 1786 "AST.ml" 72 1729 1793
+type(
+  'l
+)
+"AST.ml" 72 1729 1762 "AST.ml" 72 1729 1793
+type(
+  (Ostap.Msg.Locator.t * 'j list) list
+)
+"AST.ml" 73 1797 1814 "AST.ml" 73 1797 1815
+type(
+  Ostap.Msg.t
+)
+ident(
+  def m "AST.ml" 74 1894 1907 "AST.ml" 74 1894 1923
+)
+"AST.ml" 73 1797 1825 "AST.ml" 73 1797 1826
+type(
+  'j
+)
+ident(
+  int_ref m "AST.ml" 72 1729 1752 "AST.ml" 72 1729 1753
+)
+"AST.ml" 73 1797 1837 "AST.ml" 73 1797 1838
+type(
+  Ostap.Msg.t
+)
+ident(
+  def m "AST.ml" 73 1797 1842 "AST.ml" 73 1797 1843
+)
+"AST.ml" 73 1797 1832 "AST.ml" 73 1797 1838
+type(
+  'j
+)
+"AST.ml" 73 1797 1842 "AST.ml" 73 1797 1843
+type(
+  Ostap.Msg.t
+)
+ident(
+  int_ref m "AST.ml" 73 1797 1837 "AST.ml" 73 1797 1838
+)
+"AST.ml" 73 1797 1856 "AST.ml" 73 1797 1857
+type(
+  string
+)
+ident(
+  def s "AST.ml" 73 1797 1865 "AST.ml" 73 1797 1890
+)
+"AST.ml" 73 1797 1859 "AST.ml" 73 1797 1860
+type(
+  'h
+)
+"AST.ml" 73 1797 1856 "AST.ml" 73 1797 1860
+type(
+  string * 'h
+)
+"AST.ml" 73 1797 1846 "AST.ml" 73 1797 1861
+type(
+  'j
+)
+"AST.ml" 73 1797 1865 "AST.ml" 73 1797 1879
+type(
+  string -> string array -> Ostap.Msg.Locator.t -> Ostap.Msg.t
+)
+ident(
+  ext_ref Ostap.Msg.make
+)
+"AST.ml" 73 1797 1880 "AST.ml" 73 1797 1881
+type(
+  string
+)
+ident(
+  int_ref s "AST.ml" 73 1797 1856 "AST.ml" 73 1797 1857
+)
+"AST.ml" 73 1797 1882 "AST.ml" 73 1797 1886
+type(
+  string array
+)
+"AST.ml" 73 1797 1887 "AST.ml" 73 1797 1890
+type(
+  Ostap.Msg.Locator.t
+)
+ident(
+  int_ref loc "AST.ml" 72 1729 1747 "AST.ml" 72 1729 1750
+)
+"AST.ml" 73 1797 1865 "AST.ml" 73 1797 1890
+call(
+  stack
+)
+type(
+  Ostap.Msg.t
+)
+"AST.ml" 73 1797 1819 "AST.ml" 73 1797 1890
+type(
+  Ostap.Msg.t
+)
+"AST.ml" 74 1894 1921 "AST.ml" 74 1894 1922
+type(
+  Ostap.Msg.t
+)
+ident(
+  int_ref m "AST.ml" 73 1797 1814 "AST.ml" 73 1797 1815
+)
+"AST.ml" 74 1894 1920 "AST.ml" 74 1894 1923
+type(
+  Ostap.Msg.t list
+)
+type(
+  Ostap.Msg.t list
+)
+"AST.ml" 74 1894 1907 "AST.ml" 74 1894 1923
+type(
+  ('g, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 73 1797 1810 "AST.ml" 74 1894 1923
+type(
+  ('g, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 72 1729 1742 "AST.ml" 74 1894 1923
+type(
+  ('g, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 71 1700 1710 "AST.ml" 75 1924 1935
+type(
+  'i option -> ('g, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 70 1628 1636 "AST.ml" 75 1924 1935
+call(
+  stack
+)
+type(
+  ('g, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 76 1936 1953 "AST.ml" 76 1936 1954
+type(
+  GT.string
+)
+ident(
+  def m "AST.ml" 76 1936 1958 "AST.ml" 76 1936 1991
+)
+"AST.ml" 76 1936 1947 "AST.ml" 76 1936 1954
+type(
+  exn
+)
+"AST.ml" 76 1936 1972 "AST.ml" 76 1936 1988
+type(
+  GT.string -> Ostap.Msg.t
+)
+ident(
+  ext_ref Ostap.Msg.phrase
+)
+"AST.ml" 76 1936 1989 "AST.ml" 76 1936 1990
+type(
+  GT.string
+)
+ident(
+  int_ref m "AST.ml" 76 1936 1953 "AST.ml" 76 1936 1954
+)
+"AST.ml" 76 1936 1972 "AST.ml" 76 1936 1990
+call(
+  stack
+)
+type(
+  Ostap.Msg.t
+)
+"AST.ml" 76 1936 1971 "AST.ml" 76 1936 1991
+type(
+  Ostap.Msg.t list
+)
+type(
+  Ostap.Msg.t list
+)
+"AST.ml" 76 1936 1958 "AST.ml" 76 1936 1991
+type(
+  ('g, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 69 1618 1624 "AST.ml" 76 1936 1991
+type(
+  ('g, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 68 1593 1614 "AST.ml" 76 1936 1991
+type(
+  string -> ('g, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 68 1593 1612 "AST.ml" 76 1936 1991
+type(
+  (t -> ('f, 'g, 'i) Ostap.Combinators.result) ->
+  string -> ('g, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 83 2026 2034 "AST.ml" 83 2026 2040
+type(
+  (< getIDENT : ('a, Ostap.Matcher.Token.t, < add : 'b -> 'b; .. > as 'b)
+                Ostap.Combinators.result;
+     look : string -> ('a, 'c, 'b) Ostap.Combinators.result;
+     regexp : string -> string -> ('a, 'd, 'b) Ostap.Combinators.result; .. >
+   as 'a) ->
+  ('a, t, 'b) Ostap.Combinators.result
+)
+ident(
+  def hparse "AST.ml" 109 2872 2876 "AST.ml" 111 2917 2922
+)
+"AST.ml" 83 2026 2041 "AST.ml" 83 2026 2042
+type(
+  'a
+)
+ident(
+  def s "AST.ml" 84 2046 2052 "AST.ml" 107 2856 2870
+)
+"AST.ml" 85 2064 2081 "AST.ml" 85 2064 2092
+type(
+  (< getIDENT : ('e, Ostap.Matcher.Token.t, < add : 'f -> 'f; .. > as 'f)
+                Ostap.Combinators.result;
+     look : string -> ('e, 'g, 'f) Ostap.Combinators.result;
+     regexp : string -> string -> ('e, 'h, 'f) Ostap.Combinators.result; .. >
+   as 'e) ->
+  ('e, GT.string, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref Lexer.ident "AST.ml" 45 820 826 "AST.ml" 46 879 925
+)
+"AST.ml" 85 2064 2072 "AST.ml" 85 2064 2093
+call(
+  tail
+)
+type(
+  'e -> ('e, GT.string, 'f) Ostap.Combinators.result
+)
+type(
+  ('e, GT.string, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 85 2064 2072 "AST.ml" 85 2064 2093
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 85 2064 2072 "AST.ml" 85 2064 2093
+)
+"AST.ml" 86 2095 2107 "AST.ml" 86 2095 2111
+type(
+  string
+)
+ident(
+  def name "AST.ml" 86 2095 2103 "AST.ml" 86 2095 2136
+)
+"AST.ml" 86 2095 2116 "AST.ml" 86 2095 2120
+type(
+  string
+)
+ident(
+  int_ref name "AST.ml" 86 2095 2107 "AST.ml" 86 2095 2111
+)
+"AST.ml" 86 2095 2123 "AST.ml" 86 2095 2128
+type(
+  string
+)
+"AST.ml" 86 2095 2116 "AST.ml" 86 2095 2128
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"AST.ml" 86 2095 2131 "AST.ml" 86 2095 2135
+type(
+  string
+)
+ident(
+  int_ref name "AST.ml" 86 2095 2107 "AST.ml" 86 2095 2111
+)
+"AST.ml" 86 2095 2114 "AST.ml" 86 2095 2136
+call(
+  tail
+)
+type(
+  'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  string -> string -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 86 2095 2114 "AST.ml" 86 2095 2136
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 86 2095 2114 "AST.ml" 86 2095 2136
+)
+"AST.ml" 86 2095 2103 "AST.ml" 86 2095 2136
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 86 2095 2103 "AST.ml" 86 2095 2136
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 86 2095 2103 "AST.ml" 86 2095 2136
+)
+"AST.ml" 87 2138 2150 "AST.ml" 87 2138 2153
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  def env "AST.ml" 87 2138 2146 "AST.ml" 89 2241 2260
+)
+"AST.ml" 88 2158 2169 "AST.ml" 88 2158 2172
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+)
+"AST.ml" 88 2158 2173 "AST.ml" 88 2158 2178
+type(
+  string
+)
+"AST.ml" 88 2158 2169 "AST.ml" 88 2158 2179
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 88 2158 2169 "AST.ml" 88 2158 2179
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 88 2158 2169 "AST.ml" 88 2158 2179
+)
+"AST.ml" 88 2158 2181 "AST.ml" 88 2158 2183
+type(
+  GT.string
+)
+ident(
+  def x "AST.ml" 88 2158 2168 "AST.ml" 88 2158 2239
+)
+"AST.ml" 88 2158 2183 "AST.ml" 88 2158 2188
+type(
+  ('e, GT.string, 'f) Ostap.Combinators.parse
+)
+ident(
+  int_ref ident "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+)
+"AST.ml" 88 2158 2190 "AST.ml" 88 2158 2193
+call(
+  tail
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 88 2158 2190 "AST.ml" 88 2158 2193
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 88 2158 2190 "AST.ml" 88 2158 2193
+)
+"AST.ml" 88 2158 2195 "AST.ml" 88 2158 2197
+type(
+  t
+)
+ident(
+  def e "AST.ml" 88 2158 2168 "AST.ml" 88 2158 2239
+)
+"AST.ml" 88 2158 2197 "AST.ml" 88 2158 2201
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref expr "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+)
+"AST.ml" 88 2158 2202 "AST.ml" 88 2158 2205
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 87 2138 2150 "AST.ml" 87 2138 2153
+)
+"AST.ml" 88 2158 2197 "AST.ml" 88 2158 2206
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 88 2158 2197 "AST.ml" 88 2158 2206
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 88 2158 2197 "AST.ml" 88 2158 2206
+)
+"AST.ml" 88 2158 2208 "AST.ml" 88 2158 2211
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+)
+"AST.ml" 88 2158 2212 "AST.ml" 88 2158 2216
+type(
+  string
+)
+"AST.ml" 88 2158 2208 "AST.ml" 88 2158 2217
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 88 2158 2208 "AST.ml" 88 2158 2217
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 88 2158 2208 "AST.ml" 88 2158 2217
+)
+"AST.ml" 88 2158 2218 "AST.ml" 88 2158 2221
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref def "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+)
+"AST.ml" 88 2158 2223 "AST.ml" 88 2158 2224
+type(
+  GT.string
+)
+ident(
+  int_ref x "AST.ml" 88 2158 2181 "AST.ml" 88 2158 2183
+)
+"AST.ml" 88 2158 2231 "AST.ml" 88 2158 2232
+type(
+  t
+)
+ident(
+  int_ref e "AST.ml" 88 2158 2195 "AST.ml" 88 2158 2197
+)
+"AST.ml" 88 2158 2226 "AST.ml" 88 2158 2232
+type(
+  [ `Arg | `Def of t ]
+)
+"AST.ml" 88 2158 2222 "AST.ml" 88 2158 2233
+type(
+  GT.string * [ `Arg | `Def of t ]
+)
+"AST.ml" 88 2158 2235 "AST.ml" 88 2158 2238
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 87 2138 2150 "AST.ml" 87 2138 2153
+)
+"AST.ml" 88 2158 2222 "AST.ml" 88 2158 2238
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+"AST.ml" 88 2158 2218 "AST.ml" 88 2158 2239
+call(
+  tail
+)
+type(
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 88 2158 2218 "AST.ml" 88 2158 2239
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 88 2158 2218 "AST.ml" 88 2158 2239
+)
+"AST.ml" 88 2158 2168 "AST.ml" 88 2158 2239
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  GT.string -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'g -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  t -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse ->
+  ('h -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  (t -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'g
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.parse ->
+  ('g -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  ('e, GT.string, 'f) Ostap.Combinators.parse ->
+  (GT.string -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'h
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse ->
+  ('h -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"AST.ml" 89 2241 2251 "AST.ml" 89 2241 2255
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref expr "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+)
+"AST.ml" 89 2241 2256 "AST.ml" 89 2241 2259
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 87 2138 2150 "AST.ml" 87 2138 2153
+)
+"AST.ml" 89 2241 2251 "AST.ml" 89 2241 2260
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 89 2241 2251 "AST.ml" 89 2241 2260
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 89 2241 2251 "AST.ml" 89 2241 2260
+)
+"AST.ml" 88 2158 2168 "AST.ml" 89 2241 2260
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+"AST.ml" 87 2138 2146 "AST.ml" 89 2241 2260
+call(
+  tail
+)
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 87 2138 2146 "AST.ml" 89 2241 2260
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 87 2138 2146 "AST.ml" 89 2241 2260
+)
+"AST.ml" 90 2262 2275 "AST.ml" 90 2262 2278
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  def env "AST.ml" 90 2262 2270 "AST.ml" 93 2385 2394
+)
+"AST.ml" 90 2262 2281 "AST.ml" 90 2262 2283
+type(
+  t list
+)
+ident(
+  def p "AST.ml" 91 2299 2309 "AST.ml" 92 2327 2384
+)
+"AST.ml" 90 2262 2283 "AST.ml" 90 2262 2290
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref primary "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+)
+"AST.ml" 90 2262 2291 "AST.ml" 90 2262 2294
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 90 2262 2275 "AST.ml" 90 2262 2278
+)
+"AST.ml" 90 2262 2283 "AST.ml" 90 2262 2295
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 90 2262 2283 "AST.ml" 90 2262 2295
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 90 2262 2283 "AST.ml" 90 2262 2295
+)
+"AST.ml" 90 2262 2283 "AST.ml" 90 2262 2296
+call(
+  stack
+)
+type(
+  ('e, t list, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t list, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.some
+)
+"AST.ml" 91 2299 2313 "AST.ml" 91 2299 2314
+type(
+  t
+)
+ident(
+  def t "AST.ml" 92 2327 2337 "AST.ml" 92 2327 2384
+)
+"AST.ml" 91 2299 2316 "AST.ml" 91 2299 2318
+type(
+  t list
+)
+ident(
+  def ts "AST.ml" 92 2327 2337 "AST.ml" 92 2327 2384
+)
+"AST.ml" 91 2299 2313 "AST.ml" 91 2299 2318
+type(
+  t list
+)
+"AST.ml" 91 2299 2321 "AST.ml" 91 2299 2322
+type(
+  t list
+)
+ident(
+  int_ref p "AST.ml" 90 2262 2281 "AST.ml" 90 2262 2283
+)
+"AST.ml" 92 2327 2337 "AST.ml" 92 2327 2351
+type(
+  (t -> t -> t) -> t -> t list -> t
+)
+ident(
+  ext_ref List.fold_left
+)
+"AST.ml" 92 2327 2357 "AST.ml" 92 2327 2360
+type(
+  t
+)
+ident(
+  def acc "AST.ml" 92 2327 2361 "AST.ml" 92 2327 2378
+)
+"AST.ml" 92 2327 2361 "AST.ml" 92 2327 2362
+type(
+  t
+)
+ident(
+  def e "AST.ml" 92 2327 2366 "AST.ml" 92 2327 2378
+)
+"AST.ml" 92 2327 2371 "AST.ml" 92 2327 2374
+type(
+  t
+)
+ident(
+  int_ref acc "AST.ml" 92 2327 2357 "AST.ml" 92 2327 2360
+)
+"AST.ml" 92 2327 2376 "AST.ml" 92 2327 2377
+type(
+  t
+)
+ident(
+  int_ref e "AST.ml" 92 2327 2361 "AST.ml" 92 2327 2362
+)
+"AST.ml" 92 2327 2366 "AST.ml" 92 2327 2378
+type(
+  t
+)
+"AST.ml" 92 2327 2361 "AST.ml" 92 2327 2378
+type(
+  t -> t
+)
+"AST.ml" 92 2327 2352 "AST.ml" 92 2327 2379
+type(
+  t -> t -> t
+)
+"AST.ml" 92 2327 2380 "AST.ml" 92 2327 2381
+type(
+  t
+)
+ident(
+  int_ref t "AST.ml" 91 2299 2313 "AST.ml" 91 2299 2314
+)
+"AST.ml" 92 2327 2382 "AST.ml" 92 2327 2384
+type(
+  t list
+)
+ident(
+  int_ref ts "AST.ml" 91 2299 2316 "AST.ml" 91 2299 2318
+)
+"AST.ml" 92 2327 2337 "AST.ml" 92 2327 2384
+call(
+  tail
+)
+type(
+  t
+)
+"AST.ml" 91 2299 2309 "AST.ml" 92 2327 2384
+type(
+  t
+)
+"AST.ml" 90 2262 2281 "AST.ml" 93 2385 2394
+type(
+  t list -> t
+)
+type(
+  t list
+)
+ident(
+  def _0 "AST.ml" 91 2299 2309 "AST.ml" 92 2327 2384
+)
+type(
+  (t list -> t) ->
+  ('e, t list, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"AST.ml" 90 2262 2270 "AST.ml" 93 2385 2394
+call(
+  tail
+)
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 90 2262 2270 "AST.ml" 93 2385 2394
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 90 2262 2270 "AST.ml" 93 2385 2394
+)
+"AST.ml" 94 2396 2412 "AST.ml" 94 2396 2415
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  def env "AST.ml" 94 2396 2404 "AST.ml" 105 2833 2844
+)
+"AST.ml" 95 2418 2429 "AST.ml" 95 2418 2432
+call(
+  tail
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 95 2418 2429 "AST.ml" 95 2418 2432
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 95 2418 2429 "AST.ml" 95 2418 2432
+)
+"AST.ml" 95 2418 2433 "AST.ml" 95 2418 2437
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref expr "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+)
+"AST.ml" 95 2418 2438 "AST.ml" 95 2418 2441
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 94 2396 2412 "AST.ml" 94 2396 2415
+)
+"AST.ml" 95 2418 2433 "AST.ml" 95 2418 2442
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 95 2418 2433 "AST.ml" 95 2418 2442
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 95 2418 2433 "AST.ml" 95 2418 2442
+)
+"AST.ml" 95 2418 2444 "AST.ml" 95 2418 2447
+call(
+  tail
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 95 2418 2444 "AST.ml" 95 2418 2447
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 95 2418 2444 "AST.ml" 95 2418 2447
+)
+"AST.ml" 95 2418 2428 "AST.ml" 95 2418 2447
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'g -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  t -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'g -> t
+)
+type(
+  t
+)
+ident(
+  int_ref _0 "AST.ml" 95 2418 2428 "AST.ml" 95 2418 2447
+)
+type(
+  'g
+)
+type(
+  ('g -> t) ->
+  ('e, 'g, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  t
+)
+ident(
+  def _0 "AST.ml" 95 2418 2428 "AST.ml" 95 2418 2447
+)
+type(
+  t
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  (t -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'g
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.parse ->
+  ('g -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"AST.ml" 96 2448 2458 "AST.ml" 96 2448 2460
+type(
+  GT.string
+)
+ident(
+  def n "AST.ml" 97 2468 2480 "AST.ml" 101 2587 2681
+)
+"AST.ml" 96 2448 2460 "AST.ml" 96 2448 2465
+type(
+  ('e, GT.string, 'f) Ostap.Combinators.parse
+)
+ident(
+  int_ref ident "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+)
+"AST.ml" 98 2485 2505 "AST.ml" 98 2485 2515
+type(
+  GT.string ->
+  (GT.string * [ `Arg | `Def of t ]) list -> [ `Arg | `Def of t ]
+)
+ident(
+  ext_ref List.assoc
+)
+"AST.ml" 98 2485 2516 "AST.ml" 98 2485 2517
+type(
+  GT.string
+)
+ident(
+  int_ref n "AST.ml" 96 2448 2458 "AST.ml" 96 2448 2460
+)
+"AST.ml" 98 2485 2518 "AST.ml" 98 2485 2521
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 94 2396 2412 "AST.ml" 94 2396 2415
+)
+"AST.ml" 98 2485 2505 "AST.ml" 98 2485 2521
+call(
+  stack
+)
+type(
+  [ `Arg | `Def of t ]
+)
+"AST.ml" 99 2527 2548 "AST.ml" 99 2527 2549
+type(
+  t
+)
+ident(
+  def e "AST.ml" 99 2527 2553 "AST.ml" 99 2527 2554
+)
+"AST.ml" 99 2527 2543 "AST.ml" 99 2527 2549
+type(
+  [ `Arg | `Def of t ]
+)
+"AST.ml" 99 2527 2553 "AST.ml" 99 2527 2554
+type(
+  t
+)
+ident(
+  int_ref e "AST.ml" 99 2527 2548 "AST.ml" 99 2527 2549
+)
+"AST.ml" 100 2555 2571 "AST.ml" 100 2555 2575
+type(
+  [ `Arg | `Def of t ]
+)
+"AST.ml" 100 2555 2585 "AST.ml" 100 2555 2586
+type(
+  GT.string
+)
+ident(
+  int_ref n "AST.ml" 96 2448 2458 "AST.ml" 96 2448 2460
+)
+"AST.ml" 100 2555 2581 "AST.ml" 100 2555 2586
+type(
+  t
+)
+"AST.ml" 98 2485 2499 "AST.ml" 100 2555 2586
+type(
+  t
+)
+"AST.ml" 101 2587 2604 "AST.ml" 101 2587 2613
+type(
+  exn
+)
+"AST.ml" 101 2587 2617 "AST.ml" 101 2587 2622
+type(
+  exn -> t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"AST.ml" 101 2587 2637 "AST.ml" 101 2587 2651
+type(
+  (GT.string -> GT.string, unit, GT.string) format -> GT.string -> GT.string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"AST.ml" 101 2587 2652 "AST.ml" 101 2587 2677
+type(
+  (GT.string -> GT.string, unit, GT.string) format
+)
+"AST.ml" 101 2587 2678 "AST.ml" 101 2587 2679
+type(
+  GT.string
+)
+ident(
+  int_ref n "AST.ml" 96 2448 2458 "AST.ml" 96 2448 2460
+)
+"AST.ml" 101 2587 2636 "AST.ml" 101 2587 2680
+call(
+  stack
+)
+type(
+  GT.string
+)
+"AST.ml" 101 2587 2623 "AST.ml" 101 2587 2681
+type(
+  exn
+)
+"AST.ml" 101 2587 2617 "AST.ml" 101 2587 2681
+type(
+  t
+)
+"AST.ml" 97 2468 2480 "AST.ml" 101 2587 2681
+type(
+  t
+)
+"AST.ml" 96 2448 2458 "AST.ml" 102 2682 2693
+call(
+  stack
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  GT.string -> t
+)
+type(
+  GT.string
+)
+ident(
+  def _0 "AST.ml" 97 2468 2480 "AST.ml" 101 2587 2681
+)
+type(
+  (GT.string -> t) ->
+  ('e, GT.string, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"AST.ml" 103 2694 2704 "AST.ml" 103 2694 2708
+call(
+  tail
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 103 2694 2704 "AST.ml" 103 2694 2708
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 103 2694 2704 "AST.ml" 103 2694 2708
+)
+"AST.ml" 103 2694 2709 "AST.ml" 103 2694 2712
+type(
+  GT.string list
+)
+ident(
+  def ns "AST.ml" 103 2694 2704 "AST.ml" 105 2833 2844
+)
+"AST.ml" 103 2694 2712 "AST.ml" 103 2694 2717
+type(
+  ('e, GT.string, 'f) Ostap.Combinators.parse
+)
+ident(
+  int_ref ident "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+)
+"AST.ml" 103 2694 2712 "AST.ml" 103 2694 2718
+call(
+  stack
+)
+type(
+  ('e, GT.string list, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, GT.string, 'f) Ostap.Combinators.parse ->
+  ('e, GT.string list, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.some
+)
+"AST.ml" 103 2694 2719 "AST.ml" 103 2694 2722
+call(
+  tail
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  string
+)
+type(
+  string -> ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 103 2694 2719 "AST.ml" 103 2694 2722
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 103 2694 2719 "AST.ml" 103 2694 2722
+)
+"AST.ml" 103 2694 2723 "AST.ml" 103 2694 2725
+type(
+  t
+)
+ident(
+  def e "AST.ml" 104 2772 2784 "AST.ml" 104 2772 2832
+)
+"AST.ml" 103 2694 2725 "AST.ml" 103 2694 2729
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref expr "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+)
+"AST.ml" 103 2694 2730 "AST.ml" 103 2694 2738
+type(
+  (GT.string -> GT.string * [ `Arg | `Def of t ]) ->
+  GT.string list -> (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  ext_ref List.map
+)
+"AST.ml" 103 2694 2744 "AST.ml" 103 2694 2745
+type(
+  GT.string
+)
+ident(
+  def n "AST.ml" 103 2694 2749 "AST.ml" 103 2694 2758
+)
+"AST.ml" 103 2694 2750 "AST.ml" 103 2694 2751
+type(
+  GT.string
+)
+ident(
+  int_ref n "AST.ml" 103 2694 2744 "AST.ml" 103 2694 2745
+)
+"AST.ml" 103 2694 2753 "AST.ml" 103 2694 2757
+type(
+  [ `Arg | `Def of t ]
+)
+"AST.ml" 103 2694 2749 "AST.ml" 103 2694 2758
+type(
+  GT.string * [ `Arg | `Def of t ]
+)
+"AST.ml" 103 2694 2739 "AST.ml" 103 2694 2759
+type(
+  GT.string -> GT.string * [ `Arg | `Def of t ]
+)
+"AST.ml" 103 2694 2760 "AST.ml" 103 2694 2762
+type(
+  GT.string list
+)
+ident(
+  int_ref ns "AST.ml" 103 2694 2709 "AST.ml" 103 2694 2712
+)
+"AST.ml" 103 2694 2730 "AST.ml" 103 2694 2762
+call(
+  stack
+)
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+"AST.ml" 103 2694 2765 "AST.ml" 103 2694 2768
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 94 2396 2412 "AST.ml" 94 2396 2415
+)
+"AST.ml" 103 2694 2730 "AST.ml" 103 2694 2768
+call(
+  stack
+)
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"AST.ml" 103 2694 2725 "AST.ml" 103 2694 2769
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 103 2694 2725 "AST.ml" 103 2694 2769
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 103 2694 2725 "AST.ml" 103 2694 2769
+)
+"AST.ml" 104 2772 2784 "AST.ml" 104 2772 2799
+type(
+  (GT.string -> t -> t) -> GT.string list -> t -> t
+)
+ident(
+  ext_ref List.fold_right
+)
+"AST.ml" 104 2772 2805 "AST.ml" 104 2772 2806
+type(
+  GT.string
+)
+ident(
+  def n "AST.ml" 104 2772 2807 "AST.ml" 104 2772 2826
+)
+"AST.ml" 104 2772 2807 "AST.ml" 104 2772 2810
+type(
+  t
+)
+ident(
+  def acc "AST.ml" 104 2772 2814 "AST.ml" 104 2772 2826
+)
+"AST.ml" 104 2772 2819 "AST.ml" 104 2772 2820
+type(
+  GT.string
+)
+ident(
+  int_ref n "AST.ml" 104 2772 2805 "AST.ml" 104 2772 2806
+)
+"AST.ml" 104 2772 2822 "AST.ml" 104 2772 2825
+type(
+  t
+)
+ident(
+  int_ref acc "AST.ml" 104 2772 2807 "AST.ml" 104 2772 2810
+)
+"AST.ml" 104 2772 2814 "AST.ml" 104 2772 2826
+type(
+  t
+)
+"AST.ml" 104 2772 2807 "AST.ml" 104 2772 2826
+type(
+  t -> t
+)
+"AST.ml" 104 2772 2800 "AST.ml" 104 2772 2827
+type(
+  GT.string -> t -> t
+)
+"AST.ml" 104 2772 2828 "AST.ml" 104 2772 2830
+type(
+  GT.string list
+)
+ident(
+  int_ref ns "AST.ml" 103 2694 2709 "AST.ml" 103 2694 2712
+)
+"AST.ml" 104 2772 2831 "AST.ml" 104 2772 2832
+type(
+  t
+)
+ident(
+  int_ref e "AST.ml" 103 2694 2723 "AST.ml" 103 2694 2725
+)
+"AST.ml" 104 2772 2784 "AST.ml" 104 2772 2832
+call(
+  tail
+)
+type(
+  t
+)
+"AST.ml" 103 2694 2704 "AST.ml" 105 2833 2844
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'g -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  GT.string list -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'g -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  t -> t
+)
+type(
+  t
+)
+ident(
+  def _0 "AST.ml" 104 2772 2784 "AST.ml" 104 2772 2832
+)
+type(
+  (t -> t) ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'g
+)
+ident(
+  def _1 "AST.ml" 103 2694 2704 "AST.ml" 105 2833 2844
+)
+type(
+  'g
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.parse ->
+  ('g -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  GT.string list
+)
+ident(
+  def _2 "AST.ml" 103 2694 2704 "AST.ml" 105 2833 2844
+)
+type(
+  ('e, GT.string list, 'f) Ostap.Combinators.parse ->
+  (GT.string list -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'g
+)
+ident(
+  def _3 "AST.ml" 103 2694 2704 "AST.ml" 105 2833 2844
+)
+type(
+  'g
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.parse ->
+  ('g -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"AST.ml" 95 2418 2428 "AST.ml" 105 2833 2844
+call(
+  stack
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+"AST.ml" 94 2396 2404 "AST.ml" 105 2833 2844
+call(
+  tail
+)
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 94 2396 2404 "AST.ml" 105 2833 2844
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 94 2396 2404 "AST.ml" 105 2833 2844
+)
+"AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  def primary "AST.ml" 84 2046 2052 "AST.ml" 107 2856 2870
+)
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  def expr "AST.ml" 84 2046 2052 "AST.ml" 107 2856 2870
+)
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  def def "AST.ml" 84 2046 2052 "AST.ml" 107 2856 2870
+)
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  def key "AST.ml" 84 2046 2052 "AST.ml" 107 2856 2870
+)
+type(
+  ('e, GT.string, 'f) Ostap.Combinators.parse
+)
+ident(
+  def ident "AST.ml" 84 2046 2052 "AST.ml" 107 2856 2870
+)
+"AST.ml" 107 2856 2862 "AST.ml" 107 2856 2865
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'a -> ('a, t, 'b) Ostap.Combinators.result
+)
+ident(
+  int_ref def "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+)
+"AST.ml" 107 2856 2866 "AST.ml" 107 2856 2868
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+"AST.ml" 107 2856 2869 "AST.ml" 107 2856 2870
+type(
+  'a
+)
+ident(
+  int_ref s "AST.ml" 83 2026 2041 "AST.ml" 83 2026 2042
+)
+"AST.ml" 107 2856 2862 "AST.ml" 107 2856 2870
+call(
+  tail
+)
+type(
+  ('a, t, 'b) Ostap.Combinators.result
+)
+"AST.ml" 84 2046 2052 "AST.ml" 107 2856 2870
+type(
+  ('a, t, 'b) Ostap.Combinators.result
+)
+"AST.ml" 83 2026 2041 "AST.ml" 107 2856 2870
+type(
+  'a -> ('a, t, 'b) Ostap.Combinators.result
+)
+"AST.ml" 109 2872 2880 "AST.ml" 109 2872 2885
+type(
+  (< getEOF : ('i, 'j, < add : 'k -> 'k; .. > as 'k) Ostap.Combinators.result;
+     getIDENT : ('i, Ostap.Matcher.Token.t, 'k) Ostap.Combinators.result;
+     look : string -> ('i, 'l, 'k) Ostap.Combinators.result;
+     regexp : string -> string -> ('i, 'm, 'k) Ostap.Combinators.result; .. >
+   as 'i) ->
+  ('i, t, 'k) Ostap.Combinators.result
+)
+ident(
+  def parse "AST.ml" 109 2872 2911 "AST.ml" 111 2917 2922
+)
+"AST.ml" 109 2872 2886 "AST.ml" 109 2872 2887
+type(
+  'i
+)
+ident(
+  def s "AST.ml" 109 2872 2890 "AST.ml" 109 2872 2911
+)
+"AST.ml" 109 2872 2897 "AST.ml" 109 2872 2903
+type(
+  ('i, t, 'k) Ostap.Combinators.parse
+)
+ident(
+  int_ref hparse "AST.ml" 83 2026 2034 "AST.ml" 83 2026 2040
+)
+"AST.ml" 109 2872 2905 "AST.ml" 109 2872 2908
+call(
+  tail
+)
+type(
+  ('i, 'j, 'k) Ostap.Combinators.parse
+)
+type(
+  ('i, 'j, 'k) Ostap.Combinators.result
+)
+type(
+  'i
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 109 2872 2905 "AST.ml" 109 2872 2908
+)
+type(
+  'i
+)
+ident(
+  def _ostap_stream "AST.ml" 109 2872 2905 "AST.ml" 109 2872 2908
+)
+"AST.ml" 109 2872 2897 "AST.ml" 109 2872 2908
+call(
+  tail
+)
+type(
+  t -> ('i, t, 'k) Ostap.Combinators.parse
+)
+type(
+  ('i, t, 'k) Ostap.Combinators.parse
+)
+type(
+  'j -> t
+)
+type(
+  t
+)
+ident(
+  int_ref _0 "AST.ml" 109 2872 2897 "AST.ml" 109 2872 2908
+)
+type(
+  'j
+)
+type(
+  ('j -> t) ->
+  ('i, 'j, 'k) Ostap.Combinators.parse -> ('i, t, 'k) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  t
+)
+ident(
+  def _0 "AST.ml" 109 2872 2897 "AST.ml" 109 2872 2908
+)
+type(
+  t
+)
+type(
+  ('i, t, 'k) Ostap.Combinators.parse ->
+  (t -> ('i, t, 'k) Ostap.Combinators.parse) ->
+  ('i, t, 'k) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"AST.ml" 109 2872 2890 "AST.ml" 109 2872 2909
+call(
+  tail
+)
+type(
+  'i -> ('i, t, 'k) Ostap.Combinators.result
+)
+type(
+  ('i, t, 'k) Ostap.Combinators.result
+)
+type(
+  'i
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 109 2872 2890 "AST.ml" 109 2872 2909
+)
+type(
+  'i
+)
+ident(
+  def _ostap_stream "AST.ml" 109 2872 2890 "AST.ml" 109 2872 2909
+)
+"AST.ml" 109 2872 2910 "AST.ml" 109 2872 2911
+type(
+  'i
+)
+ident(
+  int_ref s "AST.ml" 109 2872 2886 "AST.ml" 109 2872 2887
+)
+"AST.ml" 109 2872 2890 "AST.ml" 109 2872 2911
+type(
+  ('i, t, 'k) Ostap.Combinators.result
+)
+"AST.ml" 109 2872 2886 "AST.ml" 109 2872 2911
+type(
+  'i -> ('i, t, 'k) Ostap.Combinators.result
+)
+"AST.ml" 113 2924 2928 "AST.ml" 113 2924 2936
+type(
+  string -> (t, Ostap.Msg.t) Checked.t
+)
+ident(
+  def fromFile "AST.ml" 116 3002 3002 "AST.ml" 1 0 -1
+)
+"AST.ml" 113 2924 2937 "AST.ml" 113 2924 2942
+type(
+  string
+)
+ident(
+  def fname "AST.ml" 114 2945 2947 "AST.ml" 114 2945 3000
+)
+"AST.ml" 114 2945 2947 "AST.ml" 114 2945 2963
+type(
+  (Lexer.t -> (Lexer.t, t, Ostap.Reason.t) Ostap.Combinators.result) ->
+  string -> (t, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref Lexer.fromString "AST.ml" 68 1593 1601 "AST.ml" 68 1593 1611
+)
+"AST.ml" 114 2945 2964 "AST.ml" 114 2945 2976
+type(
+  Lexer.t -> (Lexer.t, t, Ostap.Reason.t) Ostap.Combinators.result
+)
+ident(
+  int_ref Parser.parse "AST.ml" 109 2872 2880 "AST.ml" 109 2872 2885
+)
+"AST.ml" 114 2945 2978 "AST.ml" 114 2945 2993
+type(
+  string -> string
+)
+ident(
+  ext_ref Ostap.Util.read
+)
+"AST.ml" 114 2945 2994 "AST.ml" 114 2945 2999
+type(
+  string
+)
+ident(
+  int_ref fname "AST.ml" 113 2924 2937 "AST.ml" 113 2924 2942
+)
+"AST.ml" 114 2945 2977 "AST.ml" 114 2945 3000
+call(
+  stack
+)
+type(
+  string
+)
+"AST.ml" 114 2945 2947 "AST.ml" 114 2945 3000
+call(
+  tail
+)
+type(
+  (t, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 113 2924 2937 "AST.ml" 114 2945 3000
+type(
+  string -> (t, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 117 3010 3018 "AST.ml" 117 3010 3026
+type(
+  string -> (t, Ostap.Msg.t) Checked.t
+)
+ident(
+  int_ref fromFile "AST.ml" 113 2924 2928 "AST.ml" 113 2924 2936
+)
+"AST.ml" 117 3010 3028 "AST.ml" 117 3010 3037
+type(
+  string array -> int -> string
+)
+ident(
+  ext_ref Array.get
+)
+"AST.ml" 117 3010 3038 "AST.ml" 117 3010 3046
+type(
+  string array
+)
+ident(
+  ext_ref Sys.argv
+)
+"AST.ml" 117 3010 3047 "AST.ml" 117 3010 3048
+type(
+  int
+)
+"AST.ml" 117 3010 3027 "AST.ml" 117 3010 3049
+type(
+  string
+)
+"AST.ml" 117 3010 3018 "AST.ml" 117 3010 3049
+call(
+  stack
+)
+type(
+  (t, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 118 3055 3070 "AST.ml" 118 3055 3073
+type(
+  t
+)
+ident(
+  def ast "AST.ml" 119 3078 3084 "AST.ml" 119 3078 3118
+)
+"AST.ml" 118 3055 3059 "AST.ml" 118 3055 3073
+type(
+  (t, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 119 3078 3084 "AST.ml" 119 3078 3097
+type(
+  (GT.string -> unit, out_channel, unit) format -> GT.string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"AST.ml" 119 3078 3098 "AST.ml" 119 3078 3104
+type(
+  (GT.string -> unit, out_channel, unit) format
+)
+"AST.ml" 119 3078 3106 "AST.ml" 119 3078 3110
+type(
+  (('_a, '_b) _#t_tt -> '_a -> t -> '_b, < show : t -> GT.string >) GT.t ->
+  t -> GT.string
+)
+ident(
+  ext_ref GT.show
+)
+"AST.ml" 119 3078 3110 "AST.ml" 119 3078 3113
+type(
+  ((('_a, '_b) _#t_tt as 'c) -> '_a -> t -> '_b, < show : t -> GT.string >)
+  GT.t
+)
+ident(
+  int_ref t "AST.ml" 3 9 9 "AST.ml" 28 419 443
+)
+"AST.ml" 119 3078 3114 "AST.ml" 119 3078 3117
+type(
+  t
+)
+ident(
+  int_ref ast "AST.ml" 118 3055 3070 "AST.ml" 118 3055 3073
+)
+"AST.ml" 119 3078 3105 "AST.ml" 119 3078 3118
+call(
+  stack
+)
+type(
+  GT.string
+)
+"AST.ml" 119 3078 3084 "AST.ml" 119 3078 3118
+call(
+  stack
+)
+type(
+  unit
+)
+"AST.ml" 120 3119 3137 "AST.ml" 120 3119 3138
+type(
+  Ostap.Msg.t
+)
+ident(
+  def m "AST.ml" 121 3144 3150 "AST.ml" 121 3144 3208
+)
+"AST.ml" 120 3119 3136 "AST.ml" 120 3119 3139
+type(
+  Ostap.Msg.t list
+)
+type(
+  Ostap.Msg.t list
+)
+"AST.ml" 120 3119 3123 "AST.ml" 120 3119 3139
+type(
+  (t, Ostap.Msg.t) Checked.t
+)
+"AST.ml" 121 3144 3150 "AST.ml" 121 3144 3164
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"AST.ml" 121 3144 3165 "AST.ml" 121 3144 3185
+type(
+  (string -> unit, out_channel, unit) format
+)
+"AST.ml" 121 3144 3187 "AST.ml" 121 3144 3205
+type(
+  Ostap.Msg.t -> string
+)
+ident(
+  ext_ref Ostap.Msg.toString
+)
+"AST.ml" 121 3144 3206 "AST.ml" 121 3144 3207
+type(
+  Ostap.Msg.t
+)
+ident(
+  int_ref m "AST.ml" 120 3119 3137 "AST.ml" 120 3119 3138
+)
+"AST.ml" 121 3144 3186 "AST.ml" 121 3144 3208
+call(
+  stack
+)
+type(
+  string
+)
+"AST.ml" 121 3144 3150 "AST.ml" 121 3144 3208
+call(
+  stack
+)
+type(
+  unit
+)
+"AST.ml" 117 3010 3012 "AST.ml" 121 3144 3208
+type(
+  unit
+)
