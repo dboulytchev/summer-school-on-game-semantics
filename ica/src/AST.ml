@@ -26,7 +26,11 @@ open GT
 | Par     of t * t
 | Sema    of string * t
 | Grab    of t
-| Release of t with show
+| Release of t 
+
+(* Runtime values *)
+| DelLoc  of string * t
+| DelSema of string * t with show
 
 module Lexer =
   struct
@@ -154,6 +158,109 @@ module Parser =
 
 let fromFile fname =
   Lexer.fromString Parser.parse (Ostap.Util.read fname)
+
+module Semantics =
+  struct
+
+    module Context =
+      struct
+
+	@type e =
+	  | Hole
+	  | App     of e * t
+	  | BinopL  of string * e * t
+	  | BinopR  of string * t * e
+	  | Unop    of string * e
+	  | If      of e * t * t
+	  | Seq     of e * t
+	  | Assn    of string * e
+	  | Deref   of e
+	  | ParL    of e * t
+	  | ParR    of t * e
+	  | Grab    of e
+	  | Release of e
+	  | DelLoc  of string * e
+	  | DelSema of string * e with show
+
+        @type path = N | L of path | R of path with show
+
+        let rec getPath = function
+	| Hole -> N
+	
+	| BinopL  (_, e, _)
+	| BinopR  (_, _, e)
+	| Unop    (_, e)
+	| If      (e, _, _)
+	| Seq     (e, _)
+	| Assn    (_, e)
+	| Deref    e
+	| Grab     e
+	| Release  e
+	| DelLoc  (_, e)
+	| App     (e, _)
+	| DelSema (_, e) -> getPath e
+
+	| ParL    (e, _) -> L (getPath e)
+	| ParR    (_, e) -> R (getPath e)
+
+      end
+
+    let rec getContexts = function
+      | App     (x, y)    -> List.map (fun (c, t) -> Context.App (c, y), t) (getContexts x)
+      | Binop   (s, x, y) -> 
+	  List.map (fun (c, t) -> Context.BinopL (s, c, y), t) (getContexts x) @
+          List.map (fun (c, t) -> Context.BinopR (s, x, c), t) (getContexts y)
+                             
+      | Unop    (s, x)    -> List.map (fun (c, t) -> Context.Unop (s, c), t)    (getContexts x)
+      | If      (x, y, z) -> List.map (fun (c, t) -> Context.If   (c, y, z), t) (getContexts x)
+      | Seq     (x, y)    -> List.map (fun (c, t) -> Context.Seq  (c, y), t)    (getContexts x)
+      | Assn    (x, y)    -> List.map (fun (c, t) -> Context.Assn (x, c), t)    (getContexts y)
+      | Deref    x        -> List.map (fun (c, t) -> Context.Deref c, t)        (getContexts x)
+      | Par     (x, y)    ->
+	  List.map (fun (c, t) -> Context.ParL (c, y), t) (getContexts x) @
+          List.map (fun (c, t) -> Context.ParR (x, c), t) (getContexts y)
+  
+      | Grab     x        -> List.map (fun (c, t) -> Context.Grab     c, t)      (getContexts x)
+      | Release  x        -> List.map (fun (c, t) -> Context.Release  c, t)      (getContexts x)
+      | DelLoc  (s, x)    -> List.map (fun (c, t) -> Context.DelLoc  (s, c), t)  (getContexts x)
+      | DelSema (s, x)    -> List.map (fun (c, t) -> Context.DelSema (s, c), t)  (getContexts x)
+      | t                 -> [Hole, t]
+
+    let newCounter name =
+      let i = ref 0 in
+      fun () ->
+        let i' = !i in
+        incr i;
+        Var (Printf.sprintf "%s%d" name i')
+
+    let newLoc  = newCounter "loc"
+    let newSema = newCounter "sema"
+  
+    let contextStep (c, t) ((loc, sema) as state) =
+      match t with
+(*
+      | App     (Lam (x, t), m) -> (c, subst), state 
+      | Binop   (s, x, y) when is_value x && is_value y -> (c, binop s x y), state 
+      | Unop    (s, x) when is_value x -> (c, unop s x), state
+*)  
+      | If      (True, x, _)  -> (c, x), state
+      | If      (False, _, y) -> (c, y), state
+      | Fix      t            -> (c, App (t, Fix t)), state      
+      | Par     (Skip, Skip)  -> (c, Skip), state
+      | Seq     (Skip, t)     -> (c, t), state
+(*
+      | New     (s, t)        -> 
+      | Assn    (s, t)        -> ...
+      | Deref    t            -> ...
+      | Sema    (s, t)        -> ...
+      | Grab     t            -> ...
+      | Release  t            -> ...
+      | DelLoc  (s, t)        -> ...
+      | DelSema (s, t)        -> ... 
+*)
+      | _                     -> (c, t), state
+
+  end
 
 let _ =
   match fromFile (Array.get Sys.argv 1) with
