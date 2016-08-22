@@ -1,4 +1,4 @@
-"AST.ml" 3 9 9 "AST.ml" 28 419 443
+"AST.ml" 3 9 9 "AST.ml" 29 430 454
 call(
   tail
 )
@@ -162,24 +162,6 @@ call(
   tail
 )
 call(
-  stack
-)
-call(
-  stack
-)
-call(
-  stack
-)
-call(
-  stack
-)
-call(
-  stack
-)
-call(
-  stack
-)
-call(
   tail
 )
 call(
@@ -193,33 +175,6 @@ call(
 )
 call(
   stack
-)
-call(
-  stack
-)
-call(
-  tail
-)
-call(
-  stack
-)
-call(
-  stack
-)
-call(
-  stack
-)
-call(
-  stack
-)
-call(
-  stack
-)
-call(
-  stack
-)
-call(
-  tail
 )
 call(
   stack
@@ -285,19 +240,7 @@ call(
   stack
 )
 call(
-  tail
-)
-call(
-  tail
-)
-call(
   stack
-)
-call(
-  stack
-)
-call(
-  tail
 )
 call(
   stack
@@ -315,10 +258,40 @@ call(
   stack
 )
 call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
   tail
 )
 call(
   stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  tail
 )
 call(
   stack
@@ -387,6 +360,36 @@ call(
   stack
 )
 call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
   stack
 )
 call(
@@ -433,6 +436,12 @@ call(
 )
 call(
   stack
+)
+call(
+  stack
+)
+call(
+  tail
 )
 call(
   stack
@@ -483,7 +492,7 @@ type(
   (show_t_t -> GT.unit -> t -> GT.string, GT.unit) GT.t
 )
 ident(
-  int_ref t "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref t "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (show_t_t -> GT.unit -> t -> GT.string, GT.unit) GT.t ->
@@ -502,13 +511,13 @@ type(
   ('a -> 'inh -> t -> 'syn, GT.unit) GT.t
 )
 ident(
-  int_ref t "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref t "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('a -> 'inh -> t -> 'syn, < show : t -> GT.string >) GT.t
 )
 ident(
-  def t "AST.ml" 30 445 445 "AST.ml" 1 0 -1
+  def t "AST.ml" 31 456 456 "AST.ml" 1 0 -1
 )
 type(
   < c_App : GT.unit ->
@@ -560,6 +569,7 @@ type(
             (GT.unit, t, GT.string, <  >) GT.a ->
             (GT.unit, t, GT.string, <  >) GT.a ->
             (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Skip : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
     c_True_ : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
     c_Unop : GT.unit ->
              (GT.unit, t, GT.string, <  >) GT.a ->
@@ -625,6 +635,7 @@ type(
             (GT.unit, t, GT.string, <  >) GT.a ->
             (GT.unit, t, GT.string, <  >) GT.a ->
             (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Skip : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
     c_True_ : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
     c_Unop : GT.unit ->
              (GT.unit, t, GT.string, <  >) GT.a ->
@@ -635,13 +646,13 @@ type(
   as 'b
 )
 ident(
-  int_ref this "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref this "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   show_t_t ref
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   show_t_t ref -> show_t_t -> unit
@@ -653,7 +664,7 @@ type(
   '_c
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'b
@@ -732,6 +743,7 @@ type(
             (GT.unit, t, GT.string, <  >) GT.a ->
             (GT.unit, t, GT.string, <  >) GT.a ->
             (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+    c_Skip : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
     c_True_ : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
     c_Unop : GT.unit ->
              (GT.unit, t, GT.string, <  >) GT.a ->
@@ -769,7 +781,7 @@ type(
   GT.string
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   unit
@@ -819,19 +831,19 @@ type(
   GT.string
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (< c_App : GT.unit ->
@@ -883,6 +895,7 @@ type(
              (GT.unit, t, GT.string, <  >) GT.a ->
              (GT.unit, t, GT.string, <  >) GT.a ->
              (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
+     c_Skip : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
      c_True_ : GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string;
      c_Unop : GT.unit ->
               (GT.unit, t, GT.string, <  >) GT.a ->
@@ -940,7 +953,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -961,7 +974,7 @@ type(
   GT.string
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   unit
@@ -1017,25 +1030,25 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.string
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h ->
@@ -1093,7 +1106,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -1120,7 +1133,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -1147,25 +1160,25 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h ->
@@ -1232,7 +1245,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p2 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -1262,7 +1275,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -1283,7 +1296,7 @@ type(
   GT.string
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   unit
@@ -1345,31 +1358,31 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p2 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.string
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h ->
@@ -1422,7 +1435,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -1443,7 +1456,7 @@ type(
   GT.string
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   unit
@@ -1499,25 +1512,25 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.string
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h -> GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
@@ -1550,13 +1563,13 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h -> GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
@@ -1589,13 +1602,13 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h -> GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.int -> GT.string
@@ -1628,7 +1641,7 @@ type(
   GT.int
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   unit
@@ -1678,19 +1691,19 @@ type(
   GT.int
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h ->
@@ -1757,7 +1770,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p2 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -1787,7 +1800,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -1814,7 +1827,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -1847,31 +1860,31 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p2 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h ->
@@ -1918,7 +1931,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -1939,19 +1952,58 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
+)
+type(
+  'h -> GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.unit -> (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a -> GT.string
+)
+type(
+  GT.string
+)
+type(
+  string
+)
+type(
+  string
+)
+type(
+  string -> string -> GT.string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+type(
+  (GT.unit, t, GT.string, <  >) GT.a
+)
+ident(
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
+)
+type(
+  GT.unit
+)
+ident(
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h ->
@@ -2004,7 +2056,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -2025,7 +2077,7 @@ type(
   GT.string
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   unit
@@ -2081,25 +2133,25 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.string
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h ->
@@ -2157,7 +2209,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -2184,7 +2236,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -2211,25 +2263,25 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h ->
@@ -2282,7 +2334,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -2303,7 +2355,7 @@ type(
   GT.string
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   unit
@@ -2359,25 +2411,25 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.string
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h ->
@@ -2424,7 +2476,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -2445,19 +2497,19 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h ->
@@ -2515,7 +2567,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -2542,7 +2594,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -2569,25 +2621,25 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h ->
@@ -2640,7 +2692,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -2661,7 +2713,7 @@ type(
   GT.string
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   unit
@@ -2719,25 +2771,25 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.string
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h ->
@@ -2784,7 +2836,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -2805,19 +2857,19 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h ->
@@ -2864,7 +2916,7 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   string
@@ -2885,19 +2937,19 @@ type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   (GT.unit, t, GT.string, <  >) GT.a
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.unit
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h
@@ -2954,6 +3006,7 @@ type(
             ('inh0, t, 'syn0, <  >) GT.a ->
             ('inh0, t, 'syn0, <  >) GT.a ->
             ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Skip : 'inh0 -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
     c_True_ : 'inh0 -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
     c_Unop : 'inh0 ->
              ('inh0, t, 'syn0, <  >) GT.a ->
@@ -3017,6 +3070,7 @@ type(
             ('inh0, t, 'syn0, <  >) GT.a ->
             ('inh0, t, 'syn0, <  >) GT.a ->
             ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
+    c_Skip : 'inh0 -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
     c_True_ : 'inh0 -> ('inh0, t, 'syn0, <  >) GT.a -> 'syn0;
     c_Unop : 'inh0 ->
              ('inh0, t, 'syn0, <  >) GT.a ->
@@ -3026,13 +3080,13 @@ type(
   as 'e1
 )
 ident(
-  int_ref this "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref this "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('e1 -> 'inh0 -> t -> 'syn0, GT.unit) GT.t
 )
 ident(
-  int_ref t "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref t "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('e1 -> 'inh0 -> t -> 'syn0, GT.unit) GT.t -> 'e1 -> 'inh0 -> t -> 'syn0
@@ -3056,7 +3110,7 @@ type(
   'f1 -> 'inh1 -> t -> 'syn1
 )
 ident(
-  int_ref t_gcata "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref t_gcata "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   < c_App : 'g1 ->
@@ -3098,6 +3152,7 @@ type(
     c_Seq : 'g1 ->
             ('g1, t, 'h1, <  >) GT.a ->
             ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Skip : 'g1 -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
     c_True_ : 'g1 -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
     c_Unop : 'g1 ->
              ('g1, t, 'h1, <  >) GT.a ->
@@ -3127,19 +3182,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3154,19 +3209,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3178,7 +3233,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1
@@ -3223,6 +3278,7 @@ type(
     c_Seq : 'g1 ->
             ('g1, t, 'h1, <  >) GT.a ->
             ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
+    c_Skip : 'g1 -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
     c_True_ : 'g1 -> ('g1, t, 'h1, <  >) GT.a -> 'h1;
     c_Unop : 'g1 ->
              ('g1, t, 'h1, <  >) GT.a ->
@@ -3231,7 +3287,7 @@ type(
   as 'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -3243,19 +3299,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3270,19 +3326,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3294,7 +3350,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1
@@ -3303,7 +3359,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -3315,19 +3371,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3339,7 +3395,7 @@ type(
   GT.string
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1, t, 'h1, <  >) GT.a
@@ -3348,19 +3404,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3372,7 +3428,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 ->
@@ -3382,7 +3438,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -3394,19 +3450,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3421,19 +3477,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3448,19 +3504,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3472,7 +3528,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 ->
@@ -3483,7 +3539,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -3495,19 +3551,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3522,19 +3578,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3546,7 +3602,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1
@@ -3555,7 +3611,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -3567,19 +3623,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3591,7 +3647,7 @@ type(
   GT.string
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1, t, 'h1, <  >) GT.a
@@ -3600,19 +3656,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3624,7 +3680,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 ->
@@ -3634,7 +3690,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -3646,19 +3702,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3673,19 +3729,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3700,19 +3756,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3724,7 +3780,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 ->
@@ -3735,7 +3791,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -3747,19 +3803,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3771,7 +3827,7 @@ type(
   GT.string
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1, t, 'h1, <  >) GT.a
@@ -3780,19 +3836,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3804,7 +3860,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 ->
@@ -3814,7 +3870,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -3826,19 +3882,64 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
+)
+type(
+  ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
+)
+ident(
+  ext_ref GT.make
+)
+type(
+  'g1
+)
+ident(
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
+)
+type(
+  'g1 -> ('g1, t, 'h1, <  >) GT.a -> 'h1
+)
+type(
+  'i1
+)
+ident(
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
+)
+type(
+  'h1
+)
+type(
+  ('g1, t, 'h1, <  >) GT.a
+)
+type(
+  <  >
+)
+ident(
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
+)
+type(
+  t
+)
+ident(
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
+)
+type(
+  'g1 -> t -> 'h1
+)
+ident(
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3853,19 +3954,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3877,7 +3978,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> ('g1, t, 'h1, <  >) GT.a -> ('g1, t, 'h1, <  >) GT.a -> 'h1
@@ -3886,7 +3987,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -3898,19 +3999,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p2 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3925,19 +4026,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3952,19 +4053,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -3979,19 +4080,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -4003,7 +4104,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 ->
@@ -4015,7 +4116,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -4024,7 +4125,7 @@ type(
   GT.int
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1, t, 'h1, <  >) GT.a
@@ -4033,19 +4134,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -4057,7 +4158,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> ('g1, t, 'h1, <  >) GT.a -> GT.int -> 'h1
@@ -4066,7 +4167,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -4078,19 +4179,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -4102,7 +4203,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> ('g1, t, 'h1, <  >) GT.a -> 'h1
@@ -4111,7 +4212,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -4123,19 +4224,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -4147,7 +4248,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> ('g1, t, 'h1, <  >) GT.a -> 'h1
@@ -4156,7 +4257,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -4168,19 +4269,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -4192,7 +4293,7 @@ type(
   GT.string
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1, t, 'h1, <  >) GT.a
@@ -4201,19 +4302,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -4225,7 +4326,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 ->
@@ -4235,7 +4336,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -4247,19 +4348,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p2 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -4274,19 +4375,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -4298,7 +4399,7 @@ type(
   GT.string
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1, t, 'h1, <  >) GT.a
@@ -4307,19 +4408,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -4331,7 +4432,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 ->
@@ -4342,7 +4443,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -4354,19 +4455,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -4381,19 +4482,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -4408,19 +4509,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -4432,7 +4533,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 ->
@@ -4443,7 +4544,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -4455,19 +4556,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -4479,7 +4580,7 @@ type(
   GT.string
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1, t, 'h1, <  >) GT.a
@@ -4488,19 +4589,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -4512,7 +4613,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 ->
@@ -4522,7 +4623,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'h1
@@ -4531,7 +4632,7 @@ type(
   GT.string
 )
 ident(
-  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1, t, 'h1, <  >) GT.a
@@ -4540,19 +4641,19 @@ type(
   <  >
 )
 ident(
-  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  int_ref self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('g1 -> t -> 'h1) -> t -> <  > -> ('g1, t, 'h1, <  >) GT.a
@@ -4564,7 +4665,7 @@ type(
   'g1
 )
 ident(
-  int_ref inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> ('g1, t, 'h1, <  >) GT.a -> GT.string -> 'h1
@@ -4573,7 +4674,7 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
@@ -4582,7 +4683,7 @@ type(
   t
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
@@ -4591,7 +4692,7 @@ type(
   t
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
@@ -4600,13 +4701,13 @@ type(
   t
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.string
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
@@ -4615,22 +4716,13 @@ type(
   t
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
-)
-type(
-  t
-)
-type(
-  t
-)
-ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
@@ -4639,13 +4731,22 @@ type(
   t
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
+)
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.string
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
@@ -4654,13 +4755,13 @@ type(
   t
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
@@ -4669,22 +4770,16 @@ type(
   t
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.string
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
-)
-type(
-  t
-)
-ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
 )
 type(
   t
@@ -4693,19 +4788,28 @@ type(
   t
 )
 ident(
-  def p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
+)
+type(
+  t
 )
 type(
   t
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p2 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
+)
+type(
+  t
+)
+ident(
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
@@ -4714,7 +4818,7 @@ type(
   GT.int
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
@@ -4729,13 +4833,13 @@ type(
   t
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.string
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
@@ -4744,19 +4848,19 @@ type(
   t
 )
 ident(
-  def p2 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p2 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.string
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
@@ -4765,13 +4869,13 @@ type(
   t
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
@@ -4780,13 +4884,13 @@ type(
   t
 )
 ident(
-  def p1 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p1 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   GT.string
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
@@ -4795,13 +4899,13 @@ type(
   GT.string
 )
 ident(
-  def p0 "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def p0 "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  int_ref subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   <  >
@@ -4816,49 +4920,49 @@ type(
   'i1
 )
 ident(
-  int_ref trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'i1 -> 'g1 -> t -> 'h1
 )
 ident(
-  int_ref t_gcata "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref t_gcata "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   <  >
 )
 ident(
-  def tpo "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def tpo "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1 -> t -> 'h1
 )
 ident(
-  def self "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def self "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   t
 )
 ident(
-  def subj "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def subj "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'g1
 )
 ident(
-  def inh "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def inh "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'i1
 )
 ident(
-  def trans "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def trans "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   'i1 -> 'g1 -> t -> 'h1
 )
 ident(
-  def t_gcata "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  def t_gcata "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
 type(
   ('f1 -> 'inh1 -> t -> 'syn1, GT.unit) GT.t
@@ -4866,62 +4970,70 @@ type(
 ident(
   def t "AST.ml" 3 9 9 "AST.ml" 1 0 -1
 )
-"AST.ml" 33 470 478 "AST.ml" 33 470 486
+"AST.ml" 34 481 489 "AST.ml" 34 481 497
 type(
   string list
 )
 ident(
-  def keywords "AST.ml" 37 601 605 "AST.ml" 78 1993 1998
+  def keywords "AST.ml" 38 626 630 "AST.ml" 79 2018 2023
 )
-"AST.ml" 34 491 497 "AST.ml" 34 491 502
+"AST.ml" 35 502 508 "AST.ml" 35 502 513
 type(
   string
 )
-"AST.ml" 34 491 504 "AST.ml" 34 491 509
+"AST.ml" 35 502 515 "AST.ml" 35 502 520
 type(
   string
 )
-"AST.ml" 34 491 511 "AST.ml" 34 491 515
+"AST.ml" 35 502 522 "AST.ml" 35 502 526
 type(
   string
 )
-"AST.ml" 34 491 517 "AST.ml" 34 491 528
+"AST.ml" 35 502 528 "AST.ml" 35 502 539
 type(
   string
 )
-"AST.ml" 34 491 530 "AST.ml" 34 491 534
+"AST.ml" 35 502 541 "AST.ml" 35 502 545
 type(
   string
 )
-"AST.ml" 34 491 536 "AST.ml" 34 491 542
+"AST.ml" 35 502 547 "AST.ml" 35 502 553
 type(
   string
 )
-"AST.ml" 34 491 544 "AST.ml" 34 491 550
+"AST.ml" 35 502 555 "AST.ml" 35 502 561
 type(
   string
 )
-"AST.ml" 34 491 552 "AST.ml" 34 491 557
+"AST.ml" 35 502 563 "AST.ml" 35 502 567
 type(
   string
 )
-"AST.ml" 34 491 559 "AST.ml" 34 491 565
+"AST.ml" 35 502 569 "AST.ml" 35 502 574
 type(
   string
 )
-"AST.ml" 34 491 567 "AST.ml" 34 491 576
+"AST.ml" 35 502 576 "AST.ml" 35 502 582
 type(
   string
 )
-"AST.ml" 34 491 578 "AST.ml" 34 491 584
+"AST.ml" 35 502 584 "AST.ml" 35 502 593
 type(
   string
 )
-"AST.ml" 34 491 586 "AST.ml" 34 491 593
+"AST.ml" 35 502 595 "AST.ml" 35 502 601
 type(
   string
 )
-"AST.ml" 33 470 489 "AST.ml" 35 594 599
+"AST.ml" 35 502 603 "AST.ml" 35 502 610
+type(
+  string
+)
+"AST.ml" 35 502 612 "AST.ml" 35 502 618
+type(
+  string
+)
+"AST.ml" 34 481 500 "AST.ml" 36 619 624
 type(
   string list
 )
@@ -4961,177 +5073,183 @@ type(
 type(
   string list
 )
-"AST.ml" 37 601 609 "AST.ml" 37 601 610
+type(
+  string list
+)
+type(
+  string list
+)
+"AST.ml" 38 626 634 "AST.ml" 38 626 635
 type(
   Ostap.Matcher.Token.t -> string
 )
 ident(
-  def r "AST.ml" 39 639 643 "AST.ml" 78 1993 1998
+  def r "AST.ml" 40 664 668 "AST.ml" 79 2018 2023
 )
-"AST.ml" 37 601 613 "AST.ml" 37 601 637
+"AST.ml" 38 626 638 "AST.ml" 38 626 662
 type(
   Ostap.Matcher.Token.t -> string
 )
 ident(
   ext_ref Ostap.Matcher.Token.repr
 )
-"AST.ml" 39 639 647 "AST.ml" 39 639 657
+"AST.ml" 40 664 672 "AST.ml" 40 664 682
 type(
   String.t -> bool
 )
 ident(
-  def is_keyword "AST.ml" 44 808 812 "AST.ml" 78 1993 1998
+  def is_keyword "AST.ml" 45 833 837 "AST.ml" 79 2018 2023
 )
-"AST.ml" 40 661 682 "AST.ml" 40 661 699
+"AST.ml" 41 686 707 "AST.ml" 41 686 724
 call(
   stack
 )
-"AST.ml" 41 703 713 "AST.ml" 41 703 714
+"AST.ml" 42 728 738 "AST.ml" 42 728 739
 type(
   S.t
 )
 ident(
-  def s "AST.ml" 42 775 781 "AST.ml" 42 775 801
+  def s "AST.ml" 43 800 806 "AST.ml" 43 800 826
 )
-"AST.ml" 41 703 717 "AST.ml" 41 703 731
+"AST.ml" 42 728 742 "AST.ml" 42 728 756
 type(
   (S.t -> S.elt -> S.t) -> S.t -> S.elt list -> S.t
 )
 ident(
   ext_ref List.fold_left
 )
-"AST.ml" 41 703 737 "AST.ml" 41 703 738
+"AST.ml" 42 728 762 "AST.ml" 42 728 763
 type(
   S.t
 )
 ident(
-  def s "AST.ml" 41 703 739 "AST.ml" 41 703 753
+  def s "AST.ml" 42 728 764 "AST.ml" 42 728 778
 )
-"AST.ml" 41 703 739 "AST.ml" 41 703 740
+"AST.ml" 42 728 764 "AST.ml" 42 728 765
 type(
   S.elt
 )
 ident(
-  def k "AST.ml" 41 703 744 "AST.ml" 41 703 753
+  def k "AST.ml" 42 728 769 "AST.ml" 42 728 778
 )
-"AST.ml" 41 703 744 "AST.ml" 41 703 749
+"AST.ml" 42 728 769 "AST.ml" 42 728 774
 type(
   S.elt -> S.t -> S.t
 )
 ident(
   ext_ref S.add
 )
-"AST.ml" 41 703 750 "AST.ml" 41 703 751
+"AST.ml" 42 728 775 "AST.ml" 42 728 776
 type(
   S.elt
 )
 ident(
-  int_ref k "AST.ml" 41 703 739 "AST.ml" 41 703 740
+  int_ref k "AST.ml" 42 728 764 "AST.ml" 42 728 765
 )
-"AST.ml" 41 703 752 "AST.ml" 41 703 753
+"AST.ml" 42 728 777 "AST.ml" 42 728 778
 type(
   S.t
 )
 ident(
-  int_ref s "AST.ml" 41 703 737 "AST.ml" 41 703 738
+  int_ref s "AST.ml" 42 728 762 "AST.ml" 42 728 763
 )
-"AST.ml" 41 703 744 "AST.ml" 41 703 753
+"AST.ml" 42 728 769 "AST.ml" 42 728 778
 call(
   tail
 )
 type(
   S.t
 )
-"AST.ml" 41 703 739 "AST.ml" 41 703 753
+"AST.ml" 42 728 764 "AST.ml" 42 728 778
 type(
   S.elt -> S.t
 )
-"AST.ml" 41 703 732 "AST.ml" 41 703 754
+"AST.ml" 42 728 757 "AST.ml" 42 728 779
 type(
   S.t -> S.elt -> S.t
 )
-"AST.ml" 41 703 755 "AST.ml" 41 703 762
+"AST.ml" 42 728 780 "AST.ml" 42 728 787
 type(
   S.t
 )
 ident(
   ext_ref S.empty
 )
-"AST.ml" 41 703 763 "AST.ml" 41 703 771
+"AST.ml" 42 728 788 "AST.ml" 42 728 796
 type(
   S.elt list
 )
 ident(
-  int_ref keywords "AST.ml" 33 470 478 "AST.ml" 33 470 486
+  int_ref keywords "AST.ml" 34 481 489 "AST.ml" 34 481 497
 )
-"AST.ml" 41 703 717 "AST.ml" 41 703 771
+"AST.ml" 42 728 742 "AST.ml" 42 728 796
 call(
   stack
 )
 type(
   S.t
 )
-"AST.ml" 42 775 786 "AST.ml" 42 775 787
+"AST.ml" 43 800 811 "AST.ml" 43 800 812
 type(
   String.t
 )
 ident(
-  def i "AST.ml" 42 775 791 "AST.ml" 42 775 800
+  def i "AST.ml" 43 800 816 "AST.ml" 43 800 825
 )
-"AST.ml" 42 775 791 "AST.ml" 42 775 796
+"AST.ml" 43 800 816 "AST.ml" 43 800 821
 type(
   String.t -> S.t -> bool
 )
 ident(
   ext_ref S.mem
 )
-"AST.ml" 42 775 797 "AST.ml" 42 775 798
+"AST.ml" 43 800 822 "AST.ml" 43 800 823
 type(
   String.t
 )
 ident(
-  int_ref i "AST.ml" 42 775 786 "AST.ml" 42 775 787
+  int_ref i "AST.ml" 43 800 811 "AST.ml" 43 800 812
 )
-"AST.ml" 42 775 799 "AST.ml" 42 775 800
+"AST.ml" 43 800 824 "AST.ml" 43 800 825
 type(
   S.t
 )
 ident(
-  int_ref s "AST.ml" 41 703 713 "AST.ml" 41 703 714
+  int_ref s "AST.ml" 42 728 738 "AST.ml" 42 728 739
 )
-"AST.ml" 42 775 791 "AST.ml" 42 775 800
+"AST.ml" 43 800 816 "AST.ml" 43 800 825
 call(
   tail
 )
 type(
   bool
 )
-"AST.ml" 42 775 781 "AST.ml" 42 775 801
+"AST.ml" 43 800 806 "AST.ml" 43 800 826
 type(
   String.t -> bool
 )
-"AST.ml" 41 703 709 "AST.ml" 42 775 801
+"AST.ml" 42 728 734 "AST.ml" 43 800 826
 type(
   String.t -> bool
 )
-"AST.ml" 40 661 667 "AST.ml" 42 775 801
+"AST.ml" 41 686 692 "AST.ml" 43 800 826
 type(
   String.t -> bool
 )
-"AST.ml" 45 820 835 "AST.ml" 45 820 837
+"AST.ml" 46 845 860 "AST.ml" 46 845 862
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def x "AST.ml" 45 820 846 "AST.ml" 45 820 868
+  def x "AST.ml" 46 845 871 "AST.ml" 46 845 893
 )
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def x "AST.ml" 45 820 873 "AST.ml" 45 820 876
+  def x "AST.ml" 46 845 898 "AST.ml" 46 845 901
 )
-"AST.ml" 45 820 837 "AST.ml" 45 820 842
+"AST.ml" 46 845 862 "AST.ml" 46 845 867
 call(
   tail
 )
@@ -5148,82 +5266,82 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 45 820 837 "AST.ml" 45 820 842
+  int_ref _ostap_stream "AST.ml" 46 845 862 "AST.ml" 46 845 867
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "AST.ml" 45 820 837 "AST.ml" 45 820 842
+  def _ostap_stream "AST.ml" 46 845 862 "AST.ml" 46 845 867
 )
-"AST.ml" 45 820 846 "AST.ml" 45 820 849
+"AST.ml" 46 845 871 "AST.ml" 46 845 874
 type(
   bool -> bool
 )
 ident(
   ext_ref Pervasives.not
 )
-"AST.ml" 45 820 851 "AST.ml" 45 820 861
+"AST.ml" 46 845 876 "AST.ml" 46 845 886
 type(
   String.t -> bool
 )
 ident(
-  int_ref is_keyword "AST.ml" 39 639 647 "AST.ml" 39 639 657
+  int_ref is_keyword "AST.ml" 40 664 672 "AST.ml" 40 664 682
 )
-"AST.ml" 45 820 863 "AST.ml" 45 820 864
+"AST.ml" 46 845 888 "AST.ml" 46 845 889
 type(
   Ostap.Matcher.Token.t -> String.t
 )
 ident(
-  int_ref r "AST.ml" 37 601 609 "AST.ml" 37 601 610
+  int_ref r "AST.ml" 38 626 634 "AST.ml" 38 626 635
 )
-"AST.ml" 45 820 865 "AST.ml" 45 820 866
+"AST.ml" 46 845 890 "AST.ml" 46 845 891
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  int_ref x "AST.ml" 45 820 835 "AST.ml" 45 820 837
+  int_ref x "AST.ml" 46 845 860 "AST.ml" 46 845 862
 )
-"AST.ml" 45 820 862 "AST.ml" 45 820 867
+"AST.ml" 46 845 887 "AST.ml" 46 845 892
 call(
   stack
 )
 type(
   String.t
 )
-"AST.ml" 45 820 850 "AST.ml" 45 820 868
+"AST.ml" 46 845 875 "AST.ml" 46 845 893
 call(
   stack
 )
 type(
   bool
 )
-"AST.ml" 45 820 846 "AST.ml" 45 820 868
+"AST.ml" 46 845 871 "AST.ml" 46 845 893
 type(
   bool
 )
-"AST.ml" 45 820 873 "AST.ml" 45 820 874
+"AST.ml" 46 845 898 "AST.ml" 46 845 899
 type(
   Ostap.Matcher.Token.t -> string
 )
 ident(
-  int_ref r "AST.ml" 37 601 609 "AST.ml" 37 601 610
+  int_ref r "AST.ml" 38 626 634 "AST.ml" 38 626 635
 )
-"AST.ml" 45 820 875 "AST.ml" 45 820 876
+"AST.ml" 46 845 900 "AST.ml" 46 845 901
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  int_ref x "AST.ml" 45 820 835 "AST.ml" 45 820 837
+  int_ref x "AST.ml" 46 845 860 "AST.ml" 46 845 862
 )
-"AST.ml" 45 820 873 "AST.ml" 45 820 876
+"AST.ml" 46 845 898 "AST.ml" 46 845 901
 call(
   tail
 )
 type(
   string
 )
-"AST.ml" 45 820 835 "AST.ml" 45 820 877
+"AST.ml" 46 845 860 "AST.ml" 46 845 902
 call(
   stack
 )
@@ -5252,7 +5370,7 @@ type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def _0 "AST.ml" 45 820 873 "AST.ml" 45 820 876
+  def _0 "AST.ml" 46 845 898 "AST.ml" 46 845 901
 )
 type(
   (Ostap.Matcher.Token.t -> string) ->
@@ -5262,7 +5380,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.map
 )
-"AST.ml" 45 820 826 "AST.ml" 45 820 877
+"AST.ml" 46 845 851 "AST.ml" 46 845 902
 call(
   tail
 )
@@ -5276,22 +5394,22 @@ type(
   'a
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 45 820 826 "AST.ml" 45 820 877
+  int_ref _ostap_stream "AST.ml" 46 845 851 "AST.ml" 46 845 902
 )
 type(
   'a
 )
 ident(
-  def _ostap_stream "AST.ml" 45 820 826 "AST.ml" 45 820 877
+  def _ostap_stream "AST.ml" 46 845 851 "AST.ml" 46 845 902
 )
-"AST.ml" 46 879 894 "AST.ml" 46 879 896
+"AST.ml" 47 904 919 "AST.ml" 47 904 921
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def x "AST.ml" 46 879 905 "AST.ml" 46 879 924
+  def x "AST.ml" 47 904 930 "AST.ml" 47 904 949
 )
-"AST.ml" 46 879 896 "AST.ml" 46 879 903
+"AST.ml" 47 904 921 "AST.ml" 47 904 928
 call(
   tail
 )
@@ -5308,47 +5426,47 @@ type(
   'c
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 46 879 896 "AST.ml" 46 879 903
+  int_ref _ostap_stream "AST.ml" 47 904 921 "AST.ml" 47 904 928
 )
 type(
   'c
 )
 ident(
-  def _ostap_stream "AST.ml" 46 879 896 "AST.ml" 46 879 903
+  def _ostap_stream "AST.ml" 47 904 921 "AST.ml" 47 904 928
 )
-"AST.ml" 46 879 905 "AST.ml" 46 879 918
+"AST.ml" 47 904 930 "AST.ml" 47 904 943
 type(
   string -> int
 )
 ident(
   ext_ref Pervasives.int_of_string
 )
-"AST.ml" 46 879 920 "AST.ml" 46 879 921
+"AST.ml" 47 904 945 "AST.ml" 47 904 946
 type(
   Ostap.Matcher.Token.t -> string
 )
 ident(
-  int_ref r "AST.ml" 37 601 609 "AST.ml" 37 601 610
+  int_ref r "AST.ml" 38 626 634 "AST.ml" 38 626 635
 )
-"AST.ml" 46 879 922 "AST.ml" 46 879 923
+"AST.ml" 47 904 947 "AST.ml" 47 904 948
 type(
   Ostap.Matcher.Token.t
 )
 ident(
-  int_ref x "AST.ml" 46 879 894 "AST.ml" 46 879 896
+  int_ref x "AST.ml" 47 904 919 "AST.ml" 47 904 921
 )
-"AST.ml" 46 879 919 "AST.ml" 46 879 924
+"AST.ml" 47 904 944 "AST.ml" 47 904 949
 call(
   stack
 )
 type(
   string
 )
-"AST.ml" 46 879 905 "AST.ml" 46 879 924
+"AST.ml" 47 904 930 "AST.ml" 47 904 949
 type(
   int
 )
-"AST.ml" 46 879 894 "AST.ml" 46 879 925
+"AST.ml" 47 904 919 "AST.ml" 47 904 950
 type(
   Ostap.Matcher.Token.t -> int
 )
@@ -5356,7 +5474,7 @@ type(
   Ostap.Matcher.Token.t
 )
 ident(
-  def _0 "AST.ml" 46 879 905 "AST.ml" 46 879 924
+  def _0 "AST.ml" 47 904 930 "AST.ml" 47 904 949
 )
 type(
   (Ostap.Matcher.Token.t -> int) ->
@@ -5366,7 +5484,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.map
 )
-"AST.ml" 46 879 885 "AST.ml" 46 879 925
+"AST.ml" 47 904 910 "AST.ml" 47 904 950
 call(
   tail
 )
@@ -5380,39 +5498,39 @@ type(
   'c
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 46 879 885 "AST.ml" 46 879 925
+  int_ref _ostap_stream "AST.ml" 47 904 910 "AST.ml" 47 904 950
 )
 type(
   'c
 )
 ident(
-  def _ostap_stream "AST.ml" 46 879 885 "AST.ml" 46 879 925
+  def _ostap_stream "AST.ml" 47 904 910 "AST.ml" 47 904 950
 )
-"AST.ml" 45 820 826 "AST.ml" 46 879 925
+"AST.ml" 46 845 851 "AST.ml" 47 904 950
 type(
   'c -> ('c, int, 'd) Ostap.Combinators.result
 )
 ident(
-  def literal "AST.ml" 44 808 812 "AST.ml" 78 1993 1998
+  def literal "AST.ml" 45 833 837 "AST.ml" 79 2018 2023
 )
 type(
   'a -> ('a, string, 'b) Ostap.Combinators.result
 )
 ident(
-  def ident "AST.ml" 44 808 812 "AST.ml" 78 1993 1998
+  def ident "AST.ml" 45 833 837 "AST.ml" 79 2018 2023
 )
-"AST.ml" 49 934 946 "AST.ml" 49 934 947
+"AST.ml" 50 959 971 "AST.ml" 50 959 972
 type(
   string
 )
-"AST.ml" 50 951 961 "AST.ml" 50 951 965
+"AST.ml" 51 976 986 "AST.ml" 51 976 990
 type(
   string ->
   int ->
   Ostap.Msg.Coord.t ->
   [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
 )
-"AST.ml" 50 951 968 "AST.ml" 50 951 993
+"AST.ml" 51 976 993 "AST.ml" 51 976 1018
 type(
   Ostap.Matcher.Skip.t list ->
   string ->
@@ -5423,65 +5541,65 @@ type(
 ident(
   ext_ref Ostap.Matcher.Skip.create
 )
-"AST.ml" 51 996 1015 "AST.ml" 51 996 1045
+"AST.ml" 52 1021 1040 "AST.ml" 52 1021 1070
 type(
   string -> Ostap.Matcher.Skip.t
 )
 ident(
   ext_ref Ostap.Matcher.Skip.whitespaces
 )
-"AST.ml" 51 996 1046 "AST.ml" 51 996 1055
+"AST.ml" 52 1021 1071 "AST.ml" 52 1021 1080
 type(
   string
 )
-"AST.ml" 51 996 1015 "AST.ml" 51 996 1055
+"AST.ml" 52 1021 1040 "AST.ml" 52 1021 1080
 call(
   stack
 )
 type(
   Ostap.Matcher.Skip.t
 )
-"AST.ml" 52 1058 1077 "AST.ml" 52 1058 1109
+"AST.ml" 53 1083 1102 "AST.ml" 53 1083 1134
 type(
   string -> string -> Ostap.Matcher.Skip.t
 )
 ident(
   ext_ref Ostap.Matcher.Skip.nestedComment
 )
-"AST.ml" 52 1058 1110 "AST.ml" 52 1058 1114
+"AST.ml" 53 1083 1135 "AST.ml" 53 1083 1139
 type(
   string
 )
-"AST.ml" 52 1058 1115 "AST.ml" 52 1058 1119
+"AST.ml" 53 1083 1140 "AST.ml" 53 1083 1144
 type(
   string
 )
-"AST.ml" 52 1058 1077 "AST.ml" 52 1058 1119
+"AST.ml" 53 1083 1102 "AST.ml" 53 1083 1144
 call(
   stack
 )
 type(
   Ostap.Matcher.Skip.t
 )
-"AST.ml" 53 1121 1140 "AST.ml" 53 1121 1170
+"AST.ml" 54 1146 1165 "AST.ml" 54 1146 1195
 type(
   string -> Ostap.Matcher.Skip.t
 )
 ident(
   ext_ref Ostap.Matcher.Skip.lineComment
 )
-"AST.ml" 53 1121 1171 "AST.ml" 53 1121 1175
+"AST.ml" 54 1146 1196 "AST.ml" 54 1146 1200
 type(
   string
 )
-"AST.ml" 53 1121 1140 "AST.ml" 53 1121 1175
+"AST.ml" 54 1146 1165 "AST.ml" 54 1146 1200
 call(
   stack
 )
 type(
   Ostap.Matcher.Skip.t
 )
-"AST.ml" 50 951 994 "AST.ml" 54 1176 1194
+"AST.ml" 51 976 1019 "AST.ml" 55 1201 1219
 type(
   Ostap.Matcher.Skip.t list
 )
@@ -5494,7 +5612,7 @@ type(
 type(
   Ostap.Matcher.Skip.t list
 )
-"AST.ml" 50 951 968 "AST.ml" 54 1176 1194
+"AST.ml" 51 976 993 "AST.ml" 55 1201 1219
 call(
   stack
 )
@@ -5504,51 +5622,51 @@ type(
   Ostap.Msg.Coord.t ->
   [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
 )
-"AST.ml" 57 1206 1216 "AST.ml" 57 1206 1221
+"AST.ml" 58 1231 1241 "AST.ml" 58 1231 1246
 type(
   Re_str.regexp
 )
-"AST.ml" 57 1206 1226 "AST.ml" 57 1206 1239
+"AST.ml" 58 1231 1251 "AST.ml" 58 1231 1264
 type(
   string -> Re_str.regexp
 )
 ident(
   ext_ref Re_str.regexp
 )
-"AST.ml" 57 1206 1240 "AST.ml" 57 1206 1271
+"AST.ml" 58 1231 1265 "AST.ml" 58 1231 1296
 type(
   string
 )
-"AST.ml" 57 1206 1226 "AST.ml" 57 1206 1271
+"AST.ml" 58 1231 1251 "AST.ml" 58 1231 1296
 call(
   stack
 )
 type(
   Re_str.regexp
 )
-"AST.ml" 58 1276 1286 "AST.ml" 58 1276 1293
+"AST.ml" 59 1301 1311 "AST.ml" 59 1301 1318
 type(
   Re_str.regexp
 )
-"AST.ml" 58 1276 1296 "AST.ml" 58 1276 1309
+"AST.ml" 59 1301 1321 "AST.ml" 59 1301 1334
 type(
   string -> Re_str.regexp
 )
 ident(
   ext_ref Re_str.regexp
 )
-"AST.ml" 58 1276 1310 "AST.ml" 58 1276 1320
+"AST.ml" 59 1301 1335 "AST.ml" 59 1301 1345
 type(
   string
 )
-"AST.ml" 58 1276 1296 "AST.ml" 58 1276 1320
+"AST.ml" 59 1301 1321 "AST.ml" 59 1301 1345
 call(
   stack
 )
 type(
   Re_str.regexp
 )
-"AST.ml" 59 1324 1338 "AST.ml" 59 1324 1342
+"AST.ml" 60 1349 1363 "AST.ml" 60 1349 1367
 type(
   < col : int; coord : Ostap.Msg.Coord.t;
     get : string ->
@@ -5576,28 +5694,28 @@ type(
     .. >
   as 'e
 )
-"AST.ml" 60 1344 1376 "AST.ml" 60 1344 1377
+"AST.ml" 61 1369 1401 "AST.ml" 61 1369 1402
 type(
   string
 )
 ident(
-  int_ref s "AST.ml" 49 934 946 "AST.ml" 49 934 947
+  int_ref s "AST.ml" 50 959 971 "AST.ml" 50 959 972
 )
-"AST.ml" 61 1379 1399 "AST.ml" 61 1379 1400
+"AST.ml" 62 1404 1424 "AST.ml" 62 1404 1425
 type(
   int
 )
 ident(
-  def p "AST.ml" 61 1379 1401 "AST.ml" 61 1379 1423
+  def p "AST.ml" 62 1404 1426 "AST.ml" 62 1404 1448
 )
-"AST.ml" 61 1379 1401 "AST.ml" 61 1379 1406
+"AST.ml" 62 1404 1426 "AST.ml" 62 1404 1431
 type(
   Ostap.Msg.Coord.t
 )
 ident(
-  def coord "AST.ml" 61 1379 1409 "AST.ml" 61 1379 1423
+  def coord "AST.ml" 62 1404 1434 "AST.ml" 62 1404 1448
 )
-"AST.ml" 61 1379 1409 "AST.ml" 61 1379 1413
+"AST.ml" 62 1404 1434 "AST.ml" 62 1404 1438
 type(
   string ->
   int ->
@@ -5605,67 +5723,67 @@ type(
   [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
 )
 ident(
-  int_ref skip "AST.ml" 50 951 961 "AST.ml" 50 951 965
+  int_ref skip "AST.ml" 51 976 986 "AST.ml" 51 976 990
 )
-"AST.ml" 61 1379 1414 "AST.ml" 61 1379 1415
+"AST.ml" 62 1404 1439 "AST.ml" 62 1404 1440
 type(
   string
 )
 ident(
-  int_ref s "AST.ml" 49 934 946 "AST.ml" 49 934 947
+  int_ref s "AST.ml" 50 959 971 "AST.ml" 50 959 972
 )
-"AST.ml" 61 1379 1416 "AST.ml" 61 1379 1417
+"AST.ml" 62 1404 1441 "AST.ml" 62 1404 1442
 type(
   int
 )
 ident(
-  int_ref p "AST.ml" 61 1379 1399 "AST.ml" 61 1379 1400
+  int_ref p "AST.ml" 62 1404 1424 "AST.ml" 62 1404 1425
 )
-"AST.ml" 61 1379 1418 "AST.ml" 61 1379 1423
+"AST.ml" 62 1404 1443 "AST.ml" 62 1404 1448
 type(
   Ostap.Msg.Coord.t
 )
 ident(
-  int_ref coord "AST.ml" 61 1379 1401 "AST.ml" 61 1379 1406
+  int_ref coord "AST.ml" 62 1404 1426 "AST.ml" 62 1404 1431
 )
-"AST.ml" 61 1379 1409 "AST.ml" 61 1379 1423
+"AST.ml" 62 1404 1434 "AST.ml" 62 1404 1448
 call(
   tail
 )
 type(
   [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
 )
-"AST.ml" 61 1379 1401 "AST.ml" 61 1379 1423
+"AST.ml" 62 1404 1426 "AST.ml" 62 1404 1448
 type(
   Ostap.Msg.Coord.t ->
   [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
 )
-"AST.ml" 61 1379 1399 "AST.ml" 61 1379 1423
-type(
-  int ->
-  Ostap.Msg.Coord.t ->
-  [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
-)
+"AST.ml" 62 1404 1424 "AST.ml" 62 1404 1448
 type(
   int ->
   Ostap.Msg.Coord.t ->
   [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
 )
-"AST.ml" 61 1379 1387 "AST.ml" 61 1379 1423
+type(
+  int ->
+  Ostap.Msg.Coord.t ->
+  [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
+)
+"AST.ml" 62 1404 1412 "AST.ml" 62 1404 1448
 type(
   'e ->
   int ->
   Ostap.Msg.Coord.t ->
   [ `Failed of Ostap.Msg.t | `Skipped of int * Ostap.Msg.Coord.t ]
 )
-"AST.ml" 62 1424 1454 "AST.ml" 62 1424 1458
+"AST.ml" 63 1449 1479 "AST.ml" 63 1449 1483
 type(
   'e
 )
 ident(
-  int_ref self "AST.ml" 59 1324 1338 "AST.ml" 59 1324 1342
+  int_ref self "AST.ml" 60 1349 1363 "AST.ml" 60 1349 1367
 )
-"AST.ml" 62 1424 1454 "AST.ml" 62 1424 1462
+"AST.ml" 63 1449 1479 "AST.ml" 63 1449 1487
 call(
   tail
 )
@@ -5674,36 +5792,36 @@ type(
   Re_str.regexp ->
   ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
 )
-"AST.ml" 62 1424 1463 "AST.ml" 62 1424 1475
+"AST.ml" 63 1449 1488 "AST.ml" 63 1449 1500
 type(
   string
 )
-"AST.ml" 62 1424 1476 "AST.ml" 62 1424 1481
+"AST.ml" 63 1449 1501 "AST.ml" 63 1449 1506
 type(
   Re_str.regexp
 )
 ident(
-  int_ref ident "AST.ml" 57 1206 1216 "AST.ml" 57 1206 1221
+  int_ref ident "AST.ml" 58 1231 1241 "AST.ml" 58 1231 1246
 )
-"AST.ml" 62 1424 1454 "AST.ml" 62 1424 1481
+"AST.ml" 63 1449 1479 "AST.ml" 63 1449 1506
 type(
   ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
 )
 type(
   ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
 )
-"AST.ml" 62 1424 1432 "AST.ml" 62 1424 1481
+"AST.ml" 63 1449 1457 "AST.ml" 63 1449 1506
 type(
   'e -> ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
 )
-"AST.ml" 63 1482 1512 "AST.ml" 63 1482 1516
+"AST.ml" 64 1507 1537 "AST.ml" 64 1507 1541
 type(
   'e
 )
 ident(
-  int_ref self "AST.ml" 59 1324 1338 "AST.ml" 59 1324 1342
+  int_ref self "AST.ml" 60 1349 1363 "AST.ml" 60 1349 1367
 )
-"AST.ml" 63 1482 1512 "AST.ml" 63 1482 1520
+"AST.ml" 64 1507 1537 "AST.ml" 64 1507 1545
 call(
   tail
 )
@@ -5712,29 +5830,29 @@ type(
   Re_str.regexp ->
   ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
 )
-"AST.ml" 63 1482 1521 "AST.ml" 63 1482 1530
+"AST.ml" 64 1507 1546 "AST.ml" 64 1507 1555
 type(
   string
 )
-"AST.ml" 63 1482 1534 "AST.ml" 63 1482 1541
+"AST.ml" 64 1507 1559 "AST.ml" 64 1507 1566
 type(
   Re_str.regexp
 )
 ident(
-  int_ref literal "AST.ml" 58 1276 1286 "AST.ml" 58 1276 1293
+  int_ref literal "AST.ml" 59 1301 1311 "AST.ml" 59 1301 1318
 )
-"AST.ml" 63 1482 1512 "AST.ml" 63 1482 1541
+"AST.ml" 64 1507 1537 "AST.ml" 64 1507 1566
 type(
   ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
 )
 type(
   ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
 )
-"AST.ml" 63 1482 1490 "AST.ml" 63 1482 1541
+"AST.ml" 64 1507 1515 "AST.ml" 64 1507 1566
 type(
   'e -> ('e, Ostap.Matcher.Token.t, Ostap.Reason.t) Ostap.Combinators.result
 )
-"AST.ml" 68 1593 1601 "AST.ml" 68 1593 1611
+"AST.ml" 69 1618 1626 "AST.ml" 69 1618 1636
 type(
   (t ->
    ('f, 'g,
@@ -5748,9 +5866,9 @@ type(
   string -> ('g, Ostap.Msg.t) Checked.t
 )
 ident(
-  def fromString "AST.ml" 76 1936 1991 "AST.ml" 78 1993 1998
+  def fromString "AST.ml" 77 1961 2016 "AST.ml" 79 2018 2023
 )
-"AST.ml" 68 1593 1612 "AST.ml" 68 1593 1613
+"AST.ml" 69 1618 1637 "AST.ml" 69 1618 1638
 type(
   t ->
   ('f, 'g,
@@ -5764,16 +5882,16 @@ type(
   Ostap.Combinators.result
 )
 ident(
-  def p "AST.ml" 68 1593 1614 "AST.ml" 76 1936 1991
+  def p "AST.ml" 69 1618 1639 "AST.ml" 77 1961 2016
 )
-"AST.ml" 68 1593 1614 "AST.ml" 68 1593 1615
+"AST.ml" 69 1618 1639 "AST.ml" 69 1618 1640
 type(
   string
 )
 ident(
-  def s "AST.ml" 69 1618 1624 "AST.ml" 76 1936 1991
+  def s "AST.ml" 70 1643 1649 "AST.ml" 77 1961 2016
 )
-"AST.ml" 70 1628 1636 "AST.ml" 70 1628 1660
+"AST.ml" 71 1653 1661 "AST.ml" 71 1653 1685
 type(
   ('f, 'g, 'i) Ostap.Combinators.result ->
   ('g -> ('g, Ostap.Msg.t) Checked.t) ->
@@ -5782,112 +5900,112 @@ type(
 ident(
   ext_ref Ostap.Combinators.unwrap
 )
-"AST.ml" 70 1628 1662 "AST.ml" 70 1628 1663
+"AST.ml" 71 1653 1687 "AST.ml" 71 1653 1688
 type(
   t -> ('f, 'g, 'i) Ostap.Combinators.result
 )
 ident(
-  int_ref p "AST.ml" 68 1593 1612 "AST.ml" 68 1593 1613
+  int_ref p "AST.ml" 69 1618 1637 "AST.ml" 69 1618 1638
 )
-"AST.ml" 70 1628 1665 "AST.ml" 70 1628 1670
+"AST.ml" 71 1653 1690 "AST.ml" 71 1653 1695
 type(
   string -> t
 )
-"AST.ml" 70 1628 1671 "AST.ml" 70 1628 1672
+"AST.ml" 71 1653 1696 "AST.ml" 71 1653 1697
 type(
   string
 )
 ident(
-  int_ref s "AST.ml" 68 1593 1614 "AST.ml" 68 1593 1615
+  int_ref s "AST.ml" 69 1618 1639 "AST.ml" 69 1618 1640
 )
-"AST.ml" 70 1628 1664 "AST.ml" 70 1628 1673
+"AST.ml" 71 1653 1689 "AST.ml" 71 1653 1698
 call(
   stack
 )
 type(
   t
 )
-"AST.ml" 70 1628 1661 "AST.ml" 70 1628 1674
+"AST.ml" 71 1653 1686 "AST.ml" 71 1653 1699
 call(
   stack
 )
 type(
   ('f, 'g, 'i) Ostap.Combinators.result
 )
-"AST.ml" 70 1628 1680 "AST.ml" 70 1628 1681
+"AST.ml" 71 1653 1705 "AST.ml" 71 1653 1706
 type(
   'g
 )
 ident(
-  def x "AST.ml" 70 1628 1685 "AST.ml" 70 1628 1697
+  def x "AST.ml" 71 1653 1710 "AST.ml" 71 1653 1722
 )
-"AST.ml" 70 1628 1696 "AST.ml" 70 1628 1697
+"AST.ml" 71 1653 1721 "AST.ml" 71 1653 1722
 type(
   'g
 )
 ident(
-  int_ref x "AST.ml" 70 1628 1680 "AST.ml" 70 1628 1681
+  int_ref x "AST.ml" 71 1653 1705 "AST.ml" 71 1653 1706
 )
-"AST.ml" 70 1628 1685 "AST.ml" 70 1628 1697
+"AST.ml" 71 1653 1710 "AST.ml" 71 1653 1722
 type(
   ('g, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 70 1628 1675 "AST.ml" 70 1628 1698
+"AST.ml" 71 1653 1700 "AST.ml" 71 1653 1723
 type(
   'g -> ('g, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 71 1700 1721 "AST.ml" 71 1700 1724
+"AST.ml" 72 1725 1746 "AST.ml" 72 1725 1749
 type(
   'i
 )
 ident(
-  def err "AST.ml" 72 1729 1742 "AST.ml" 74 1894 1923
+  def err "AST.ml" 73 1754 1767 "AST.ml" 75 1919 1948
 )
-"AST.ml" 71 1700 1716 "AST.ml" 71 1700 1724
+"AST.ml" 72 1725 1741 "AST.ml" 72 1725 1749
 type(
   'i option
 )
-"AST.ml" 72 1729 1747 "AST.ml" 72 1729 1750
+"AST.ml" 73 1754 1772 "AST.ml" 73 1754 1775
 type(
   Ostap.Msg.Locator.t
 )
 ident(
-  def loc "AST.ml" 73 1797 1810 "AST.ml" 74 1894 1923
+  def loc "AST.ml" 74 1822 1835 "AST.ml" 75 1919 1948
 )
-"AST.ml" 72 1729 1752 "AST.ml" 72 1729 1753
+"AST.ml" 73 1754 1777 "AST.ml" 73 1754 1778
 type(
   [< `Comment of string * 'h | `Msg of Ostap.Msg.t ] as 'j
 )
 ident(
-  def m "AST.ml" 73 1797 1810 "AST.ml" 74 1894 1923
+  def m "AST.ml" 74 1822 1835 "AST.ml" 75 1919 1948
 )
-"AST.ml" 72 1729 1757 "AST.ml" 72 1729 1758
+"AST.ml" 73 1754 1782 "AST.ml" 73 1754 1783
 type(
   'j list
 )
-"AST.ml" 72 1729 1752 "AST.ml" 72 1729 1758
+"AST.ml" 73 1754 1777 "AST.ml" 73 1754 1783
 type(
   'j list
 )
-"AST.ml" 72 1729 1747 "AST.ml" 72 1729 1758
+"AST.ml" 73 1754 1772 "AST.ml" 73 1754 1783
 type(
   Ostap.Msg.Locator.t * 'j list
 )
-"AST.ml" 72 1729 1746 "AST.ml" 72 1729 1759
+"AST.ml" 73 1754 1771 "AST.ml" 73 1754 1784
 type(
   (Ostap.Msg.Locator.t * 'j list) list
 )
 type(
   (Ostap.Msg.Locator.t * 'j list) list
 )
-"AST.ml" 72 1729 1762 "AST.ml" 72 1729 1765
+"AST.ml" 73 1754 1787 "AST.ml" 73 1754 1790
 type(
   'i
 )
 ident(
-  int_ref err "AST.ml" 71 1700 1721 "AST.ml" 71 1700 1724
+  int_ref err "AST.ml" 72 1725 1746 "AST.ml" 72 1725 1749
 )
-"AST.ml" 72 1729 1762 "AST.ml" 72 1729 1774
+"AST.ml" 73 1754 1787 "AST.ml" 73 1754 1799
 call(
   stack
 )
@@ -5895,234 +6013,236 @@ type(
   ([> `First of int ] as 'k) ->
   ([> `Desc ] as 'l) -> (Ostap.Msg.Locator.t * 'j list) list
 )
-"AST.ml" 72 1729 1783 "AST.ml" 72 1729 1784
+"AST.ml" 73 1754 1808 "AST.ml" 73 1754 1809
 type(
   int
 )
-"AST.ml" 72 1729 1775 "AST.ml" 72 1729 1785
+"AST.ml" 73 1754 1800 "AST.ml" 73 1754 1810
 type(
   'k
 )
-"AST.ml" 72 1729 1786 "AST.ml" 72 1729 1793
+"AST.ml" 73 1754 1811 "AST.ml" 73 1754 1818
 type(
   'l
 )
-"AST.ml" 72 1729 1762 "AST.ml" 72 1729 1793
+"AST.ml" 73 1754 1787 "AST.ml" 73 1754 1818
 type(
   (Ostap.Msg.Locator.t * 'j list) list
 )
-"AST.ml" 73 1797 1814 "AST.ml" 73 1797 1815
+"AST.ml" 74 1822 1839 "AST.ml" 74 1822 1840
 type(
   Ostap.Msg.t
 )
 ident(
-  def m "AST.ml" 74 1894 1907 "AST.ml" 74 1894 1923
+  def m "AST.ml" 75 1919 1932 "AST.ml" 75 1919 1948
 )
-"AST.ml" 73 1797 1825 "AST.ml" 73 1797 1826
+"AST.ml" 74 1822 1850 "AST.ml" 74 1822 1851
 type(
   'j
 )
 ident(
-  int_ref m "AST.ml" 72 1729 1752 "AST.ml" 72 1729 1753
+  int_ref m "AST.ml" 73 1754 1777 "AST.ml" 73 1754 1778
 )
-"AST.ml" 73 1797 1837 "AST.ml" 73 1797 1838
+"AST.ml" 74 1822 1862 "AST.ml" 74 1822 1863
 type(
   Ostap.Msg.t
 )
 ident(
-  def m "AST.ml" 73 1797 1842 "AST.ml" 73 1797 1843
+  def m "AST.ml" 74 1822 1867 "AST.ml" 74 1822 1868
 )
-"AST.ml" 73 1797 1832 "AST.ml" 73 1797 1838
+"AST.ml" 74 1822 1857 "AST.ml" 74 1822 1863
 type(
   'j
 )
-"AST.ml" 73 1797 1842 "AST.ml" 73 1797 1843
+"AST.ml" 74 1822 1867 "AST.ml" 74 1822 1868
 type(
   Ostap.Msg.t
 )
 ident(
-  int_ref m "AST.ml" 73 1797 1837 "AST.ml" 73 1797 1838
+  int_ref m "AST.ml" 74 1822 1862 "AST.ml" 74 1822 1863
 )
-"AST.ml" 73 1797 1856 "AST.ml" 73 1797 1857
+"AST.ml" 74 1822 1881 "AST.ml" 74 1822 1882
 type(
   string
 )
 ident(
-  def s "AST.ml" 73 1797 1865 "AST.ml" 73 1797 1890
+  def s "AST.ml" 74 1822 1890 "AST.ml" 74 1822 1915
 )
-"AST.ml" 73 1797 1859 "AST.ml" 73 1797 1860
+"AST.ml" 74 1822 1884 "AST.ml" 74 1822 1885
 type(
   'h
 )
-"AST.ml" 73 1797 1856 "AST.ml" 73 1797 1860
+"AST.ml" 74 1822 1881 "AST.ml" 74 1822 1885
 type(
   string * 'h
 )
-"AST.ml" 73 1797 1846 "AST.ml" 73 1797 1861
+"AST.ml" 74 1822 1871 "AST.ml" 74 1822 1886
 type(
   'j
 )
-"AST.ml" 73 1797 1865 "AST.ml" 73 1797 1879
+"AST.ml" 74 1822 1890 "AST.ml" 74 1822 1904
 type(
   string -> string array -> Ostap.Msg.Locator.t -> Ostap.Msg.t
 )
 ident(
   ext_ref Ostap.Msg.make
 )
-"AST.ml" 73 1797 1880 "AST.ml" 73 1797 1881
+"AST.ml" 74 1822 1905 "AST.ml" 74 1822 1906
 type(
   string
 )
 ident(
-  int_ref s "AST.ml" 73 1797 1856 "AST.ml" 73 1797 1857
+  int_ref s "AST.ml" 74 1822 1881 "AST.ml" 74 1822 1882
 )
-"AST.ml" 73 1797 1882 "AST.ml" 73 1797 1886
+"AST.ml" 74 1822 1907 "AST.ml" 74 1822 1911
 type(
   string array
 )
-"AST.ml" 73 1797 1887 "AST.ml" 73 1797 1890
+"AST.ml" 74 1822 1912 "AST.ml" 74 1822 1915
 type(
   Ostap.Msg.Locator.t
 )
 ident(
-  int_ref loc "AST.ml" 72 1729 1747 "AST.ml" 72 1729 1750
+  int_ref loc "AST.ml" 73 1754 1772 "AST.ml" 73 1754 1775
 )
-"AST.ml" 73 1797 1865 "AST.ml" 73 1797 1890
+"AST.ml" 74 1822 1890 "AST.ml" 74 1822 1915
 call(
   stack
 )
 type(
   Ostap.Msg.t
 )
-"AST.ml" 73 1797 1819 "AST.ml" 73 1797 1890
+"AST.ml" 74 1822 1844 "AST.ml" 74 1822 1915
 type(
   Ostap.Msg.t
 )
-"AST.ml" 74 1894 1921 "AST.ml" 74 1894 1922
+"AST.ml" 75 1919 1946 "AST.ml" 75 1919 1947
 type(
   Ostap.Msg.t
 )
 ident(
-  int_ref m "AST.ml" 73 1797 1814 "AST.ml" 73 1797 1815
+  int_ref m "AST.ml" 74 1822 1839 "AST.ml" 74 1822 1840
 )
-"AST.ml" 74 1894 1920 "AST.ml" 74 1894 1923
+"AST.ml" 75 1919 1945 "AST.ml" 75 1919 1948
 type(
   Ostap.Msg.t list
 )
 type(
   Ostap.Msg.t list
 )
-"AST.ml" 74 1894 1907 "AST.ml" 74 1894 1923
+"AST.ml" 75 1919 1932 "AST.ml" 75 1919 1948
 type(
   ('g, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 73 1797 1810 "AST.ml" 74 1894 1923
+"AST.ml" 74 1822 1835 "AST.ml" 75 1919 1948
 type(
   ('g, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 72 1729 1742 "AST.ml" 74 1894 1923
+"AST.ml" 73 1754 1767 "AST.ml" 75 1919 1948
 type(
   ('g, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 71 1700 1710 "AST.ml" 75 1924 1935
+"AST.ml" 72 1725 1735 "AST.ml" 76 1949 1960
 type(
   'i option -> ('g, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 70 1628 1636 "AST.ml" 75 1924 1935
+"AST.ml" 71 1653 1661 "AST.ml" 76 1949 1960
 call(
   stack
 )
 type(
   ('g, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 76 1936 1953 "AST.ml" 76 1936 1954
+"AST.ml" 77 1961 1978 "AST.ml" 77 1961 1979
 type(
   GT.string
 )
 ident(
-  def m "AST.ml" 76 1936 1958 "AST.ml" 76 1936 1991
+  def m "AST.ml" 77 1961 1983 "AST.ml" 77 1961 2016
 )
-"AST.ml" 76 1936 1947 "AST.ml" 76 1936 1954
+"AST.ml" 77 1961 1972 "AST.ml" 77 1961 1979
 type(
   exn
 )
-"AST.ml" 76 1936 1972 "AST.ml" 76 1936 1988
+"AST.ml" 77 1961 1997 "AST.ml" 77 1961 2013
 type(
   GT.string -> Ostap.Msg.t
 )
 ident(
   ext_ref Ostap.Msg.phrase
 )
-"AST.ml" 76 1936 1989 "AST.ml" 76 1936 1990
+"AST.ml" 77 1961 2014 "AST.ml" 77 1961 2015
 type(
   GT.string
 )
 ident(
-  int_ref m "AST.ml" 76 1936 1953 "AST.ml" 76 1936 1954
+  int_ref m "AST.ml" 77 1961 1978 "AST.ml" 77 1961 1979
 )
-"AST.ml" 76 1936 1972 "AST.ml" 76 1936 1990
+"AST.ml" 77 1961 1997 "AST.ml" 77 1961 2015
 call(
   stack
 )
 type(
   Ostap.Msg.t
 )
-"AST.ml" 76 1936 1971 "AST.ml" 76 1936 1991
+"AST.ml" 77 1961 1996 "AST.ml" 77 1961 2016
 type(
   Ostap.Msg.t list
 )
 type(
   Ostap.Msg.t list
 )
-"AST.ml" 76 1936 1958 "AST.ml" 76 1936 1991
+"AST.ml" 77 1961 1983 "AST.ml" 77 1961 2016
 type(
   ('g, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 69 1618 1624 "AST.ml" 76 1936 1991
+"AST.ml" 70 1643 1649 "AST.ml" 77 1961 2016
 type(
   ('g, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 68 1593 1614 "AST.ml" 76 1936 1991
+"AST.ml" 69 1618 1639 "AST.ml" 77 1961 2016
 type(
   string -> ('g, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 68 1593 1612 "AST.ml" 76 1936 1991
+"AST.ml" 69 1618 1637 "AST.ml" 77 1961 2016
 type(
   (t -> ('f, 'g, 'i) Ostap.Combinators.result) ->
   string -> ('g, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 83 2026 2034 "AST.ml" 83 2026 2040
+"AST.ml" 84 2051 2059 "AST.ml" 84 2051 2065
 type(
   (< getIDENT : ('a, Ostap.Matcher.Token.t, < add : 'b -> 'b; .. > as 'b)
                 Ostap.Combinators.result;
-     look : string -> ('a, 'c, 'b) Ostap.Combinators.result;
+     getLITERAL : ('a, Ostap.Matcher.Token.t, 'b) Ostap.Combinators.result;
+     look : GT.string -> ('a, 'c, 'b) Ostap.Combinators.result;
      regexp : string -> string -> ('a, 'd, 'b) Ostap.Combinators.result; .. >
    as 'a) ->
   ('a, t, 'b) Ostap.Combinators.result
 )
 ident(
-  def hparse "AST.ml" 109 2872 2876 "AST.ml" 111 2917 2922
+  def hparse "AST.ml" 151 4252 4256 "AST.ml" 153 4297 4302
 )
-"AST.ml" 83 2026 2041 "AST.ml" 83 2026 2042
+"AST.ml" 84 2051 2066 "AST.ml" 84 2051 2067
 type(
   'a
 )
 ident(
-  def s "AST.ml" 84 2046 2052 "AST.ml" 107 2856 2870
+  def s "AST.ml" 85 2071 2077 "AST.ml" 149 4236 4250
 )
-"AST.ml" 85 2064 2081 "AST.ml" 85 2064 2092
+"AST.ml" 86 2089 2106 "AST.ml" 86 2089 2117
 type(
   (< getIDENT : ('e, Ostap.Matcher.Token.t, < add : 'f -> 'f; .. > as 'f)
                 Ostap.Combinators.result;
-     look : string -> ('e, 'g, 'f) Ostap.Combinators.result;
+     getLITERAL : ('e, Ostap.Matcher.Token.t, 'f) Ostap.Combinators.result;
+     look : GT.string -> ('e, 'g, 'f) Ostap.Combinators.result;
      regexp : string -> string -> ('e, 'h, 'f) Ostap.Combinators.result; .. >
    as 'e) ->
   ('e, GT.string, 'f) Ostap.Combinators.result
 )
 ident(
-  int_ref Lexer.ident "AST.ml" 45 820 826 "AST.ml" 46 879 925
+  int_ref Lexer.ident "AST.ml" 46 845 851 "AST.ml" 47 904 950
 )
-"AST.ml" 85 2064 2072 "AST.ml" 85 2064 2093
+"AST.ml" 86 2089 2097 "AST.ml" 86 2089 2118
 call(
   tail
 )
@@ -6136,33 +6256,33 @@ type(
   'e
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 85 2064 2072 "AST.ml" 85 2064 2093
+  int_ref _ostap_stream "AST.ml" 86 2089 2097 "AST.ml" 86 2089 2118
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 85 2064 2072 "AST.ml" 85 2064 2093
+  def _ostap_stream "AST.ml" 86 2089 2097 "AST.ml" 86 2089 2118
 )
-"AST.ml" 86 2095 2107 "AST.ml" 86 2095 2111
+"AST.ml" 87 2120 2132 "AST.ml" 87 2120 2136
 type(
   string
 )
 ident(
-  def name "AST.ml" 86 2095 2103 "AST.ml" 86 2095 2136
+  def name "AST.ml" 87 2120 2128 "AST.ml" 87 2120 2161
 )
-"AST.ml" 86 2095 2116 "AST.ml" 86 2095 2120
+"AST.ml" 87 2120 2141 "AST.ml" 87 2120 2145
 type(
   string
 )
 ident(
-  int_ref name "AST.ml" 86 2095 2107 "AST.ml" 86 2095 2111
+  int_ref name "AST.ml" 87 2120 2132 "AST.ml" 87 2120 2136
 )
-"AST.ml" 86 2095 2123 "AST.ml" 86 2095 2128
+"AST.ml" 87 2120 2148 "AST.ml" 87 2120 2153
 type(
   string
 )
-"AST.ml" 86 2095 2116 "AST.ml" 86 2095 2128
+"AST.ml" 87 2120 2141 "AST.ml" 87 2120 2153
 call(
   stack
 )
@@ -6175,14 +6295,14 @@ type(
 ident(
   ext_ref Pervasives.( ^ )
 )
-"AST.ml" 86 2095 2131 "AST.ml" 86 2095 2135
+"AST.ml" 87 2120 2156 "AST.ml" 87 2120 2160
 type(
   string
 )
 ident(
-  int_ref name "AST.ml" 86 2095 2107 "AST.ml" 86 2095 2111
+  int_ref name "AST.ml" 87 2120 2132 "AST.ml" 87 2120 2136
 )
-"AST.ml" 86 2095 2114 "AST.ml" 86 2095 2136
+"AST.ml" 87 2120 2139 "AST.ml" 87 2120 2161
 call(
   tail
 )
@@ -6199,15 +6319,15 @@ type(
   'e
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 86 2095 2114 "AST.ml" 86 2095 2136
+  int_ref _ostap_stream "AST.ml" 87 2120 2139 "AST.ml" 87 2120 2161
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 86 2095 2114 "AST.ml" 86 2095 2136
+  def _ostap_stream "AST.ml" 87 2120 2139 "AST.ml" 87 2120 2161
 )
-"AST.ml" 86 2095 2103 "AST.ml" 86 2095 2136
+"AST.ml" 87 2120 2128 "AST.ml" 87 2120 2161
 type(
   string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
 )
@@ -6221,33 +6341,33 @@ type(
   'e
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 86 2095 2103 "AST.ml" 86 2095 2136
+  int_ref _ostap_stream "AST.ml" 87 2120 2128 "AST.ml" 87 2120 2161
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 86 2095 2103 "AST.ml" 86 2095 2136
+  def _ostap_stream "AST.ml" 87 2120 2128 "AST.ml" 87 2120 2161
 )
-"AST.ml" 87 2138 2150 "AST.ml" 87 2138 2153
+"AST.ml" 88 2163 2175 "AST.ml" 88 2163 2178
 type(
   (GT.string * [ `Arg | `Def of t ]) list
 )
 ident(
-  def env "AST.ml" 87 2138 2146 "AST.ml" 89 2241 2260
+  def env "AST.ml" 88 2163 2171 "AST.ml" 90 2266 2285
 )
-"AST.ml" 88 2158 2169 "AST.ml" 88 2158 2172
+"AST.ml" 89 2183 2194 "AST.ml" 89 2183 2197
 type(
   string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
 )
 ident(
-  int_ref key "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
 )
-"AST.ml" 88 2158 2173 "AST.ml" 88 2158 2178
+"AST.ml" 89 2183 2198 "AST.ml" 89 2183 2203
 type(
   string
 )
-"AST.ml" 88 2158 2169 "AST.ml" 88 2158 2179
+"AST.ml" 89 2183 2194 "AST.ml" 89 2183 2204
 call(
   tail
 )
@@ -6261,29 +6381,29 @@ type(
   'e
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 88 2158 2169 "AST.ml" 88 2158 2179
+  int_ref _ostap_stream "AST.ml" 89 2183 2194 "AST.ml" 89 2183 2204
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 88 2158 2169 "AST.ml" 88 2158 2179
+  def _ostap_stream "AST.ml" 89 2183 2194 "AST.ml" 89 2183 2204
 )
-"AST.ml" 88 2158 2181 "AST.ml" 88 2158 2183
+"AST.ml" 89 2183 2206 "AST.ml" 89 2183 2208
 type(
   GT.string
 )
 ident(
-  def x "AST.ml" 88 2158 2168 "AST.ml" 88 2158 2239
+  def x "AST.ml" 89 2183 2193 "AST.ml" 89 2183 2264
 )
-"AST.ml" 88 2158 2183 "AST.ml" 88 2158 2188
+"AST.ml" 89 2183 2208 "AST.ml" 89 2183 2213
 type(
   ('e, GT.string, 'f) Ostap.Combinators.parse
 )
 ident(
-  int_ref ident "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+  int_ref ident "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
 )
-"AST.ml" 88 2158 2190 "AST.ml" 88 2158 2193
+"AST.ml" 89 2183 2215 "AST.ml" 89 2183 2218
 call(
   tail
 )
@@ -6294,46 +6414,46 @@ type(
   ('e, 'g, 'f) Ostap.Combinators.result
 )
 type(
-  string
+  GT.string
 )
 type(
-  string -> ('e, 'g, 'f) Ostap.Combinators.result
-)
-type(
-  'e
-)
-ident(
-  int_ref _ostap_stream "AST.ml" 88 2158 2190 "AST.ml" 88 2158 2193
+  GT.string -> ('e, 'g, 'f) Ostap.Combinators.result
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 88 2158 2190 "AST.ml" 88 2158 2193
+  int_ref _ostap_stream "AST.ml" 89 2183 2215 "AST.ml" 89 2183 2218
 )
-"AST.ml" 88 2158 2195 "AST.ml" 88 2158 2197
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 89 2183 2215 "AST.ml" 89 2183 2218
+)
+"AST.ml" 89 2183 2220 "AST.ml" 89 2183 2222
 type(
   t
 )
 ident(
-  def e "AST.ml" 88 2158 2168 "AST.ml" 88 2158 2239
+  def e "AST.ml" 89 2183 2193 "AST.ml" 89 2183 2264
 )
-"AST.ml" 88 2158 2197 "AST.ml" 88 2158 2201
+"AST.ml" 89 2183 2222 "AST.ml" 89 2183 2226
 type(
   (GT.string * [ `Arg | `Def of t ]) list ->
   'e -> ('e, t, 'f) Ostap.Combinators.result
 )
 ident(
-  int_ref expr "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+  int_ref apps "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
 )
-"AST.ml" 88 2158 2202 "AST.ml" 88 2158 2205
+"AST.ml" 89 2183 2227 "AST.ml" 89 2183 2230
 type(
   (GT.string * [ `Arg | `Def of t ]) list
 )
 ident(
-  int_ref env "AST.ml" 87 2138 2150 "AST.ml" 87 2138 2153
+  int_ref env "AST.ml" 88 2163 2175 "AST.ml" 88 2163 2178
 )
-"AST.ml" 88 2158 2197 "AST.ml" 88 2158 2206
+"AST.ml" 89 2183 2222 "AST.ml" 89 2183 2231
 call(
   tail
 )
@@ -6347,26 +6467,26 @@ type(
   'e
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 88 2158 2197 "AST.ml" 88 2158 2206
+  int_ref _ostap_stream "AST.ml" 89 2183 2222 "AST.ml" 89 2183 2231
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 88 2158 2197 "AST.ml" 88 2158 2206
+  def _ostap_stream "AST.ml" 89 2183 2222 "AST.ml" 89 2183 2231
 )
-"AST.ml" 88 2158 2208 "AST.ml" 88 2158 2211
+"AST.ml" 89 2183 2233 "AST.ml" 89 2183 2236
 type(
   string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
 )
 ident(
-  int_ref key "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
 )
-"AST.ml" 88 2158 2212 "AST.ml" 88 2158 2216
+"AST.ml" 89 2183 2237 "AST.ml" 89 2183 2241
 type(
   string
 )
-"AST.ml" 88 2158 2208 "AST.ml" 88 2158 2217
+"AST.ml" 89 2183 2233 "AST.ml" 89 2183 2242
 call(
   tail
 )
@@ -6380,56 +6500,56 @@ type(
   'e
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 88 2158 2208 "AST.ml" 88 2158 2217
+  int_ref _ostap_stream "AST.ml" 89 2183 2233 "AST.ml" 89 2183 2242
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 88 2158 2208 "AST.ml" 88 2158 2217
+  def _ostap_stream "AST.ml" 89 2183 2233 "AST.ml" 89 2183 2242
 )
-"AST.ml" 88 2158 2218 "AST.ml" 88 2158 2221
+"AST.ml" 89 2183 2243 "AST.ml" 89 2183 2246
 type(
   (GT.string * [ `Arg | `Def of t ]) list ->
   'e -> ('e, t, 'f) Ostap.Combinators.result
 )
 ident(
-  int_ref def "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+  int_ref def "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
 )
-"AST.ml" 88 2158 2223 "AST.ml" 88 2158 2224
+"AST.ml" 89 2183 2248 "AST.ml" 89 2183 2249
 type(
   GT.string
 )
 ident(
-  int_ref x "AST.ml" 88 2158 2181 "AST.ml" 88 2158 2183
+  int_ref x "AST.ml" 89 2183 2206 "AST.ml" 89 2183 2208
 )
-"AST.ml" 88 2158 2231 "AST.ml" 88 2158 2232
+"AST.ml" 89 2183 2256 "AST.ml" 89 2183 2257
 type(
   t
 )
 ident(
-  int_ref e "AST.ml" 88 2158 2195 "AST.ml" 88 2158 2197
+  int_ref e "AST.ml" 89 2183 2220 "AST.ml" 89 2183 2222
 )
-"AST.ml" 88 2158 2226 "AST.ml" 88 2158 2232
+"AST.ml" 89 2183 2251 "AST.ml" 89 2183 2257
 type(
   [ `Arg | `Def of t ]
 )
-"AST.ml" 88 2158 2222 "AST.ml" 88 2158 2233
+"AST.ml" 89 2183 2247 "AST.ml" 89 2183 2258
 type(
   GT.string * [ `Arg | `Def of t ]
 )
-"AST.ml" 88 2158 2235 "AST.ml" 88 2158 2238
+"AST.ml" 89 2183 2260 "AST.ml" 89 2183 2263
 type(
   (GT.string * [ `Arg | `Def of t ]) list
 )
 ident(
-  int_ref env "AST.ml" 87 2138 2150 "AST.ml" 87 2138 2153
+  int_ref env "AST.ml" 88 2163 2175 "AST.ml" 88 2163 2178
 )
-"AST.ml" 88 2158 2222 "AST.ml" 88 2158 2238
+"AST.ml" 89 2183 2247 "AST.ml" 89 2183 2263
 type(
   (GT.string * [ `Arg | `Def of t ]) list
 )
-"AST.ml" 88 2158 2218 "AST.ml" 88 2158 2239
+"AST.ml" 89 2183 2243 "AST.ml" 89 2183 2264
 call(
   tail
 )
@@ -6443,15 +6563,15 @@ type(
   'e
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 88 2158 2218 "AST.ml" 88 2158 2239
+  int_ref _ostap_stream "AST.ml" 89 2183 2243 "AST.ml" 89 2183 2264
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 88 2158 2218 "AST.ml" 88 2158 2239
+  def _ostap_stream "AST.ml" 89 2183 2243 "AST.ml" 89 2183 2264
 )
-"AST.ml" 88 2158 2168 "AST.ml" 88 2158 2239
+"AST.ml" 89 2183 2193 "AST.ml" 89 2183 2264
 call(
   stack
 )
@@ -6546,22 +6666,22 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"AST.ml" 89 2241 2251 "AST.ml" 89 2241 2255
+"AST.ml" 90 2266 2276 "AST.ml" 90 2266 2280
 type(
   (GT.string * [ `Arg | `Def of t ]) list ->
   'e -> ('e, t, 'f) Ostap.Combinators.result
 )
 ident(
-  int_ref expr "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+  int_ref apps "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
 )
-"AST.ml" 89 2241 2256 "AST.ml" 89 2241 2259
+"AST.ml" 90 2266 2281 "AST.ml" 90 2266 2284
 type(
   (GT.string * [ `Arg | `Def of t ]) list
 )
 ident(
-  int_ref env "AST.ml" 87 2138 2150 "AST.ml" 87 2138 2153
+  int_ref env "AST.ml" 88 2163 2175 "AST.ml" 88 2163 2178
 )
-"AST.ml" 89 2241 2251 "AST.ml" 89 2241 2260
+"AST.ml" 90 2266 2276 "AST.ml" 90 2266 2285
 call(
   tail
 )
@@ -6575,15 +6695,15 @@ type(
   'e
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 89 2241 2251 "AST.ml" 89 2241 2260
+  int_ref _ostap_stream "AST.ml" 90 2266 2276 "AST.ml" 90 2266 2285
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 89 2241 2251 "AST.ml" 89 2241 2260
+  def _ostap_stream "AST.ml" 90 2266 2276 "AST.ml" 90 2266 2285
 )
-"AST.ml" 88 2158 2168 "AST.ml" 89 2241 2260
+"AST.ml" 89 2183 2193 "AST.ml" 90 2266 2285
 type(
   ('e, t, 'f) Ostap.Combinators.parse ->
   ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
@@ -6591,7 +6711,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.alt
 )
-"AST.ml" 87 2138 2146 "AST.ml" 89 2241 2260
+"AST.ml" 88 2163 2171 "AST.ml" 90 2266 2285
 call(
   tail
 )
@@ -6609,44 +6729,681 @@ type(
   'e
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 87 2138 2146 "AST.ml" 89 2241 2260
+  int_ref _ostap_stream "AST.ml" 88 2163 2171 "AST.ml" 90 2266 2285
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 87 2138 2146 "AST.ml" 89 2241 2260
+  def _ostap_stream "AST.ml" 88 2163 2171 "AST.ml" 90 2266 2285
 )
-"AST.ml" 90 2262 2275 "AST.ml" 90 2262 2278
+"AST.ml" 91 2287 2300 "AST.ml" 91 2287 2303
 type(
   (GT.string * [ `Arg | `Def of t ]) list
 )
 ident(
-  def env "AST.ml" 90 2262 2270 "AST.ml" 93 2385 2394
+  def env "AST.ml" 91 2287 2295 "AST.ml" 116 2974 2983
 )
-"AST.ml" 90 2262 2281 "AST.ml" 90 2262 2283
+"AST.ml" 92 2307 2312 "AST.ml" 92 2307 2327
 type(
-  t list
+  (('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ([ `Lefta | `Nona | `Righta ] *
+   (('e, unit, 'f) Ostap.Combinators.parse * (t -> t -> t)) list)
+  array ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
 )
 ident(
-  def p "AST.ml" 91 2299 2309 "AST.ml" 92 2327 2384
+  ext_ref Ostap.Util.expr
 )
-"AST.ml" 90 2262 2283 "AST.ml" 90 2262 2290
+"AST.ml" 93 2329 2347 "AST.ml" 93 2329 2348
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  def x "AST.ml" 93 2329 2352 "AST.ml" 93 2329 2353
+)
+"AST.ml" 93 2329 2352 "AST.ml" 93 2329 2353
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  int_ref x "AST.ml" 93 2329 2347 "AST.ml" 93 2329 2348
+)
+"AST.ml" 93 2329 2342 "AST.ml" 93 2329 2354
+type(
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+"AST.ml" 94 2355 2366 "AST.ml" 94 2355 2367
+type(
+  GT.string list ->
+  (('e -> ('e, unit, 'f) Ostap.Combinators.result) * (t -> t -> t)) list
+)
+ident(
+  def l "AST.ml" 104 2646 2660 "AST.ml" 113 2923 2939
+)
+"AST.ml" 95 2371 2380 "AST.ml" 95 2371 2388
+type(
+  (GT.string ->
+   ('e -> ('e, unit, 'f) Ostap.Combinators.result) * (t -> t -> t)) ->
+  GT.string list ->
+  (('e -> ('e, unit, 'f) Ostap.Combinators.result) * (t -> t -> t)) list
+)
+ident(
+  ext_ref List.map
+)
+"AST.ml" 96 2390 2399 "AST.ml" 96 2390 2400
+type(
+  GT.string
+)
+ident(
+  def s "AST.ml" 97 2405 2412 "AST.ml" 101 2557 2614
+)
+"AST.ml" 97 2405 2422 "AST.ml" 97 2405 2423
+type(
+  GT.string
+)
+ident(
+  int_ref s "AST.ml" 96 2390 2399 "AST.ml" 96 2390 2400
+)
+"AST.ml" 97 2405 2420 "AST.ml" 97 2405 2424
+call(
+  tail
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  GT.string -> ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 97 2405 2420 "AST.ml" 97 2405 2424
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 97 2405 2420 "AST.ml" 97 2405 2424
+)
+"AST.ml" 97 2405 2418 "AST.ml" 97 2405 2424
+type(
+  'g -> unit
+)
+type(
+  unit
+)
+type(
+  'g
+)
+type(
+  ('g -> unit) ->
+  ('e, 'g, 'f) Ostap.Combinators.parse ->
+  ('e, unit, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"AST.ml" 97 2405 2412 "AST.ml" 97 2405 2425
+call(
+  tail
+)
+type(
+  'e -> ('e, unit, 'f) Ostap.Combinators.result
+)
+type(
+  ('e, unit, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 97 2405 2412 "AST.ml" 97 2405 2425
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 97 2405 2412 "AST.ml" 97 2405 2425
+)
+"AST.ml" 98 2428 2441 "AST.ml" 98 2428 2442
+type(
+  GT.string
+)
+ident(
+  int_ref s "AST.ml" 96 2390 2399 "AST.ml" 96 2390 2400
+)
+"AST.ml" 99 2449 2472 "AST.ml" 99 2449 2476
+type(
+  GT.string
+)
+"AST.ml" 99 2449 2484 "AST.ml" 99 2449 2485
+type(
+  t
+)
+ident(
+  def x "AST.ml" 99 2449 2486 "AST.ml" 99 2449 2501
+)
+"AST.ml" 99 2449 2486 "AST.ml" 99 2449 2487
+type(
+  t
+)
+ident(
+  def y "AST.ml" 99 2449 2491 "AST.ml" 99 2449 2501
+)
+"AST.ml" 99 2449 2496 "AST.ml" 99 2449 2497
+type(
+  t
+)
+ident(
+  int_ref x "AST.ml" 99 2449 2484 "AST.ml" 99 2449 2485
+)
+"AST.ml" 99 2449 2499 "AST.ml" 99 2449 2500
+type(
+  t
+)
+ident(
+  int_ref y "AST.ml" 99 2449 2486 "AST.ml" 99 2449 2487
+)
+"AST.ml" 99 2449 2491 "AST.ml" 99 2449 2501
+type(
+  t
+)
+"AST.ml" 99 2449 2486 "AST.ml" 99 2449 2501
+type(
+  t -> t
+)
+"AST.ml" 99 2449 2480 "AST.ml" 99 2449 2501
+type(
+  t -> t -> t
+)
+"AST.ml" 100 2503 2526 "AST.ml" 100 2503 2529
+type(
+  GT.string
+)
+"AST.ml" 100 2503 2538 "AST.ml" 100 2503 2539
+type(
+  t
+)
+ident(
+  def x "AST.ml" 100 2503 2540 "AST.ml" 100 2503 2555
+)
+"AST.ml" 100 2503 2540 "AST.ml" 100 2503 2541
+type(
+  t
+)
+ident(
+  def y "AST.ml" 100 2503 2545 "AST.ml" 100 2503 2555
+)
+"AST.ml" 100 2503 2550 "AST.ml" 100 2503 2551
+type(
+  t
+)
+ident(
+  int_ref x "AST.ml" 100 2503 2538 "AST.ml" 100 2503 2539
+)
+"AST.ml" 100 2503 2553 "AST.ml" 100 2503 2554
+type(
+  t
+)
+ident(
+  int_ref y "AST.ml" 100 2503 2540 "AST.ml" 100 2503 2541
+)
+"AST.ml" 100 2503 2545 "AST.ml" 100 2503 2555
+type(
+  t
+)
+"AST.ml" 100 2503 2540 "AST.ml" 100 2503 2555
+type(
+  t -> t
+)
+"AST.ml" 100 2503 2534 "AST.ml" 100 2503 2555
+type(
+  t -> t -> t
+)
+"AST.ml" 101 2557 2580 "AST.ml" 101 2557 2581
+type(
+  GT.string
+)
+"AST.ml" 101 2557 2592 "AST.ml" 101 2557 2593
+type(
+  t
+)
+ident(
+  def x "AST.ml" 101 2557 2594 "AST.ml" 101 2557 2614
+)
+"AST.ml" 101 2557 2594 "AST.ml" 101 2557 2595
+type(
+  t
+)
+ident(
+  def y "AST.ml" 101 2557 2599 "AST.ml" 101 2557 2614
+)
+"AST.ml" 101 2557 2606 "AST.ml" 101 2557 2607
+type(
+  GT.string
+)
+ident(
+  int_ref s "AST.ml" 96 2390 2399 "AST.ml" 96 2390 2400
+)
+"AST.ml" 101 2557 2609 "AST.ml" 101 2557 2610
+type(
+  t
+)
+ident(
+  int_ref x "AST.ml" 101 2557 2592 "AST.ml" 101 2557 2593
+)
+"AST.ml" 101 2557 2612 "AST.ml" 101 2557 2613
+type(
+  t
+)
+ident(
+  int_ref y "AST.ml" 101 2557 2594 "AST.ml" 101 2557 2595
+)
+"AST.ml" 101 2557 2599 "AST.ml" 101 2557 2614
+type(
+  t
+)
+"AST.ml" 101 2557 2594 "AST.ml" 101 2557 2614
+type(
+  t -> t
+)
+"AST.ml" 101 2557 2588 "AST.ml" 101 2557 2614
+type(
+  t -> t -> t
+)
+"AST.ml" 98 2428 2435 "AST.ml" 101 2557 2614
+type(
+  t -> t -> t
+)
+"AST.ml" 97 2405 2412 "AST.ml" 101 2557 2614
+type(
+  ('e -> ('e, unit, 'f) Ostap.Combinators.result) * (t -> t -> t)
+)
+"AST.ml" 96 2390 2394 "AST.ml" 102 2615 2634
+type(
+  GT.string ->
+  ('e -> ('e, unit, 'f) Ostap.Combinators.result) * (t -> t -> t)
+)
+"AST.ml" 95 2371 2380 "AST.ml" 102 2615 2634
+call(
+  stack
+)
+type(
+  GT.string list ->
+  (('e -> ('e, unit, 'f) Ostap.Combinators.result) * (t -> t -> t)) list
+)
+"AST.ml" 104 2646 2660 "AST.ml" 104 2646 2669
+type(
+  ([ `Lefta | `Nona | `Righta ] * GT.string list ->
+   [ `Lefta | `Nona | `Righta ] *
+   (('e, unit, 'f) Ostap.Combinators.parse * (t -> t -> t)) list) ->
+  ([ `Lefta | `Nona | `Righta ] * GT.string list) array ->
+  ([ `Lefta | `Nona | `Righta ] *
+   (('e, unit, 'f) Ostap.Combinators.parse * (t -> t -> t)) list)
+  array
+)
+ident(
+  ext_ref Array.map
+)
+"AST.ml" 104 2646 2676 "AST.ml" 104 2646 2677
+type(
+  [ `Lefta | `Nona | `Righta ]
+)
+ident(
+  def a "AST.ml" 104 2646 2685 "AST.ml" 104 2646 2691
+)
+"AST.ml" 104 2646 2679 "AST.ml" 104 2646 2680
+type(
+  GT.string list
+)
+ident(
+  def s "AST.ml" 104 2646 2685 "AST.ml" 104 2646 2691
+)
+"AST.ml" 104 2646 2676 "AST.ml" 104 2646 2680
+type(
+  [ `Lefta | `Nona | `Righta ] * GT.string list
+)
+"AST.ml" 104 2646 2685 "AST.ml" 104 2646 2686
+type(
+  [ `Lefta | `Nona | `Righta ]
+)
+ident(
+  int_ref a "AST.ml" 104 2646 2676 "AST.ml" 104 2646 2677
+)
+"AST.ml" 104 2646 2688 "AST.ml" 104 2646 2689
+type(
+  GT.string list ->
+  (('e, unit, 'f) Ostap.Combinators.parse * (t -> t -> t)) list
+)
+ident(
+  int_ref l "AST.ml" 94 2355 2366 "AST.ml" 94 2355 2367
+)
+"AST.ml" 104 2646 2690 "AST.ml" 104 2646 2691
+type(
+  GT.string list
+)
+ident(
+  int_ref s "AST.ml" 104 2646 2679 "AST.ml" 104 2646 2680
+)
+"AST.ml" 104 2646 2688 "AST.ml" 104 2646 2691
+call(
+  stack
+)
+type(
+  (('e, unit, 'f) Ostap.Combinators.parse * (t -> t -> t)) list
+)
+"AST.ml" 104 2646 2685 "AST.ml" 104 2646 2691
+type(
+  [ `Lefta | `Nona | `Righta ] *
+  (('e, unit, 'f) Ostap.Combinators.parse * (t -> t -> t)) list
+)
+"AST.ml" 104 2646 2670 "AST.ml" 104 2646 2692
+type(
+  [ `Lefta | `Nona | `Righta ] * GT.string list ->
+  [ `Lefta | `Nona | `Righta ] *
+  (('e, unit, 'f) Ostap.Combinators.parse * (t -> t -> t)) list
+)
+"AST.ml" 106 2711 2727 "AST.ml" 106 2711 2733
+type(
+  [ `Lefta | `Nona | `Righta ]
+)
+"AST.ml" 106 2711 2736 "AST.ml" 106 2711 2740
+type(
+  GT.string
+)
+"AST.ml" 106 2711 2735 "AST.ml" 106 2711 2741
+type(
+  GT.string list
+)
+type(
+  GT.string list
+)
+"AST.ml" 106 2711 2727 "AST.ml" 106 2711 2741
+type(
+  [ `Lefta | `Nona | `Righta ] * GT.string list
+)
+"AST.ml" 107 2743 2759 "AST.ml" 107 2743 2765
+type(
+  [ `Lefta | `Nona | `Righta ]
+)
+"AST.ml" 107 2743 2768 "AST.ml" 107 2743 2771
+type(
+  GT.string
+)
+"AST.ml" 107 2743 2767 "AST.ml" 107 2743 2772
+type(
+  GT.string list
+)
+type(
+  GT.string list
+)
+"AST.ml" 107 2743 2759 "AST.ml" 107 2743 2772
+type(
+  [ `Lefta | `Nona | `Righta ] * GT.string list
+)
+"AST.ml" 108 2790 2792 "AST.ml" 108 2790 2798
+type(
+  [ `Lefta | `Nona | `Righta ]
+)
+"AST.ml" 108 2790 2801 "AST.ml" 108 2790 2805
+type(
+  GT.string
+)
+"AST.ml" 108 2790 2800 "AST.ml" 108 2790 2806
+type(
+  GT.string list
+)
+type(
+  GT.string list
+)
+"AST.ml" 108 2790 2792 "AST.ml" 108 2790 2806
+type(
+  [ `Lefta | `Nona | `Righta ] * GT.string list
+)
+"AST.ml" 109 2808 2810 "AST.ml" 109 2808 2816
+type(
+  [ `Lefta | `Nona | `Righta ]
+)
+"AST.ml" 109 2808 2819 "AST.ml" 109 2808 2823
+type(
+  GT.string
+)
+"AST.ml" 109 2808 2818 "AST.ml" 109 2808 2824
+type(
+  GT.string list
+)
+type(
+  GT.string list
+)
+"AST.ml" 109 2808 2810 "AST.ml" 109 2808 2824
+type(
+  [ `Lefta | `Nona | `Righta ] * GT.string list
+)
+"AST.ml" 110 2826 2828 "AST.ml" 110 2826 2833
+type(
+  [ `Lefta | `Nona | `Righta ]
+)
+"AST.ml" 110 2826 2837 "AST.ml" 110 2826 2841
+type(
+  GT.string
+)
+"AST.ml" 110 2826 2843 "AST.ml" 110 2826 2847
+type(
+  GT.string
+)
+"AST.ml" 110 2826 2849 "AST.ml" 110 2826 2853
+type(
+  GT.string
+)
+"AST.ml" 110 2826 2855 "AST.ml" 110 2826 2858
+type(
+  GT.string
+)
+"AST.ml" 110 2826 2860 "AST.ml" 110 2826 2864
+type(
+  GT.string
+)
+"AST.ml" 110 2826 2866 "AST.ml" 110 2826 2869
+type(
+  GT.string
+)
+"AST.ml" 110 2826 2836 "AST.ml" 110 2826 2870
+type(
+  GT.string list
+)
+type(
+  GT.string list
+)
+type(
+  GT.string list
+)
+type(
+  GT.string list
+)
+type(
+  GT.string list
+)
+type(
+  GT.string list
+)
+type(
+  GT.string list
+)
+"AST.ml" 110 2826 2828 "AST.ml" 110 2826 2870
+type(
+  [ `Lefta | `Nona | `Righta ] * GT.string list
+)
+"AST.ml" 111 2872 2874 "AST.ml" 111 2872 2880
+type(
+  [ `Lefta | `Nona | `Righta ]
+)
+"AST.ml" 111 2872 2883 "AST.ml" 111 2872 2886
+type(
+  GT.string
+)
+"AST.ml" 111 2872 2889 "AST.ml" 111 2872 2892
+type(
+  GT.string
+)
+"AST.ml" 111 2872 2882 "AST.ml" 111 2872 2893
+type(
+  GT.string list
+)
+type(
+  GT.string list
+)
+type(
+  GT.string list
+)
+"AST.ml" 111 2872 2874 "AST.ml" 111 2872 2893
+type(
+  [ `Lefta | `Nona | `Righta ] * GT.string list
+)
+"AST.ml" 112 2895 2897 "AST.ml" 112 2895 2903
+type(
+  [ `Lefta | `Nona | `Righta ]
+)
+"AST.ml" 112 2895 2906 "AST.ml" 112 2895 2909
+type(
+  GT.string
+)
+"AST.ml" 112 2895 2912 "AST.ml" 112 2895 2915
+type(
+  GT.string
+)
+"AST.ml" 112 2895 2917 "AST.ml" 112 2895 2920
+type(
+  GT.string
+)
+"AST.ml" 112 2895 2905 "AST.ml" 112 2895 2921
+type(
+  GT.string list
+)
+type(
+  GT.string list
+)
+type(
+  GT.string list
+)
+type(
+  GT.string list
+)
+"AST.ml" 112 2895 2897 "AST.ml" 112 2895 2921
+type(
+  [ `Lefta | `Nona | `Righta ] * GT.string list
+)
+"AST.ml" 105 2694 2708 "AST.ml" 113 2923 2939
+type(
+  ([ `Lefta | `Nona | `Righta ] * GT.string list) array
+)
+"AST.ml" 104 2646 2660 "AST.ml" 113 2923 2939
+call(
+  stack
+)
+type(
+  ([ `Lefta | `Nona | `Righta ] *
+   (('e, unit, 'f) Ostap.Combinators.parse * (t -> t -> t)) list)
+  array
+)
+"AST.ml" 94 2355 2361 "AST.ml" 114 2941 2948
+type(
+  ([ `Lefta | `Nona | `Righta ] *
+   (('e, unit, 'f) Ostap.Combinators.parse * (t -> t -> t)) list)
+  array
+)
+"AST.ml" 115 2949 2956 "AST.ml" 115 2949 2963
+type(
+  ((GT.string * [ `Arg | `Def of t ]) list ->
+   'e -> ('e, t, 'f) Ostap.Combinators.result) ->
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  int_ref primary "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 115 2949 2964 "AST.ml" 115 2949 2968
 type(
   (GT.string * [ `Arg | `Def of t ]) list ->
   'e -> ('e, t, 'f) Ostap.Combinators.result
 )
 ident(
-  int_ref primary "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+  int_ref apps "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
 )
-"AST.ml" 90 2262 2291 "AST.ml" 90 2262 2294
+"AST.ml" 115 2949 2969 "AST.ml" 115 2949 2972
 type(
   (GT.string * [ `Arg | `Def of t ]) list
 )
 ident(
-  int_ref env "AST.ml" 90 2262 2275 "AST.ml" 90 2262 2278
+  int_ref env "AST.ml" 91 2287 2300 "AST.ml" 91 2287 2303
 )
-"AST.ml" 90 2262 2283 "AST.ml" 90 2262 2295
+"AST.ml" 115 2949 2955 "AST.ml" 115 2949 2973
+call(
+  stack
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+"AST.ml" 91 2287 2295 "AST.ml" 116 2974 2983
+call(
+  tail
+)
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 91 2287 2295 "AST.ml" 116 2974 2983
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 91 2287 2295 "AST.ml" 116 2974 2983
+)
+"AST.ml" 117 2985 2991 "AST.ml" 117 2985 2994
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  def env "AST.ml" 117 2985 2986 "AST.ml" 120 3081 3090
+)
+"AST.ml" 117 2985 2997 "AST.ml" 117 2985 2999
+type(
+  t list
+)
+ident(
+  def p "AST.ml" 118 3012 3015 "AST.ml" 119 3031 3080
+)
+"AST.ml" 117 2985 2999 "AST.ml" 117 2985 3003
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref expr "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 117 2985 3004 "AST.ml" 117 2985 3007
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 117 2985 2991 "AST.ml" 117 2985 2994
+)
+"AST.ml" 117 2985 2999 "AST.ml" 117 2985 3008
 call(
   tail
 )
@@ -6660,15 +7417,15 @@ type(
   'e
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 90 2262 2283 "AST.ml" 90 2262 2295
+  int_ref _ostap_stream "AST.ml" 117 2985 2999 "AST.ml" 117 2985 3008
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 90 2262 2283 "AST.ml" 90 2262 2295
+  def _ostap_stream "AST.ml" 117 2985 2999 "AST.ml" 117 2985 3008
 )
-"AST.ml" 90 2262 2283 "AST.ml" 90 2262 2296
+"AST.ml" 117 2985 2999 "AST.ml" 117 2985 3009
 call(
   stack
 )
@@ -6682,104 +7439,104 @@ type(
 ident(
   ext_ref Ostap.Combinators.some
 )
-"AST.ml" 91 2299 2313 "AST.ml" 91 2299 2314
+"AST.ml" 118 3012 3019 "AST.ml" 118 3012 3020
 type(
   t
 )
 ident(
-  def t "AST.ml" 92 2327 2337 "AST.ml" 92 2327 2384
+  def h "AST.ml" 119 3031 3034 "AST.ml" 119 3031 3080
 )
-"AST.ml" 91 2299 2316 "AST.ml" 91 2299 2318
+"AST.ml" 118 3012 3022 "AST.ml" 118 3012 3023
 type(
   t list
 )
 ident(
-  def ts "AST.ml" 92 2327 2337 "AST.ml" 92 2327 2384
+  def t "AST.ml" 119 3031 3034 "AST.ml" 119 3031 3080
 )
-"AST.ml" 91 2299 2313 "AST.ml" 91 2299 2318
+"AST.ml" 118 3012 3019 "AST.ml" 118 3012 3023
 type(
   t list
 )
-"AST.ml" 91 2299 2321 "AST.ml" 91 2299 2322
+"AST.ml" 118 3012 3026 "AST.ml" 118 3012 3027
 type(
   t list
 )
 ident(
-  int_ref p "AST.ml" 90 2262 2281 "AST.ml" 90 2262 2283
+  int_ref p "AST.ml" 117 2985 2997 "AST.ml" 117 2985 2999
 )
-"AST.ml" 92 2327 2337 "AST.ml" 92 2327 2351
+"AST.ml" 119 3031 3034 "AST.ml" 119 3031 3048
 type(
   (t -> t -> t) -> t -> t list -> t
 )
 ident(
   ext_ref List.fold_left
 )
-"AST.ml" 92 2327 2357 "AST.ml" 92 2327 2360
+"AST.ml" 119 3031 3054 "AST.ml" 119 3031 3057
 type(
   t
 )
 ident(
-  def acc "AST.ml" 92 2327 2361 "AST.ml" 92 2327 2378
+  def acc "AST.ml" 119 3031 3058 "AST.ml" 119 3031 3075
 )
-"AST.ml" 92 2327 2361 "AST.ml" 92 2327 2362
+"AST.ml" 119 3031 3058 "AST.ml" 119 3031 3059
 type(
   t
 )
 ident(
-  def e "AST.ml" 92 2327 2366 "AST.ml" 92 2327 2378
+  def e "AST.ml" 119 3031 3063 "AST.ml" 119 3031 3075
 )
-"AST.ml" 92 2327 2371 "AST.ml" 92 2327 2374
+"AST.ml" 119 3031 3068 "AST.ml" 119 3031 3071
 type(
   t
 )
 ident(
-  int_ref acc "AST.ml" 92 2327 2357 "AST.ml" 92 2327 2360
+  int_ref acc "AST.ml" 119 3031 3054 "AST.ml" 119 3031 3057
 )
-"AST.ml" 92 2327 2376 "AST.ml" 92 2327 2377
+"AST.ml" 119 3031 3073 "AST.ml" 119 3031 3074
 type(
   t
 )
 ident(
-  int_ref e "AST.ml" 92 2327 2361 "AST.ml" 92 2327 2362
+  int_ref e "AST.ml" 119 3031 3058 "AST.ml" 119 3031 3059
 )
-"AST.ml" 92 2327 2366 "AST.ml" 92 2327 2378
+"AST.ml" 119 3031 3063 "AST.ml" 119 3031 3075
 type(
   t
 )
-"AST.ml" 92 2327 2361 "AST.ml" 92 2327 2378
+"AST.ml" 119 3031 3058 "AST.ml" 119 3031 3075
 type(
   t -> t
 )
-"AST.ml" 92 2327 2352 "AST.ml" 92 2327 2379
+"AST.ml" 119 3031 3049 "AST.ml" 119 3031 3076
 type(
   t -> t -> t
 )
-"AST.ml" 92 2327 2380 "AST.ml" 92 2327 2381
+"AST.ml" 119 3031 3077 "AST.ml" 119 3031 3078
 type(
   t
 )
 ident(
-  int_ref t "AST.ml" 91 2299 2313 "AST.ml" 91 2299 2314
+  int_ref h "AST.ml" 118 3012 3019 "AST.ml" 118 3012 3020
 )
-"AST.ml" 92 2327 2382 "AST.ml" 92 2327 2384
+"AST.ml" 119 3031 3079 "AST.ml" 119 3031 3080
 type(
   t list
 )
 ident(
-  int_ref ts "AST.ml" 91 2299 2316 "AST.ml" 91 2299 2318
+  int_ref t "AST.ml" 118 3012 3022 "AST.ml" 118 3012 3023
 )
-"AST.ml" 92 2327 2337 "AST.ml" 92 2327 2384
+"AST.ml" 119 3031 3034 "AST.ml" 119 3031 3080
 call(
   tail
 )
 type(
   t
 )
-"AST.ml" 91 2299 2309 "AST.ml" 92 2327 2384
+"AST.ml" 118 3012 3015 "AST.ml" 119 3031 3080
 type(
   t
 )
-"AST.ml" 90 2262 2281 "AST.ml" 93 2385 2394
+"AST.ml" 117 2985 2997 "AST.ml" 120 3081 3090
 type(
   t list -> t
 )
@@ -6787,7 +7544,7 @@ type(
   t list
 )
 ident(
-  def _0 "AST.ml" 91 2299 2309 "AST.ml" 92 2327 2384
+  def _0 "AST.ml" 118 3012 3015 "AST.ml" 119 3031 3080
 )
 type(
   (t list -> t) ->
@@ -6797,7 +7554,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.map
 )
-"AST.ml" 90 2262 2270 "AST.ml" 93 2385 2394
+"AST.ml" 117 2985 2986 "AST.ml" 120 3081 3090
 call(
   tail
 )
@@ -6815,22 +7572,30 @@ type(
   'e
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 90 2262 2270 "AST.ml" 93 2385 2394
+  int_ref _ostap_stream "AST.ml" 117 2985 2986 "AST.ml" 120 3081 3090
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 90 2262 2270 "AST.ml" 93 2385 2394
+  def _ostap_stream "AST.ml" 117 2985 2986 "AST.ml" 120 3081 3090
 )
-"AST.ml" 94 2396 2412 "AST.ml" 94 2396 2415
+"AST.ml" 121 3092 3108 "AST.ml" 121 3092 3112
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  def expr "AST.ml" 121 3092 3100 "AST.ml" 147 4213 4224
+)
+"AST.ml" 121 3092 3114 "AST.ml" 121 3092 3117
 type(
   (GT.string * [ `Arg | `Def of t ]) list
 )
 ident(
-  def env "AST.ml" 94 2396 2404 "AST.ml" 105 2833 2844
+  def env "AST.ml" 121 3092 3100 "AST.ml" 147 4213 4224
 )
-"AST.ml" 95 2418 2429 "AST.ml" 95 2418 2432
+"AST.ml" 122 3120 3131 "AST.ml" 122 3120 3134
 call(
   tail
 )
@@ -6841,39 +7606,39 @@ type(
   ('e, 'g, 'f) Ostap.Combinators.result
 )
 type(
-  string
+  GT.string
 )
 type(
-  string -> ('e, 'g, 'f) Ostap.Combinators.result
-)
-type(
-  'e
-)
-ident(
-  int_ref _ostap_stream "AST.ml" 95 2418 2429 "AST.ml" 95 2418 2432
+  GT.string -> ('e, 'g, 'f) Ostap.Combinators.result
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 95 2418 2429 "AST.ml" 95 2418 2432
+  int_ref _ostap_stream "AST.ml" 122 3120 3131 "AST.ml" 122 3120 3134
 )
-"AST.ml" 95 2418 2433 "AST.ml" 95 2418 2437
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 122 3120 3131 "AST.ml" 122 3120 3134
+)
+"AST.ml" 122 3120 3135 "AST.ml" 122 3120 3139
 type(
   (GT.string * [ `Arg | `Def of t ]) list ->
   'e -> ('e, t, 'f) Ostap.Combinators.result
 )
 ident(
-  int_ref expr "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+  int_ref expr "AST.ml" 121 3092 3108 "AST.ml" 121 3092 3112
 )
-"AST.ml" 95 2418 2438 "AST.ml" 95 2418 2441
+"AST.ml" 122 3120 3140 "AST.ml" 122 3120 3143
 type(
   (GT.string * [ `Arg | `Def of t ]) list
 )
 ident(
-  int_ref env "AST.ml" 94 2396 2412 "AST.ml" 94 2396 2415
+  int_ref env "AST.ml" 121 3092 3114 "AST.ml" 121 3092 3117
 )
-"AST.ml" 95 2418 2433 "AST.ml" 95 2418 2442
+"AST.ml" 122 3120 3135 "AST.ml" 122 3120 3144
 call(
   tail
 )
@@ -6887,15 +7652,15 @@ type(
   'e
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 95 2418 2433 "AST.ml" 95 2418 2442
+  int_ref _ostap_stream "AST.ml" 122 3120 3135 "AST.ml" 122 3120 3144
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 95 2418 2433 "AST.ml" 95 2418 2442
+  def _ostap_stream "AST.ml" 122 3120 3135 "AST.ml" 122 3120 3144
 )
-"AST.ml" 95 2418 2444 "AST.ml" 95 2418 2447
+"AST.ml" 122 3120 3146 "AST.ml" 122 3120 3149
 call(
   tail
 )
@@ -6906,24 +7671,24 @@ type(
   ('e, 'g, 'f) Ostap.Combinators.result
 )
 type(
-  string
+  GT.string
 )
 type(
-  string -> ('e, 'g, 'f) Ostap.Combinators.result
-)
-type(
-  'e
-)
-ident(
-  int_ref _ostap_stream "AST.ml" 95 2418 2444 "AST.ml" 95 2418 2447
+  GT.string -> ('e, 'g, 'f) Ostap.Combinators.result
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 95 2418 2444 "AST.ml" 95 2418 2447
+  int_ref _ostap_stream "AST.ml" 122 3120 3146 "AST.ml" 122 3120 3149
 )
-"AST.ml" 95 2418 2428 "AST.ml" 95 2418 2447
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 122 3120 3146 "AST.ml" 122 3120 3149
+)
+"AST.ml" 122 3120 3130 "AST.ml" 122 3120 3149
 call(
   stack
 )
@@ -6955,7 +7720,7 @@ type(
   t
 )
 ident(
-  int_ref _0 "AST.ml" 95 2418 2428 "AST.ml" 95 2418 2447
+  int_ref _0 "AST.ml" 122 3120 3130 "AST.ml" 122 3120 3149
 )
 type(
   'g
@@ -6971,7 +7736,7 @@ type(
   t
 )
 ident(
-  def _0 "AST.ml" 95 2418 2428 "AST.ml" 95 2418 2447
+  def _0 "AST.ml" 122 3120 3130 "AST.ml" 122 3120 3149
 )
 type(
   t
@@ -6995,135 +7760,32 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"AST.ml" 96 2448 2458 "AST.ml" 96 2448 2460
+"AST.ml" 123 3150 3160 "AST.ml" 123 3150 3162
 type(
-  GT.string
+  GT.int
 )
 ident(
-  def n "AST.ml" 97 2468 2480 "AST.ml" 101 2587 2681
+  def k "AST.ml" 123 3150 3180 "AST.ml" 123 3150 3187
 )
-"AST.ml" 96 2448 2460 "AST.ml" 96 2448 2465
+"AST.ml" 123 3150 3164 "AST.ml" 123 3150 3177
 type(
-  ('e, GT.string, 'f) Ostap.Combinators.parse
+  ('e, GT.int, 'f) Ostap.Combinators.parse
 )
 ident(
-  int_ref ident "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+  int_ref Lexer.literal "AST.ml" 46 845 851 "AST.ml" 47 904 950
 )
-"AST.ml" 98 2485 2505 "AST.ml" 98 2485 2515
+"AST.ml" 123 3150 3186 "AST.ml" 123 3150 3187
 type(
-  GT.string ->
-  (GT.string * [ `Arg | `Def of t ]) list -> [ `Arg | `Def of t ]
+  GT.int
 )
 ident(
-  ext_ref List.assoc
+  int_ref k "AST.ml" 123 3150 3160 "AST.ml" 123 3150 3162
 )
-"AST.ml" 98 2485 2516 "AST.ml" 98 2485 2517
-type(
-  GT.string
-)
-ident(
-  int_ref n "AST.ml" 96 2448 2458 "AST.ml" 96 2448 2460
-)
-"AST.ml" 98 2485 2518 "AST.ml" 98 2485 2521
-type(
-  (GT.string * [ `Arg | `Def of t ]) list
-)
-ident(
-  int_ref env "AST.ml" 94 2396 2412 "AST.ml" 94 2396 2415
-)
-"AST.ml" 98 2485 2505 "AST.ml" 98 2485 2521
-call(
-  stack
-)
-type(
-  [ `Arg | `Def of t ]
-)
-"AST.ml" 99 2527 2548 "AST.ml" 99 2527 2549
+"AST.ml" 123 3150 3180 "AST.ml" 123 3150 3187
 type(
   t
 )
-ident(
-  def e "AST.ml" 99 2527 2553 "AST.ml" 99 2527 2554
-)
-"AST.ml" 99 2527 2543 "AST.ml" 99 2527 2549
-type(
-  [ `Arg | `Def of t ]
-)
-"AST.ml" 99 2527 2553 "AST.ml" 99 2527 2554
-type(
-  t
-)
-ident(
-  int_ref e "AST.ml" 99 2527 2548 "AST.ml" 99 2527 2549
-)
-"AST.ml" 100 2555 2571 "AST.ml" 100 2555 2575
-type(
-  [ `Arg | `Def of t ]
-)
-"AST.ml" 100 2555 2585 "AST.ml" 100 2555 2586
-type(
-  GT.string
-)
-ident(
-  int_ref n "AST.ml" 96 2448 2458 "AST.ml" 96 2448 2460
-)
-"AST.ml" 100 2555 2581 "AST.ml" 100 2555 2586
-type(
-  t
-)
-"AST.ml" 98 2485 2499 "AST.ml" 100 2555 2586
-type(
-  t
-)
-"AST.ml" 101 2587 2604 "AST.ml" 101 2587 2613
-type(
-  exn
-)
-"AST.ml" 101 2587 2617 "AST.ml" 101 2587 2622
-type(
-  exn -> t
-)
-ident(
-  ext_ref Pervasives.raise
-)
-"AST.ml" 101 2587 2637 "AST.ml" 101 2587 2651
-type(
-  (GT.string -> GT.string, unit, GT.string) format -> GT.string -> GT.string
-)
-ident(
-  ext_ref Printf.sprintf
-)
-"AST.ml" 101 2587 2652 "AST.ml" 101 2587 2677
-type(
-  (GT.string -> GT.string, unit, GT.string) format
-)
-"AST.ml" 101 2587 2678 "AST.ml" 101 2587 2679
-type(
-  GT.string
-)
-ident(
-  int_ref n "AST.ml" 96 2448 2458 "AST.ml" 96 2448 2460
-)
-"AST.ml" 101 2587 2636 "AST.ml" 101 2587 2680
-call(
-  stack
-)
-type(
-  GT.string
-)
-"AST.ml" 101 2587 2623 "AST.ml" 101 2587 2681
-type(
-  exn
-)
-"AST.ml" 101 2587 2617 "AST.ml" 101 2587 2681
-type(
-  t
-)
-"AST.ml" 97 2468 2480 "AST.ml" 101 2587 2681
-type(
-  t
-)
-"AST.ml" 96 2448 2458 "AST.ml" 102 2682 2693
+"AST.ml" 123 3150 3160 "AST.ml" 123 3150 3188
 call(
   stack
 )
@@ -7131,23 +7793,1565 @@ type(
   ('e, t, 'f) Ostap.Combinators.parse
 )
 type(
-  GT.string -> t
+  GT.int -> t
 )
 type(
-  GT.string
+  GT.int
 )
 ident(
-  def _0 "AST.ml" 97 2468 2480 "AST.ml" 101 2587 2681
+  def _0 "AST.ml" 123 3150 3180 "AST.ml" 123 3150 3187
 )
 type(
-  (GT.string -> t) ->
-  ('e, GT.string, 'f) Ostap.Combinators.parse ->
+  (GT.int -> t) ->
+  ('e, GT.int, 'f) Ostap.Combinators.parse ->
   ('e, t, 'f) Ostap.Combinators.parse
 )
 ident(
   ext_ref Ostap.Combinators.map
 )
-"AST.ml" 103 2694 2704 "AST.ml" 103 2694 2708
+"AST.ml" 124 3189 3199 "AST.ml" 124 3189 3202
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 124 3189 3203 "AST.ml" 124 3189 3209
+type(
+  string
+)
+"AST.ml" 124 3189 3199 "AST.ml" 124 3189 3211
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 124 3189 3199 "AST.ml" 124 3189 3211
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 124 3189 3199 "AST.ml" 124 3189 3211
+)
+"AST.ml" 124 3189 3213 "AST.ml" 124 3189 3217
+type(
+  t
+)
+"AST.ml" 124 3189 3199 "AST.ml" 124 3189 3218
+call(
+  stack
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> t
+)
+type(
+  'h
+)
+ident(
+  def _0 "AST.ml" 124 3189 3213 "AST.ml" 124 3189 3217
+)
+type(
+  'h
+)
+type(
+  ('h -> t) ->
+  ('e, 'h, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"AST.ml" 125 3220 3230 "AST.ml" 125 3220 3233
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 125 3220 3234 "AST.ml" 125 3220 3241
+type(
+  string
+)
+"AST.ml" 125 3220 3230 "AST.ml" 125 3220 3242
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 125 3220 3230 "AST.ml" 125 3220 3242
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 125 3220 3230 "AST.ml" 125 3220 3242
+)
+"AST.ml" 125 3220 3244 "AST.ml" 125 3220 3249
+type(
+  t
+)
+"AST.ml" 125 3220 3230 "AST.ml" 125 3220 3250
+call(
+  stack
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> t
+)
+type(
+  'h
+)
+ident(
+  def _0 "AST.ml" 125 3220 3244 "AST.ml" 125 3220 3249
+)
+type(
+  'h
+)
+type(
+  ('h -> t) ->
+  ('e, 'h, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"AST.ml" 126 3251 3261 "AST.ml" 126 3251 3264
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 126 3251 3265 "AST.ml" 126 3251 3270
+type(
+  string
+)
+"AST.ml" 126 3251 3261 "AST.ml" 126 3251 3271
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 126 3251 3261 "AST.ml" 126 3251 3271
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 126 3251 3261 "AST.ml" 126 3251 3271
+)
+"AST.ml" 126 3251 3272 "AST.ml" 126 3251 3274
+type(
+  t
+)
+ident(
+  def e "AST.ml" 126 3251 3285 "AST.ml" 126 3251 3290
+)
+"AST.ml" 126 3251 3274 "AST.ml" 126 3251 3278
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref expr "AST.ml" 121 3092 3108 "AST.ml" 121 3092 3112
+)
+"AST.ml" 126 3251 3279 "AST.ml" 126 3251 3282
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 121 3092 3114 "AST.ml" 121 3092 3117
+)
+"AST.ml" 126 3251 3274 "AST.ml" 126 3251 3283
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 126 3251 3274 "AST.ml" 126 3251 3283
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 126 3251 3274 "AST.ml" 126 3251 3283
+)
+"AST.ml" 126 3251 3289 "AST.ml" 126 3251 3290
+type(
+  t
+)
+ident(
+  int_ref e "AST.ml" 126 3251 3272 "AST.ml" 126 3251 3274
+)
+"AST.ml" 126 3251 3285 "AST.ml" 126 3251 3290
+type(
+  t
+)
+"AST.ml" 126 3251 3261 "AST.ml" 126 3251 3291
+call(
+  stack
+)
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  t -> t
+)
+type(
+  t
+)
+ident(
+  def _0 "AST.ml" 126 3251 3285 "AST.ml" 126 3251 3290
+)
+type(
+  (t -> t) ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'h
+)
+ident(
+  def _1 "AST.ml" 126 3251 3261 "AST.ml" 126 3251 3291
+)
+type(
+  'h
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse ->
+  ('h -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"AST.ml" 127 3292 3302 "AST.ml" 127 3292 3305
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 127 3292 3306 "AST.ml" 127 3292 3310
+type(
+  string
+)
+"AST.ml" 127 3292 3302 "AST.ml" 127 3292 3311
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 127 3292 3302 "AST.ml" 127 3292 3311
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 127 3292 3302 "AST.ml" 127 3292 3311
+)
+"AST.ml" 127 3292 3312 "AST.ml" 127 3292 3314
+type(
+  t
+)
+ident(
+  def c "AST.ml" 127 3292 3302 "AST.ml" 127 3292 3400
+)
+"AST.ml" 127 3292 3314 "AST.ml" 127 3292 3318
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref expr "AST.ml" 121 3092 3108 "AST.ml" 121 3092 3112
+)
+"AST.ml" 127 3292 3319 "AST.ml" 127 3292 3322
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 121 3092 3114 "AST.ml" 121 3092 3117
+)
+"AST.ml" 127 3292 3314 "AST.ml" 127 3292 3323
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 127 3292 3314 "AST.ml" 127 3292 3323
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 127 3292 3314 "AST.ml" 127 3292 3323
+)
+"AST.ml" 127 3292 3324 "AST.ml" 127 3292 3327
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 127 3292 3328 "AST.ml" 127 3292 3334
+type(
+  string
+)
+"AST.ml" 127 3292 3324 "AST.ml" 127 3292 3335
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 127 3292 3324 "AST.ml" 127 3292 3335
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 127 3292 3324 "AST.ml" 127 3292 3335
+)
+"AST.ml" 127 3292 3336 "AST.ml" 127 3292 3339
+type(
+  t
+)
+ident(
+  def e1 "AST.ml" 127 3292 3302 "AST.ml" 127 3292 3400
+)
+"AST.ml" 127 3292 3339 "AST.ml" 127 3292 3343
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref expr "AST.ml" 121 3092 3108 "AST.ml" 121 3092 3112
+)
+"AST.ml" 127 3292 3344 "AST.ml" 127 3292 3347
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 121 3092 3114 "AST.ml" 121 3092 3117
+)
+"AST.ml" 127 3292 3339 "AST.ml" 127 3292 3348
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 127 3292 3339 "AST.ml" 127 3292 3348
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 127 3292 3339 "AST.ml" 127 3292 3348
+)
+"AST.ml" 127 3292 3349 "AST.ml" 127 3292 3352
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 127 3292 3353 "AST.ml" 127 3292 3359
+type(
+  string
+)
+"AST.ml" 127 3292 3349 "AST.ml" 127 3292 3360
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 127 3292 3349 "AST.ml" 127 3292 3360
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 127 3292 3349 "AST.ml" 127 3292 3360
+)
+"AST.ml" 127 3292 3361 "AST.ml" 127 3292 3364
+type(
+  t
+)
+ident(
+  def e2 "AST.ml" 127 3292 3302 "AST.ml" 127 3292 3400
+)
+"AST.ml" 127 3292 3364 "AST.ml" 127 3292 3368
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref expr "AST.ml" 121 3092 3108 "AST.ml" 121 3092 3112
+)
+"AST.ml" 127 3292 3369 "AST.ml" 127 3292 3372
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 121 3092 3114 "AST.ml" 121 3092 3117
+)
+"AST.ml" 127 3292 3364 "AST.ml" 127 3292 3373
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 127 3292 3364 "AST.ml" 127 3292 3373
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 127 3292 3364 "AST.ml" 127 3292 3373
+)
+"AST.ml" 127 3292 3374 "AST.ml" 127 3292 3377
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 127 3292 3378 "AST.ml" 127 3292 3382
+type(
+  string
+)
+"AST.ml" 127 3292 3374 "AST.ml" 127 3292 3383
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 127 3292 3374 "AST.ml" 127 3292 3383
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 127 3292 3374 "AST.ml" 127 3292 3383
+)
+"AST.ml" 127 3292 3389 "AST.ml" 127 3292 3390
+type(
+  t
+)
+ident(
+  int_ref c "AST.ml" 127 3292 3312 "AST.ml" 127 3292 3314
+)
+"AST.ml" 127 3292 3392 "AST.ml" 127 3292 3394
+type(
+  t
+)
+ident(
+  int_ref e1 "AST.ml" 127 3292 3336 "AST.ml" 127 3292 3339
+)
+"AST.ml" 127 3292 3396 "AST.ml" 127 3292 3398
+type(
+  t
+)
+ident(
+  int_ref e2 "AST.ml" 127 3292 3361 "AST.ml" 127 3292 3364
+)
+"AST.ml" 127 3292 3385 "AST.ml" 127 3292 3399
+type(
+  t
+)
+"AST.ml" 127 3292 3302 "AST.ml" 127 3292 3400
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  t -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  t -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  t -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> t
+)
+type(
+  'h
+)
+ident(
+  def _0 "AST.ml" 127 3292 3385 "AST.ml" 127 3292 3399
+)
+type(
+  'h
+)
+type(
+  ('h -> t) ->
+  ('e, 'h, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  t
+)
+ident(
+  def _1 "AST.ml" 127 3292 3302 "AST.ml" 127 3292 3400
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  (t -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'h
+)
+ident(
+  def _2 "AST.ml" 127 3292 3302 "AST.ml" 127 3292 3400
+)
+type(
+  'h
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse ->
+  ('h -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  t
+)
+ident(
+  def _3 "AST.ml" 127 3292 3302 "AST.ml" 127 3292 3400
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  (t -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'h
+)
+ident(
+  def _4 "AST.ml" 127 3292 3302 "AST.ml" 127 3292 3400
+)
+type(
+  'h
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse ->
+  ('h -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  t
+)
+ident(
+  def _5 "AST.ml" 127 3292 3302 "AST.ml" 127 3292 3400
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  (t -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'h
+)
+ident(
+  def _6 "AST.ml" 127 3292 3302 "AST.ml" 127 3292 3400
+)
+type(
+  'h
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse ->
+  ('h -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"AST.ml" 128 3402 3412 "AST.ml" 128 3402 3415
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 128 3402 3416 "AST.ml" 128 3402 3421
+type(
+  string
+)
+"AST.ml" 128 3402 3412 "AST.ml" 128 3402 3422
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 128 3402 3412 "AST.ml" 128 3402 3422
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 128 3402 3412 "AST.ml" 128 3402 3422
+)
+"AST.ml" 128 3402 3423 "AST.ml" 128 3402 3425
+type(
+  GT.string
+)
+ident(
+  def n "AST.ml" 128 3402 3412 "AST.ml" 128 3402 3465
+)
+"AST.ml" 128 3402 3425 "AST.ml" 128 3402 3430
+type(
+  ('e, GT.string, 'f) Ostap.Combinators.parse
+)
+ident(
+  int_ref ident "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 128 3402 3431 "AST.ml" 128 3402 3434
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 128 3402 3435 "AST.ml" 128 3402 3439
+type(
+  string
+)
+"AST.ml" 128 3402 3431 "AST.ml" 128 3402 3440
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 128 3402 3431 "AST.ml" 128 3402 3440
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 128 3402 3431 "AST.ml" 128 3402 3440
+)
+"AST.ml" 128 3402 3441 "AST.ml" 128 3402 3443
+type(
+  t
+)
+ident(
+  def e "AST.ml" 128 3402 3454 "AST.ml" 128 3402 3464
+)
+"AST.ml" 128 3402 3443 "AST.ml" 128 3402 3447
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref expr "AST.ml" 121 3092 3108 "AST.ml" 121 3092 3112
+)
+"AST.ml" 128 3402 3448 "AST.ml" 128 3402 3451
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 121 3092 3114 "AST.ml" 121 3092 3117
+)
+"AST.ml" 128 3402 3443 "AST.ml" 128 3402 3452
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 128 3402 3443 "AST.ml" 128 3402 3452
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 128 3402 3443 "AST.ml" 128 3402 3452
+)
+"AST.ml" 128 3402 3459 "AST.ml" 128 3402 3460
+type(
+  GT.string
+)
+ident(
+  int_ref n "AST.ml" 128 3402 3423 "AST.ml" 128 3402 3425
+)
+"AST.ml" 128 3402 3462 "AST.ml" 128 3402 3463
+type(
+  t
+)
+ident(
+  int_ref e "AST.ml" 128 3402 3441 "AST.ml" 128 3402 3443
+)
+"AST.ml" 128 3402 3454 "AST.ml" 128 3402 3464
+type(
+  t
+)
+"AST.ml" 128 3402 3412 "AST.ml" 128 3402 3465
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  GT.string -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  t -> t
+)
+type(
+  t
+)
+ident(
+  def _0 "AST.ml" 128 3402 3454 "AST.ml" 128 3402 3464
+)
+type(
+  (t -> t) ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'h
+)
+ident(
+  def _1 "AST.ml" 128 3402 3412 "AST.ml" 128 3402 3465
+)
+type(
+  'h
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse ->
+  ('h -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  GT.string
+)
+ident(
+  def _2 "AST.ml" 128 3402 3412 "AST.ml" 128 3402 3465
+)
+type(
+  ('e, GT.string, 'f) Ostap.Combinators.parse ->
+  (GT.string -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'h
+)
+ident(
+  def _3 "AST.ml" 128 3402 3412 "AST.ml" 128 3402 3465
+)
+type(
+  'h
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse ->
+  ('h -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"AST.ml" 129 3466 3476 "AST.ml" 129 3466 3479
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 129 3466 3480 "AST.ml" 129 3466 3491
+type(
+  string
+)
+"AST.ml" 129 3466 3476 "AST.ml" 129 3466 3492
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 129 3466 3476 "AST.ml" 129 3466 3492
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 129 3466 3476 "AST.ml" 129 3466 3492
+)
+"AST.ml" 129 3466 3493 "AST.ml" 129 3466 3495
+type(
+  GT.string
+)
+ident(
+  def n "AST.ml" 129 3466 3476 "AST.ml" 129 3466 3536
+)
+"AST.ml" 129 3466 3495 "AST.ml" 129 3466 3500
+type(
+  ('e, GT.string, 'f) Ostap.Combinators.parse
+)
+ident(
+  int_ref ident "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 129 3466 3501 "AST.ml" 129 3466 3504
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 129 3466 3505 "AST.ml" 129 3466 3509
+type(
+  string
+)
+"AST.ml" 129 3466 3501 "AST.ml" 129 3466 3510
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 129 3466 3501 "AST.ml" 129 3466 3510
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 129 3466 3501 "AST.ml" 129 3466 3510
+)
+"AST.ml" 129 3466 3511 "AST.ml" 129 3466 3513
+type(
+  t
+)
+ident(
+  def e "AST.ml" 129 3466 3524 "AST.ml" 129 3466 3535
+)
+"AST.ml" 129 3466 3513 "AST.ml" 129 3466 3517
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref expr "AST.ml" 121 3092 3108 "AST.ml" 121 3092 3112
+)
+"AST.ml" 129 3466 3518 "AST.ml" 129 3466 3521
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 121 3092 3114 "AST.ml" 121 3092 3117
+)
+"AST.ml" 129 3466 3513 "AST.ml" 129 3466 3522
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 129 3466 3513 "AST.ml" 129 3466 3522
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 129 3466 3513 "AST.ml" 129 3466 3522
+)
+"AST.ml" 129 3466 3530 "AST.ml" 129 3466 3531
+type(
+  GT.string
+)
+ident(
+  int_ref n "AST.ml" 129 3466 3493 "AST.ml" 129 3466 3495
+)
+"AST.ml" 129 3466 3533 "AST.ml" 129 3466 3534
+type(
+  t
+)
+ident(
+  int_ref e "AST.ml" 129 3466 3511 "AST.ml" 129 3466 3513
+)
+"AST.ml" 129 3466 3524 "AST.ml" 129 3466 3535
+type(
+  t
+)
+"AST.ml" 129 3466 3476 "AST.ml" 129 3466 3536
+call(
+  stack
+)
+call(
+  tail
+)
+call(
+  tail
+)
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  GT.string -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  t -> t
+)
+type(
+  t
+)
+ident(
+  def _0 "AST.ml" 129 3466 3524 "AST.ml" 129 3466 3535
+)
+type(
+  (t -> t) ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'h
+)
+ident(
+  def _1 "AST.ml" 129 3466 3476 "AST.ml" 129 3466 3536
+)
+type(
+  'h
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse ->
+  ('h -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  GT.string
+)
+ident(
+  def _2 "AST.ml" 129 3466 3476 "AST.ml" 129 3466 3536
+)
+type(
+  ('e, GT.string, 'f) Ostap.Combinators.parse ->
+  (GT.string -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+type(
+  'h
+)
+ident(
+  def _3 "AST.ml" 129 3466 3476 "AST.ml" 129 3466 3536
+)
+type(
+  'h
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse ->
+  ('h -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"AST.ml" 130 3537 3547 "AST.ml" 130 3537 3550
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 130 3537 3551 "AST.ml" 130 3537 3557
+type(
+  string
+)
+"AST.ml" 130 3537 3547 "AST.ml" 130 3537 3558
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 130 3537 3547 "AST.ml" 130 3537 3558
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 130 3537 3547 "AST.ml" 130 3537 3558
+)
+"AST.ml" 130 3537 3559 "AST.ml" 130 3537 3561
+type(
+  t
+)
+ident(
+  def e "AST.ml" 130 3537 3572 "AST.ml" 130 3537 3578
+)
+"AST.ml" 130 3537 3561 "AST.ml" 130 3537 3565
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref expr "AST.ml" 121 3092 3108 "AST.ml" 121 3092 3112
+)
+"AST.ml" 130 3537 3566 "AST.ml" 130 3537 3569
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 121 3092 3114 "AST.ml" 121 3092 3117
+)
+"AST.ml" 130 3537 3561 "AST.ml" 130 3537 3570
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 130 3537 3561 "AST.ml" 130 3537 3570
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 130 3537 3561 "AST.ml" 130 3537 3570
+)
+"AST.ml" 130 3537 3577 "AST.ml" 130 3537 3578
+type(
+  t
+)
+ident(
+  int_ref e "AST.ml" 130 3537 3559 "AST.ml" 130 3537 3561
+)
+"AST.ml" 130 3537 3572 "AST.ml" 130 3537 3578
+type(
+  t
+)
+"AST.ml" 130 3537 3547 "AST.ml" 130 3537 3579
+call(
+  stack
+)
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  t -> t
+)
+type(
+  t
+)
+ident(
+  def _0 "AST.ml" 130 3537 3572 "AST.ml" 130 3537 3578
+)
+type(
+  (t -> t) ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'h
+)
+ident(
+  def _1 "AST.ml" 130 3537 3547 "AST.ml" 130 3537 3579
+)
+type(
+  'h
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse ->
+  ('h -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"AST.ml" 131 3580 3590 "AST.ml" 131 3580 3593
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 131 3580 3594 "AST.ml" 131 3580 3603
+type(
+  string
+)
+"AST.ml" 131 3580 3590 "AST.ml" 131 3580 3604
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 131 3580 3590 "AST.ml" 131 3580 3604
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 131 3580 3590 "AST.ml" 131 3580 3604
+)
+"AST.ml" 131 3580 3605 "AST.ml" 131 3580 3607
+type(
+  t
+)
+ident(
+  def e "AST.ml" 131 3580 3618 "AST.ml" 131 3580 3627
+)
+"AST.ml" 131 3580 3607 "AST.ml" 131 3580 3611
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref expr "AST.ml" 121 3092 3108 "AST.ml" 121 3092 3112
+)
+"AST.ml" 131 3580 3612 "AST.ml" 131 3580 3615
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 121 3092 3114 "AST.ml" 121 3092 3117
+)
+"AST.ml" 131 3580 3607 "AST.ml" 131 3580 3616
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 131 3580 3607 "AST.ml" 131 3580 3616
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 131 3580 3607 "AST.ml" 131 3580 3616
+)
+"AST.ml" 131 3580 3626 "AST.ml" 131 3580 3627
+type(
+  t
+)
+ident(
+  int_ref e "AST.ml" 131 3580 3605 "AST.ml" 131 3580 3607
+)
+"AST.ml" 131 3580 3618 "AST.ml" 131 3580 3627
+type(
+  t
+)
+"AST.ml" 131 3580 3590 "AST.ml" 131 3580 3628
+call(
+  stack
+)
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  t -> t
+)
+type(
+  t
+)
+ident(
+  def _0 "AST.ml" 131 3580 3618 "AST.ml" 131 3580 3627
+)
+type(
+  (t -> t) ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'h
+)
+ident(
+  def _1 "AST.ml" 131 3580 3590 "AST.ml" 131 3580 3628
+)
+type(
+  'h
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse ->
+  ('h -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"AST.ml" 132 3629 3639 "AST.ml" 132 3629 3642
+type(
+  string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref key "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 132 3629 3643 "AST.ml" 132 3629 3649
+type(
+  string
+)
+"AST.ml" 132 3629 3639 "AST.ml" 132 3629 3650
+call(
+  tail
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'h, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 132 3629 3639 "AST.ml" 132 3629 3650
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 132 3629 3639 "AST.ml" 132 3629 3650
+)
+"AST.ml" 132 3629 3652 "AST.ml" 132 3629 3656
+type(
+  t
+)
+"AST.ml" 132 3629 3639 "AST.ml" 132 3629 3657
+call(
+  stack
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'h -> t
+)
+type(
+  'h
+)
+ident(
+  def _0 "AST.ml" 132 3629 3652 "AST.ml" 132 3629 3656
+)
+type(
+  'h
+)
+type(
+  ('h -> t) ->
+  ('e, 'h, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+"AST.ml" 133 3658 3668 "AST.ml" 133 3658 3671
 call(
   tail
 )
@@ -7158,38 +9362,496 @@ type(
   ('e, 'g, 'f) Ostap.Combinators.result
 )
 type(
-  string
+  GT.string
 )
 type(
-  string -> ('e, 'g, 'f) Ostap.Combinators.result
-)
-type(
-  'e
-)
-ident(
-  int_ref _ostap_stream "AST.ml" 103 2694 2704 "AST.ml" 103 2694 2708
+  GT.string -> ('e, 'g, 'f) Ostap.Combinators.result
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 103 2694 2704 "AST.ml" 103 2694 2708
+  int_ref _ostap_stream "AST.ml" 133 3658 3668 "AST.ml" 133 3658 3671
 )
-"AST.ml" 103 2694 2709 "AST.ml" 103 2694 2712
 type(
-  GT.string list
+  'e
 )
 ident(
-  def ns "AST.ml" 103 2694 2704 "AST.ml" 105 2833 2844
+  def _ostap_stream "AST.ml" 133 3658 3668 "AST.ml" 133 3658 3671
 )
-"AST.ml" 103 2694 2712 "AST.ml" 103 2694 2717
+"AST.ml" 133 3658 3672 "AST.ml" 133 3658 3674
+type(
+  t
+)
+ident(
+  def e "AST.ml" 133 3658 3685 "AST.ml" 133 3658 3692
+)
+"AST.ml" 133 3658 3674 "AST.ml" 133 3658 3678
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref expr "AST.ml" 121 3092 3108 "AST.ml" 121 3092 3112
+)
+"AST.ml" 133 3658 3679 "AST.ml" 133 3658 3682
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 121 3092 3114 "AST.ml" 121 3092 3117
+)
+"AST.ml" 133 3658 3674 "AST.ml" 133 3658 3683
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 133 3658 3674 "AST.ml" 133 3658 3683
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 133 3658 3674 "AST.ml" 133 3658 3683
+)
+"AST.ml" 133 3658 3691 "AST.ml" 133 3658 3692
+type(
+  t
+)
+ident(
+  int_ref e "AST.ml" 133 3658 3672 "AST.ml" 133 3658 3674
+)
+"AST.ml" 133 3658 3685 "AST.ml" 133 3658 3692
+type(
+  t
+)
+"AST.ml" 133 3658 3668 "AST.ml" 133 3658 3693
+call(
+  stack
+)
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'g -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  t -> t
+)
+type(
+  t
+)
+ident(
+  def _0 "AST.ml" 133 3658 3685 "AST.ml" 133 3658 3692
+)
+type(
+  (t -> t) ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  'g
+)
+ident(
+  def _1 "AST.ml" 133 3658 3668 "AST.ml" 133 3658 3693
+)
+type(
+  'g
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.parse ->
+  ('g -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"AST.ml" 134 3702 3712 "AST.ml" 134 3702 3714
+type(
+  GT.string
+)
+ident(
+  def n "AST.ml" 134 3702 3712 "AST.ml" 144 4062 4073
+)
+"AST.ml" 134 3702 3714 "AST.ml" 134 3702 3719
 type(
   ('e, GT.string, 'f) Ostap.Combinators.parse
 )
 ident(
-  int_ref ident "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+  int_ref ident "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
 )
-"AST.ml" 103 2694 2712 "AST.ml" 103 2694 2718
+"AST.ml" 134 3702 3720 "AST.ml" 134 3702 3722
+type(
+  t option
+)
+ident(
+  def s "AST.ml" 135 3743 3755 "AST.ml" 143 3967 4061
+)
+"AST.ml" 134 3702 3724 "AST.ml" 134 3702 3728
+call(
+  tail
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  GT.string
+)
+type(
+  GT.string -> ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 134 3702 3724 "AST.ml" 134 3702 3728
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 134 3702 3724 "AST.ml" 134 3702 3728
+)
+"AST.ml" 134 3702 3729 "AST.ml" 134 3702 3733
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+ident(
+  int_ref expr "AST.ml" 121 3092 3108 "AST.ml" 121 3092 3112
+)
+"AST.ml" 134 3702 3734 "AST.ml" 134 3702 3737
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 121 3092 3114 "AST.ml" 121 3092 3117
+)
+"AST.ml" 134 3702 3729 "AST.ml" 134 3702 3738
+call(
+  tail
+)
+type(
+  'e -> ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 134 3702 3729 "AST.ml" 134 3702 3738
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 134 3702 3729 "AST.ml" 134 3702 3738
+)
+"AST.ml" 134 3702 3723 "AST.ml" 134 3702 3738
+call(
+  stack
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'g -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  'g
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.parse ->
+  ('g -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"AST.ml" 134 3702 3722 "AST.ml" 134 3702 3740
+call(
+  stack
+)
+type(
+  ('e, t option, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t option, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.opt
+)
+"AST.ml" 136 3759 3779 "AST.ml" 136 3759 3780
+type(
+  t option
+)
+ident(
+  int_ref s "AST.ml" 134 3702 3720 "AST.ml" 134 3702 3722
+)
+"AST.ml" 137 3786 3795 "AST.ml" 137 3786 3799
+type(
+  t option
+)
+"AST.ml" 138 3803 3827 "AST.ml" 138 3803 3837
+type(
+  GT.string ->
+  (GT.string * [ `Arg | `Def of t ]) list -> [ `Arg | `Def of t ]
+)
+ident(
+  ext_ref List.assoc
+)
+"AST.ml" 138 3803 3838 "AST.ml" 138 3803 3839
+type(
+  GT.string
+)
+ident(
+  int_ref n "AST.ml" 134 3702 3712 "AST.ml" 134 3702 3714
+)
+"AST.ml" 138 3803 3840 "AST.ml" 138 3803 3843
+type(
+  (GT.string * [ `Arg | `Def of t ]) list
+)
+ident(
+  int_ref env "AST.ml" 121 3092 3114 "AST.ml" 121 3092 3117
+)
+"AST.ml" 138 3803 3827 "AST.ml" 138 3803 3843
+call(
+  stack
+)
+type(
+  [ `Arg | `Def of t ]
+)
+"AST.ml" 139 3849 3874 "AST.ml" 139 3849 3875
+type(
+  t
+)
+ident(
+  def e "AST.ml" 139 3849 3879 "AST.ml" 139 3849 3880
+)
+"AST.ml" 139 3849 3869 "AST.ml" 139 3849 3875
+type(
+  [ `Arg | `Def of t ]
+)
+"AST.ml" 139 3849 3879 "AST.ml" 139 3849 3880
+type(
+  t
+)
+ident(
+  int_ref e "AST.ml" 139 3849 3874 "AST.ml" 139 3849 3875
+)
+"AST.ml" 140 3881 3901 "AST.ml" 140 3881 3905
+type(
+  [ `Arg | `Def of t ]
+)
+"AST.ml" 140 3881 3915 "AST.ml" 140 3881 3916
+type(
+  GT.string
+)
+ident(
+  int_ref n "AST.ml" 134 3702 3712 "AST.ml" 134 3702 3714
+)
+"AST.ml" 140 3881 3911 "AST.ml" 140 3881 3916
+type(
+  t
+)
+"AST.ml" 138 3803 3820 "AST.ml" 141 3917 3935
+type(
+  t
+)
+"AST.ml" 142 3936 3950 "AST.ml" 142 3936 3951
+type(
+  t
+)
+ident(
+  def e "AST.ml" 142 3936 3955 "AST.ml" 142 3936 3966
+)
+"AST.ml" 142 3936 3945 "AST.ml" 142 3936 3951
+type(
+  t option
+)
+"AST.ml" 142 3936 3961 "AST.ml" 142 3936 3962
+type(
+  GT.string
+)
+ident(
+  int_ref n "AST.ml" 134 3702 3712 "AST.ml" 134 3702 3714
+)
+"AST.ml" 142 3936 3964 "AST.ml" 142 3936 3965
+type(
+  t
+)
+ident(
+  int_ref e "AST.ml" 142 3936 3950 "AST.ml" 142 3936 3951
+)
+"AST.ml" 142 3936 3955 "AST.ml" 142 3936 3966
+type(
+  t
+)
+"AST.ml" 136 3759 3773 "AST.ml" 142 3936 3966
+type(
+  t
+)
+"AST.ml" 143 3967 3984 "AST.ml" 143 3967 3993
+type(
+  exn
+)
+"AST.ml" 143 3967 3997 "AST.ml" 143 3967 4002
+type(
+  exn -> t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"AST.ml" 143 3967 4017 "AST.ml" 143 3967 4031
+type(
+  (GT.string -> GT.string, unit, GT.string) format -> GT.string -> GT.string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"AST.ml" 143 3967 4032 "AST.ml" 143 3967 4057
+type(
+  (GT.string -> GT.string, unit, GT.string) format
+)
+"AST.ml" 143 3967 4058 "AST.ml" 143 3967 4059
+type(
+  GT.string
+)
+ident(
+  int_ref n "AST.ml" 134 3702 3712 "AST.ml" 134 3702 3714
+)
+"AST.ml" 143 3967 4016 "AST.ml" 143 3967 4060
+call(
+  stack
+)
+type(
+  GT.string
+)
+"AST.ml" 143 3967 4003 "AST.ml" 143 3967 4061
+type(
+  exn
+)
+"AST.ml" 143 3967 3997 "AST.ml" 143 3967 4061
+type(
+  t
+)
+"AST.ml" 135 3743 3755 "AST.ml" 143 3967 4061
+type(
+  t
+)
+"AST.ml" 134 3702 3712 "AST.ml" 144 4062 4073
+call(
+  stack
+)
+call(
+  tail
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  GT.string -> ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  t option -> t
+)
+type(
+  t option
+)
+ident(
+  def _0 "AST.ml" 135 3743 3755 "AST.ml" 143 3967 4061
+)
+type(
+  (t option -> t) ->
+  ('e, t option, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.map
+)
+type(
+  GT.string
+)
+ident(
+  def _1 "AST.ml" 134 3702 3712 "AST.ml" 144 4062 4073
+)
+type(
+  ('e, GT.string, 'f) Ostap.Combinators.parse ->
+  (GT.string -> ('e, t, 'f) Ostap.Combinators.parse) ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.seq
+)
+"AST.ml" 145 4074 4084 "AST.ml" 145 4074 4088
+call(
+  tail
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  GT.string
+)
+type(
+  GT.string -> ('e, 'g, 'f) Ostap.Combinators.result
+)
+type(
+  'e
+)
+ident(
+  int_ref _ostap_stream "AST.ml" 145 4074 4084 "AST.ml" 145 4074 4088
+)
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 145 4074 4084 "AST.ml" 145 4074 4088
+)
+"AST.ml" 145 4074 4089 "AST.ml" 145 4074 4092
+type(
+  GT.string list
+)
+ident(
+  def ns "AST.ml" 145 4074 4084 "AST.ml" 147 4213 4224
+)
+"AST.ml" 145 4074 4092 "AST.ml" 145 4074 4097
+type(
+  ('e, GT.string, 'f) Ostap.Combinators.parse
+)
+ident(
+  int_ref ident "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+)
+"AST.ml" 145 4074 4092 "AST.ml" 145 4074 4098
 call(
   stack
 )
@@ -7203,7 +9865,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.some
 )
-"AST.ml" 103 2694 2719 "AST.ml" 103 2694 2722
+"AST.ml" 145 4074 4099 "AST.ml" 145 4074 4102
 call(
   tail
 )
@@ -7214,39 +9876,39 @@ type(
   ('e, 'g, 'f) Ostap.Combinators.result
 )
 type(
-  string
+  GT.string
 )
 type(
-  string -> ('e, 'g, 'f) Ostap.Combinators.result
-)
-type(
-  'e
-)
-ident(
-  int_ref _ostap_stream "AST.ml" 103 2694 2719 "AST.ml" 103 2694 2722
+  GT.string -> ('e, 'g, 'f) Ostap.Combinators.result
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 103 2694 2719 "AST.ml" 103 2694 2722
+  int_ref _ostap_stream "AST.ml" 145 4074 4099 "AST.ml" 145 4074 4102
 )
-"AST.ml" 103 2694 2723 "AST.ml" 103 2694 2725
+type(
+  'e
+)
+ident(
+  def _ostap_stream "AST.ml" 145 4074 4099 "AST.ml" 145 4074 4102
+)
+"AST.ml" 145 4074 4103 "AST.ml" 145 4074 4105
 type(
   t
 )
 ident(
-  def e "AST.ml" 104 2772 2784 "AST.ml" 104 2772 2832
+  def e "AST.ml" 146 4152 4164 "AST.ml" 146 4152 4212
 )
-"AST.ml" 103 2694 2725 "AST.ml" 103 2694 2729
+"AST.ml" 145 4074 4105 "AST.ml" 145 4074 4109
 type(
   (GT.string * [ `Arg | `Def of t ]) list ->
   'e -> ('e, t, 'f) Ostap.Combinators.result
 )
 ident(
-  int_ref expr "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+  int_ref expr "AST.ml" 121 3092 3108 "AST.ml" 121 3092 3112
 )
-"AST.ml" 103 2694 2730 "AST.ml" 103 2694 2738
+"AST.ml" 145 4074 4110 "AST.ml" 145 4074 4118
 type(
   (GT.string -> GT.string * [ `Arg | `Def of t ]) ->
   GT.string list -> (GT.string * [ `Arg | `Def of t ]) list
@@ -7254,54 +9916,54 @@ type(
 ident(
   ext_ref List.map
 )
-"AST.ml" 103 2694 2744 "AST.ml" 103 2694 2745
+"AST.ml" 145 4074 4124 "AST.ml" 145 4074 4125
 type(
   GT.string
 )
 ident(
-  def n "AST.ml" 103 2694 2749 "AST.ml" 103 2694 2758
+  def n "AST.ml" 145 4074 4129 "AST.ml" 145 4074 4138
 )
-"AST.ml" 103 2694 2750 "AST.ml" 103 2694 2751
+"AST.ml" 145 4074 4130 "AST.ml" 145 4074 4131
 type(
   GT.string
 )
 ident(
-  int_ref n "AST.ml" 103 2694 2744 "AST.ml" 103 2694 2745
+  int_ref n "AST.ml" 145 4074 4124 "AST.ml" 145 4074 4125
 )
-"AST.ml" 103 2694 2753 "AST.ml" 103 2694 2757
+"AST.ml" 145 4074 4133 "AST.ml" 145 4074 4137
 type(
   [ `Arg | `Def of t ]
 )
-"AST.ml" 103 2694 2749 "AST.ml" 103 2694 2758
+"AST.ml" 145 4074 4129 "AST.ml" 145 4074 4138
 type(
   GT.string * [ `Arg | `Def of t ]
 )
-"AST.ml" 103 2694 2739 "AST.ml" 103 2694 2759
+"AST.ml" 145 4074 4119 "AST.ml" 145 4074 4139
 type(
   GT.string -> GT.string * [ `Arg | `Def of t ]
 )
-"AST.ml" 103 2694 2760 "AST.ml" 103 2694 2762
+"AST.ml" 145 4074 4140 "AST.ml" 145 4074 4142
 type(
   GT.string list
 )
 ident(
-  int_ref ns "AST.ml" 103 2694 2709 "AST.ml" 103 2694 2712
+  int_ref ns "AST.ml" 145 4074 4089 "AST.ml" 145 4074 4092
 )
-"AST.ml" 103 2694 2730 "AST.ml" 103 2694 2762
+"AST.ml" 145 4074 4110 "AST.ml" 145 4074 4142
 call(
   stack
 )
 type(
   (GT.string * [ `Arg | `Def of t ]) list
 )
-"AST.ml" 103 2694 2765 "AST.ml" 103 2694 2768
+"AST.ml" 145 4074 4145 "AST.ml" 145 4074 4148
 type(
   (GT.string * [ `Arg | `Def of t ]) list
 )
 ident(
-  int_ref env "AST.ml" 94 2396 2412 "AST.ml" 94 2396 2415
+  int_ref env "AST.ml" 121 3092 3114 "AST.ml" 121 3092 3117
 )
-"AST.ml" 103 2694 2730 "AST.ml" 103 2694 2768
+"AST.ml" 145 4074 4110 "AST.ml" 145 4074 4148
 call(
   stack
 )
@@ -7316,7 +9978,7 @@ type(
 ident(
   ext_ref Pervasives.( @ )
 )
-"AST.ml" 103 2694 2725 "AST.ml" 103 2694 2769
+"AST.ml" 145 4074 4105 "AST.ml" 145 4074 4149
 call(
   tail
 )
@@ -7330,83 +9992,83 @@ type(
   'e
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 103 2694 2725 "AST.ml" 103 2694 2769
+  int_ref _ostap_stream "AST.ml" 145 4074 4105 "AST.ml" 145 4074 4149
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 103 2694 2725 "AST.ml" 103 2694 2769
+  def _ostap_stream "AST.ml" 145 4074 4105 "AST.ml" 145 4074 4149
 )
-"AST.ml" 104 2772 2784 "AST.ml" 104 2772 2799
+"AST.ml" 146 4152 4164 "AST.ml" 146 4152 4179
 type(
   (GT.string -> t -> t) -> GT.string list -> t -> t
 )
 ident(
   ext_ref List.fold_right
 )
-"AST.ml" 104 2772 2805 "AST.ml" 104 2772 2806
+"AST.ml" 146 4152 4185 "AST.ml" 146 4152 4186
 type(
   GT.string
 )
 ident(
-  def n "AST.ml" 104 2772 2807 "AST.ml" 104 2772 2826
+  def n "AST.ml" 146 4152 4187 "AST.ml" 146 4152 4206
 )
-"AST.ml" 104 2772 2807 "AST.ml" 104 2772 2810
+"AST.ml" 146 4152 4187 "AST.ml" 146 4152 4190
 type(
   t
 )
 ident(
-  def acc "AST.ml" 104 2772 2814 "AST.ml" 104 2772 2826
+  def acc "AST.ml" 146 4152 4194 "AST.ml" 146 4152 4206
 )
-"AST.ml" 104 2772 2819 "AST.ml" 104 2772 2820
+"AST.ml" 146 4152 4199 "AST.ml" 146 4152 4200
 type(
   GT.string
 )
 ident(
-  int_ref n "AST.ml" 104 2772 2805 "AST.ml" 104 2772 2806
+  int_ref n "AST.ml" 146 4152 4185 "AST.ml" 146 4152 4186
 )
-"AST.ml" 104 2772 2822 "AST.ml" 104 2772 2825
+"AST.ml" 146 4152 4202 "AST.ml" 146 4152 4205
 type(
   t
 )
 ident(
-  int_ref acc "AST.ml" 104 2772 2807 "AST.ml" 104 2772 2810
+  int_ref acc "AST.ml" 146 4152 4187 "AST.ml" 146 4152 4190
 )
-"AST.ml" 104 2772 2814 "AST.ml" 104 2772 2826
+"AST.ml" 146 4152 4194 "AST.ml" 146 4152 4206
 type(
   t
 )
-"AST.ml" 104 2772 2807 "AST.ml" 104 2772 2826
+"AST.ml" 146 4152 4187 "AST.ml" 146 4152 4206
 type(
   t -> t
 )
-"AST.ml" 104 2772 2800 "AST.ml" 104 2772 2827
+"AST.ml" 146 4152 4180 "AST.ml" 146 4152 4207
 type(
   GT.string -> t -> t
 )
-"AST.ml" 104 2772 2828 "AST.ml" 104 2772 2830
+"AST.ml" 146 4152 4208 "AST.ml" 146 4152 4210
 type(
   GT.string list
 )
 ident(
-  int_ref ns "AST.ml" 103 2694 2709 "AST.ml" 103 2694 2712
+  int_ref ns "AST.ml" 145 4074 4089 "AST.ml" 145 4074 4092
 )
-"AST.ml" 104 2772 2831 "AST.ml" 104 2772 2832
+"AST.ml" 146 4152 4211 "AST.ml" 146 4152 4212
 type(
   t
 )
 ident(
-  int_ref e "AST.ml" 103 2694 2723 "AST.ml" 103 2694 2725
+  int_ref e "AST.ml" 145 4074 4103 "AST.ml" 145 4074 4105
 )
-"AST.ml" 104 2772 2784 "AST.ml" 104 2772 2832
+"AST.ml" 146 4152 4164 "AST.ml" 146 4152 4212
 call(
   tail
 )
 type(
   t
 )
-"AST.ml" 103 2694 2704 "AST.ml" 105 2833 2844
+"AST.ml" 145 4074 4084 "AST.ml" 147 4213 4224
 call(
   stack
 )
@@ -7447,7 +10109,7 @@ type(
   t
 )
 ident(
-  def _0 "AST.ml" 104 2772 2784 "AST.ml" 104 2772 2832
+  def _0 "AST.ml" 146 4152 4164 "AST.ml" 146 4152 4212
 )
 type(
   (t -> t) ->
@@ -7460,7 +10122,7 @@ type(
   'g
 )
 ident(
-  def _1 "AST.ml" 103 2694 2704 "AST.ml" 105 2833 2844
+  def _1 "AST.ml" 145 4074 4084 "AST.ml" 147 4213 4224
 )
 type(
   'g
@@ -7477,7 +10139,7 @@ type(
   GT.string list
 )
 ident(
-  def _2 "AST.ml" 103 2694 2704 "AST.ml" 105 2833 2844
+  def _2 "AST.ml" 145 4074 4084 "AST.ml" 147 4213 4224
 )
 type(
   ('e, GT.string list, 'f) Ostap.Combinators.parse ->
@@ -7491,7 +10153,7 @@ type(
   'g
 )
 ident(
-  def _3 "AST.ml" 103 2694 2704 "AST.ml" 105 2833 2844
+  def _3 "AST.ml" 145 4074 4084 "AST.ml" 147 4213 4224
 )
 type(
   'g
@@ -7504,9 +10166,75 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"AST.ml" 95 2418 2428 "AST.ml" 105 2833 2844
+"AST.ml" 122 3120 3130 "AST.ml" 147 4213 4224
 call(
   stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+call(
+  stack
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse
 )
 type(
   ('e, t, 'f) Ostap.Combinators.parse
@@ -7525,13 +10253,96 @@ type(
 ident(
   ext_ref Ostap.Combinators.alt
 )
-"AST.ml" 94 2396 2404 "AST.ml" 105 2833 2844
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+type(
+  ('e, t, 'f) Ostap.Combinators.parse ->
+  ('e, t, 'f) Ostap.Combinators.parse -> ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  ext_ref Ostap.Combinators.alt
+)
+"AST.ml" 121 3092 3100 "AST.ml" 147 4213 4224
 call(
   tail
 )
 type(
+  ((GT.string * [ `Arg | `Def of t ]) list ->
+   'e -> ('e, t, 'f) Ostap.Combinators.result) ->
   (GT.string * [ `Arg | `Def of t ]) list ->
-  'e -> ('e, t, 'f) Ostap.Combinators.result
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+type(
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  ('e, t, 'f) Ostap.Combinators.parse
 )
 type(
   'e -> ('e, t, 'f) Ostap.Combinators.result
@@ -7543,109 +10354,119 @@ type(
   'e
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 94 2396 2404 "AST.ml" 105 2833 2844
+  int_ref _ostap_stream "AST.ml" 121 3092 3100 "AST.ml" 147 4213 4224
 )
 type(
   'e
 )
 ident(
-  def _ostap_stream "AST.ml" 94 2396 2404 "AST.ml" 105 2833 2844
+  def _ostap_stream "AST.ml" 121 3092 3100 "AST.ml" 147 4213 4224
 )
-"AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+"AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
+type(
+  ((GT.string * [ `Arg | `Def of t ]) list ->
+   'e -> ('e, t, 'f) Ostap.Combinators.result) ->
+  (GT.string * [ `Arg | `Def of t ]) list ->
+  ('e, t, 'f) Ostap.Combinators.parse
+)
+ident(
+  def primary "AST.ml" 85 2071 2077 "AST.ml" 149 4236 4250
+)
 type(
   (GT.string * [ `Arg | `Def of t ]) list ->
   'e -> ('e, t, 'f) Ostap.Combinators.result
 )
 ident(
-  def primary "AST.ml" 84 2046 2052 "AST.ml" 107 2856 2870
+  def apps "AST.ml" 85 2071 2077 "AST.ml" 149 4236 4250
 )
 type(
   (GT.string * [ `Arg | `Def of t ]) list ->
   'e -> ('e, t, 'f) Ostap.Combinators.result
 )
 ident(
-  def expr "AST.ml" 84 2046 2052 "AST.ml" 107 2856 2870
+  def expr "AST.ml" 85 2071 2077 "AST.ml" 149 4236 4250
 )
 type(
   (GT.string * [ `Arg | `Def of t ]) list ->
   'e -> ('e, t, 'f) Ostap.Combinators.result
 )
 ident(
-  def def "AST.ml" 84 2046 2052 "AST.ml" 107 2856 2870
+  def def "AST.ml" 85 2071 2077 "AST.ml" 149 4236 4250
 )
 type(
   string -> 'e -> ('e, 'h, 'f) Ostap.Combinators.result
 )
 ident(
-  def key "AST.ml" 84 2046 2052 "AST.ml" 107 2856 2870
+  def key "AST.ml" 85 2071 2077 "AST.ml" 149 4236 4250
 )
 type(
   ('e, GT.string, 'f) Ostap.Combinators.parse
 )
 ident(
-  def ident "AST.ml" 84 2046 2052 "AST.ml" 107 2856 2870
+  def ident "AST.ml" 85 2071 2077 "AST.ml" 149 4236 4250
 )
-"AST.ml" 107 2856 2862 "AST.ml" 107 2856 2865
+"AST.ml" 149 4236 4242 "AST.ml" 149 4236 4245
 type(
   (GT.string * [ `Arg | `Def of t ]) list ->
   'a -> ('a, t, 'b) Ostap.Combinators.result
 )
 ident(
-  int_ref def "AST.ml" 85 2064 2072 "AST.ml" 105 2833 2844
+  int_ref def "AST.ml" 86 2089 2097 "AST.ml" 147 4213 4224
 )
-"AST.ml" 107 2856 2866 "AST.ml" 107 2856 2868
+"AST.ml" 149 4236 4246 "AST.ml" 149 4236 4248
 type(
   (GT.string * [ `Arg | `Def of t ]) list
 )
-"AST.ml" 107 2856 2869 "AST.ml" 107 2856 2870
+"AST.ml" 149 4236 4249 "AST.ml" 149 4236 4250
 type(
   'a
 )
 ident(
-  int_ref s "AST.ml" 83 2026 2041 "AST.ml" 83 2026 2042
+  int_ref s "AST.ml" 84 2051 2066 "AST.ml" 84 2051 2067
 )
-"AST.ml" 107 2856 2862 "AST.ml" 107 2856 2870
+"AST.ml" 149 4236 4242 "AST.ml" 149 4236 4250
 call(
   tail
 )
 type(
   ('a, t, 'b) Ostap.Combinators.result
 )
-"AST.ml" 84 2046 2052 "AST.ml" 107 2856 2870
+"AST.ml" 85 2071 2077 "AST.ml" 149 4236 4250
 type(
   ('a, t, 'b) Ostap.Combinators.result
 )
-"AST.ml" 83 2026 2041 "AST.ml" 107 2856 2870
+"AST.ml" 84 2051 2066 "AST.ml" 149 4236 4250
 type(
   'a -> ('a, t, 'b) Ostap.Combinators.result
 )
-"AST.ml" 109 2872 2880 "AST.ml" 109 2872 2885
+"AST.ml" 151 4252 4260 "AST.ml" 151 4252 4265
 type(
   (< getEOF : ('i, 'j, < add : 'k -> 'k; .. > as 'k) Ostap.Combinators.result;
      getIDENT : ('i, Ostap.Matcher.Token.t, 'k) Ostap.Combinators.result;
-     look : string -> ('i, 'l, 'k) Ostap.Combinators.result;
+     getLITERAL : ('i, Ostap.Matcher.Token.t, 'k) Ostap.Combinators.result;
+     look : GT.string -> ('i, 'l, 'k) Ostap.Combinators.result;
      regexp : string -> string -> ('i, 'm, 'k) Ostap.Combinators.result; .. >
    as 'i) ->
   ('i, t, 'k) Ostap.Combinators.result
 )
 ident(
-  def parse "AST.ml" 109 2872 2911 "AST.ml" 111 2917 2922
+  def parse "AST.ml" 151 4252 4291 "AST.ml" 153 4297 4302
 )
-"AST.ml" 109 2872 2886 "AST.ml" 109 2872 2887
+"AST.ml" 151 4252 4266 "AST.ml" 151 4252 4267
 type(
   'i
 )
 ident(
-  def s "AST.ml" 109 2872 2890 "AST.ml" 109 2872 2911
+  def s "AST.ml" 151 4252 4270 "AST.ml" 151 4252 4291
 )
-"AST.ml" 109 2872 2897 "AST.ml" 109 2872 2903
+"AST.ml" 151 4252 4277 "AST.ml" 151 4252 4283
 type(
   ('i, t, 'k) Ostap.Combinators.parse
 )
 ident(
-  int_ref hparse "AST.ml" 83 2026 2034 "AST.ml" 83 2026 2040
+  int_ref hparse "AST.ml" 84 2051 2059 "AST.ml" 84 2051 2065
 )
-"AST.ml" 109 2872 2905 "AST.ml" 109 2872 2908
+"AST.ml" 151 4252 4285 "AST.ml" 151 4252 4288
 call(
   tail
 )
@@ -7659,15 +10480,15 @@ type(
   'i
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 109 2872 2905 "AST.ml" 109 2872 2908
+  int_ref _ostap_stream "AST.ml" 151 4252 4285 "AST.ml" 151 4252 4288
 )
 type(
   'i
 )
 ident(
-  def _ostap_stream "AST.ml" 109 2872 2905 "AST.ml" 109 2872 2908
+  def _ostap_stream "AST.ml" 151 4252 4285 "AST.ml" 151 4252 4288
 )
-"AST.ml" 109 2872 2897 "AST.ml" 109 2872 2908
+"AST.ml" 151 4252 4277 "AST.ml" 151 4252 4288
 call(
   tail
 )
@@ -7684,7 +10505,7 @@ type(
   t
 )
 ident(
-  int_ref _0 "AST.ml" 109 2872 2897 "AST.ml" 109 2872 2908
+  int_ref _0 "AST.ml" 151 4252 4277 "AST.ml" 151 4252 4288
 )
 type(
   'j
@@ -7700,7 +10521,7 @@ type(
   t
 )
 ident(
-  def _0 "AST.ml" 109 2872 2897 "AST.ml" 109 2872 2908
+  def _0 "AST.ml" 151 4252 4277 "AST.ml" 151 4252 4288
 )
 type(
   t
@@ -7713,7 +10534,7 @@ type(
 ident(
   ext_ref Ostap.Combinators.seq
 )
-"AST.ml" 109 2872 2890 "AST.ml" 109 2872 2909
+"AST.ml" 151 4252 4270 "AST.ml" 151 4252 4289
 call(
   tail
 )
@@ -7727,149 +10548,149 @@ type(
   'i
 )
 ident(
-  int_ref _ostap_stream "AST.ml" 109 2872 2890 "AST.ml" 109 2872 2909
+  int_ref _ostap_stream "AST.ml" 151 4252 4270 "AST.ml" 151 4252 4289
 )
 type(
   'i
 )
 ident(
-  def _ostap_stream "AST.ml" 109 2872 2890 "AST.ml" 109 2872 2909
+  def _ostap_stream "AST.ml" 151 4252 4270 "AST.ml" 151 4252 4289
 )
-"AST.ml" 109 2872 2910 "AST.ml" 109 2872 2911
+"AST.ml" 151 4252 4290 "AST.ml" 151 4252 4291
 type(
   'i
 )
 ident(
-  int_ref s "AST.ml" 109 2872 2886 "AST.ml" 109 2872 2887
+  int_ref s "AST.ml" 151 4252 4266 "AST.ml" 151 4252 4267
 )
-"AST.ml" 109 2872 2890 "AST.ml" 109 2872 2911
+"AST.ml" 151 4252 4270 "AST.ml" 151 4252 4291
 type(
   ('i, t, 'k) Ostap.Combinators.result
 )
-"AST.ml" 109 2872 2886 "AST.ml" 109 2872 2911
+"AST.ml" 151 4252 4266 "AST.ml" 151 4252 4291
 type(
   'i -> ('i, t, 'k) Ostap.Combinators.result
 )
-"AST.ml" 113 2924 2928 "AST.ml" 113 2924 2936
+"AST.ml" 155 4304 4308 "AST.ml" 155 4304 4316
 type(
   string -> (t, Ostap.Msg.t) Checked.t
 )
 ident(
-  def fromFile "AST.ml" 116 3002 3002 "AST.ml" 1 0 -1
+  def fromFile "AST.ml" 158 4382 4382 "AST.ml" 1 0 -1
 )
-"AST.ml" 113 2924 2937 "AST.ml" 113 2924 2942
+"AST.ml" 155 4304 4317 "AST.ml" 155 4304 4322
 type(
   string
 )
 ident(
-  def fname "AST.ml" 114 2945 2947 "AST.ml" 114 2945 3000
+  def fname "AST.ml" 156 4325 4327 "AST.ml" 156 4325 4380
 )
-"AST.ml" 114 2945 2947 "AST.ml" 114 2945 2963
+"AST.ml" 156 4325 4327 "AST.ml" 156 4325 4343
 type(
   (Lexer.t -> (Lexer.t, t, Ostap.Reason.t) Ostap.Combinators.result) ->
   string -> (t, Ostap.Msg.t) Checked.t
 )
 ident(
-  int_ref Lexer.fromString "AST.ml" 68 1593 1601 "AST.ml" 68 1593 1611
+  int_ref Lexer.fromString "AST.ml" 69 1618 1626 "AST.ml" 69 1618 1636
 )
-"AST.ml" 114 2945 2964 "AST.ml" 114 2945 2976
+"AST.ml" 156 4325 4344 "AST.ml" 156 4325 4356
 type(
   Lexer.t -> (Lexer.t, t, Ostap.Reason.t) Ostap.Combinators.result
 )
 ident(
-  int_ref Parser.parse "AST.ml" 109 2872 2880 "AST.ml" 109 2872 2885
+  int_ref Parser.parse "AST.ml" 151 4252 4260 "AST.ml" 151 4252 4265
 )
-"AST.ml" 114 2945 2978 "AST.ml" 114 2945 2993
+"AST.ml" 156 4325 4358 "AST.ml" 156 4325 4373
 type(
   string -> string
 )
 ident(
   ext_ref Ostap.Util.read
 )
-"AST.ml" 114 2945 2994 "AST.ml" 114 2945 2999
+"AST.ml" 156 4325 4374 "AST.ml" 156 4325 4379
 type(
   string
 )
 ident(
-  int_ref fname "AST.ml" 113 2924 2937 "AST.ml" 113 2924 2942
+  int_ref fname "AST.ml" 155 4304 4317 "AST.ml" 155 4304 4322
 )
-"AST.ml" 114 2945 2977 "AST.ml" 114 2945 3000
+"AST.ml" 156 4325 4357 "AST.ml" 156 4325 4380
 call(
   stack
 )
 type(
   string
 )
-"AST.ml" 114 2945 2947 "AST.ml" 114 2945 3000
+"AST.ml" 156 4325 4327 "AST.ml" 156 4325 4380
 call(
   tail
 )
 type(
   (t, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 113 2924 2937 "AST.ml" 114 2945 3000
+"AST.ml" 155 4304 4317 "AST.ml" 156 4325 4380
 type(
   string -> (t, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 117 3010 3018 "AST.ml" 117 3010 3026
+"AST.ml" 159 4390 4398 "AST.ml" 159 4390 4406
 type(
   string -> (t, Ostap.Msg.t) Checked.t
 )
 ident(
-  int_ref fromFile "AST.ml" 113 2924 2928 "AST.ml" 113 2924 2936
+  int_ref fromFile "AST.ml" 155 4304 4308 "AST.ml" 155 4304 4316
 )
-"AST.ml" 117 3010 3028 "AST.ml" 117 3010 3037
+"AST.ml" 159 4390 4408 "AST.ml" 159 4390 4417
 type(
   string array -> int -> string
 )
 ident(
   ext_ref Array.get
 )
-"AST.ml" 117 3010 3038 "AST.ml" 117 3010 3046
+"AST.ml" 159 4390 4418 "AST.ml" 159 4390 4426
 type(
   string array
 )
 ident(
   ext_ref Sys.argv
 )
-"AST.ml" 117 3010 3047 "AST.ml" 117 3010 3048
+"AST.ml" 159 4390 4427 "AST.ml" 159 4390 4428
 type(
   int
 )
-"AST.ml" 117 3010 3027 "AST.ml" 117 3010 3049
+"AST.ml" 159 4390 4407 "AST.ml" 159 4390 4429
 type(
   string
 )
-"AST.ml" 117 3010 3018 "AST.ml" 117 3010 3049
+"AST.ml" 159 4390 4398 "AST.ml" 159 4390 4429
 call(
   stack
 )
 type(
   (t, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 118 3055 3070 "AST.ml" 118 3055 3073
+"AST.ml" 160 4435 4450 "AST.ml" 160 4435 4453
 type(
   t
 )
 ident(
-  def ast "AST.ml" 119 3078 3084 "AST.ml" 119 3078 3118
+  def ast "AST.ml" 161 4458 4464 "AST.ml" 161 4458 4498
 )
-"AST.ml" 118 3055 3059 "AST.ml" 118 3055 3073
+"AST.ml" 160 4435 4439 "AST.ml" 160 4435 4453
 type(
   (t, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 119 3078 3084 "AST.ml" 119 3078 3097
+"AST.ml" 161 4458 4464 "AST.ml" 161 4458 4477
 type(
   (GT.string -> unit, out_channel, unit) format -> GT.string -> unit
 )
 ident(
   ext_ref Printf.printf
 )
-"AST.ml" 119 3078 3098 "AST.ml" 119 3078 3104
+"AST.ml" 161 4458 4478 "AST.ml" 161 4458 4484
 type(
   (GT.string -> unit, out_channel, unit) format
 )
-"AST.ml" 119 3078 3106 "AST.ml" 119 3078 3110
+"AST.ml" 161 4458 4486 "AST.ml" 161 4458 4490
 type(
   (('_a, '_b) _#t_tt -> '_a -> t -> '_b, < show : t -> GT.string >) GT.t ->
   t -> GT.string
@@ -7877,93 +10698,93 @@ type(
 ident(
   ext_ref GT.show
 )
-"AST.ml" 119 3078 3110 "AST.ml" 119 3078 3113
+"AST.ml" 161 4458 4490 "AST.ml" 161 4458 4493
 type(
   ((('_a, '_b) _#t_tt as 'c) -> '_a -> t -> '_b, < show : t -> GT.string >)
   GT.t
 )
 ident(
-  int_ref t "AST.ml" 3 9 9 "AST.ml" 28 419 443
+  int_ref t "AST.ml" 3 9 9 "AST.ml" 29 430 454
 )
-"AST.ml" 119 3078 3114 "AST.ml" 119 3078 3117
+"AST.ml" 161 4458 4494 "AST.ml" 161 4458 4497
 type(
   t
 )
 ident(
-  int_ref ast "AST.ml" 118 3055 3070 "AST.ml" 118 3055 3073
+  int_ref ast "AST.ml" 160 4435 4450 "AST.ml" 160 4435 4453
 )
-"AST.ml" 119 3078 3105 "AST.ml" 119 3078 3118
+"AST.ml" 161 4458 4485 "AST.ml" 161 4458 4498
 call(
   stack
 )
 type(
   GT.string
 )
-"AST.ml" 119 3078 3084 "AST.ml" 119 3078 3118
+"AST.ml" 161 4458 4464 "AST.ml" 161 4458 4498
 call(
   stack
 )
 type(
   unit
 )
-"AST.ml" 120 3119 3137 "AST.ml" 120 3119 3138
+"AST.ml" 162 4499 4517 "AST.ml" 162 4499 4518
 type(
   Ostap.Msg.t
 )
 ident(
-  def m "AST.ml" 121 3144 3150 "AST.ml" 121 3144 3208
+  def m "AST.ml" 163 4524 4530 "AST.ml" 163 4524 4588
 )
-"AST.ml" 120 3119 3136 "AST.ml" 120 3119 3139
+"AST.ml" 162 4499 4516 "AST.ml" 162 4499 4519
 type(
   Ostap.Msg.t list
 )
 type(
   Ostap.Msg.t list
 )
-"AST.ml" 120 3119 3123 "AST.ml" 120 3119 3139
+"AST.ml" 162 4499 4503 "AST.ml" 162 4499 4519
 type(
   (t, Ostap.Msg.t) Checked.t
 )
-"AST.ml" 121 3144 3150 "AST.ml" 121 3144 3164
+"AST.ml" 163 4524 4530 "AST.ml" 163 4524 4544
 type(
   (string -> unit, out_channel, unit) format -> string -> unit
 )
 ident(
   ext_ref Printf.eprintf
 )
-"AST.ml" 121 3144 3165 "AST.ml" 121 3144 3185
+"AST.ml" 163 4524 4545 "AST.ml" 163 4524 4565
 type(
   (string -> unit, out_channel, unit) format
 )
-"AST.ml" 121 3144 3187 "AST.ml" 121 3144 3205
+"AST.ml" 163 4524 4567 "AST.ml" 163 4524 4585
 type(
   Ostap.Msg.t -> string
 )
 ident(
   ext_ref Ostap.Msg.toString
 )
-"AST.ml" 121 3144 3206 "AST.ml" 121 3144 3207
+"AST.ml" 163 4524 4586 "AST.ml" 163 4524 4587
 type(
   Ostap.Msg.t
 )
 ident(
-  int_ref m "AST.ml" 120 3119 3137 "AST.ml" 120 3119 3138
+  int_ref m "AST.ml" 162 4499 4517 "AST.ml" 162 4499 4518
 )
-"AST.ml" 121 3144 3186 "AST.ml" 121 3144 3208
+"AST.ml" 163 4524 4566 "AST.ml" 163 4524 4588
 call(
   stack
 )
 type(
   string
 )
-"AST.ml" 121 3144 3150 "AST.ml" 121 3144 3208
+"AST.ml" 163 4524 4530 "AST.ml" 163 4524 4588
 call(
   stack
 )
 type(
   unit
 )
-"AST.ml" 117 3010 3012 "AST.ml" 121 3144 3208
+"AST.ml" 159 4390 4392 "AST.ml" 163 4524 4588
 type(
   unit
 )

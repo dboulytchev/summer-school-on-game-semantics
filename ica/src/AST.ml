@@ -16,6 +16,7 @@ open GT
 | Fix     of t
 
 (* I.A. part *)
+| Skip    
 | New     of string * t
 | Seq     of t * t
 | Assn    of string * t
@@ -31,7 +32,7 @@ module Lexer =
   struct
 
     let keywords = [
-      "def"; "new"; "in"; "semaphore"; "if"; "then"; "else"; "fix"; "grab"; "release"; "true"; "false"
+      "def"; "new"; "in"; "semaphore"; "if"; "then"; "else"; "fi"; "fix"; "grab"; "release"; "true"; "false"; "skip"
     ]
 
     let r = Ostap.Matcher.Token.repr
@@ -85,19 +86,60 @@ module Parser =
         ident: !(Lexer.ident);
         key[name]: @(name ^ "\\b" : name);
         def[env] : 
-          -key["def"] -x:ident -"=" -e:expr[env] -key["in"] def[(x, `Def e)::env] 
-        | expr[env];
-        expr[env]: p:primary[env]+ {
-          let t::ts = p in 
-          List.fold_left (fun acc e -> App (acc, e)) t ts
+          -key["def"] -x:ident -"=" -e:apps[env] -key["in"] def[(x, `Def e)::env] 
+        | apps[env];
+        expr[env]: 
+	  !(Ostap.Util.expr 
+             (fun x -> x)
+	     (let l = 
+	        List.map 
+		  (fun s -> 
+		     ostap(- $(s)), 
+		     match s with 
+                     | "||" -> fun x y -> Par (x, y) 
+                     | ";"  -> fun x y -> Seq (x, y) 
+                     | _    -> fun x y -> Binop (s, x, y)
+                  ) 
+	      in
+              Array.map (fun (a, s) -> a, l s) 
+              [|
+                `Lefta, ["||"];
+                `Lefta, [";"];                
+		`Lefta, ["!!"];
+		`Lefta, ["&&"];
+		`Nona , ["=="; "!="; "<="; "<"; ">="; ">"];
+		`Lefta, ["+" ; "-"];
+		`Lefta, ["*" ; "/"; "%"];
+              |] 
+	     )
+	     (primary apps env)
+        );
+	apps[env]: p:expr[env]+ {
+	  let h::t = p in
+	  List.fold_left (fun acc e -> App (acc, e)) h t
         };
-        primary[env]:
+        primary[expr][env]:
           -"(" expr[env] -")"
-        | n:ident {
-            try 
-              match List.assoc n env with
-              | `Def e -> e
-              | `Arg   -> Var n
+        | k:!(Lexer.literal) {Const k}
+        | key["true" ] {True} 
+        | key["false"] {False}
+        | key["fix"] e:expr[env] {Fix e}
+        | key["if"] c:expr[env] key["then"] e1:expr[env] key["else"] e2:expr[env] key["fi"] {If (c, e1, e2)} 
+        | key["new"] n:ident key["in"] e:expr[env] {New (n, e)}
+        | key["semaphore"] n:ident key["in"] e:expr[env] {Sema (n, e)}
+        | key["grab"] e:expr[env] {Grab e}
+        | key["release"] e:expr[env] {Release e}
+        | key["skip"] {Skip}
+        | "!" e:expr[env] {Deref e}        
+        | n:ident s:(-":=" expr[env])? {
+            try
+              match s with
+	      | None ->
+                 (match List.assoc n env with
+                  | `Def e -> e
+                  | `Arg   -> Var n
+                 )
+	      | Some e -> Assn (n, e)
             with Not_found -> raise (Lexer.Error (Printf.sprintf "undefined identifier %s" n))
           }
         | "\\" ns:ident+ "." e:expr[List.map (fun n -> (n, `Arg)) ns @ env] {
