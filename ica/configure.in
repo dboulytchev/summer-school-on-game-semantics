@@ -56,7 +56,6 @@ AC_CHECK_CAMLP5_MODULE(Pr_o, pr_o.cmo, +camlp5)
 AC_CHECK_CAMLP5_MODULE(logger, pa_log.cmo, +camlp5 ../logger/camlp5, http://oops.math.spbu.ru/projects/logger) dnl GET: svn co http://oops.math.spbu.ru/svn/logger/trunk
 AC_CHECK_CAMLP5_MODULE(checked, pa_checked.cmo, +camlp5 ../checked/camlp5, http://oops.math.spbu.ru/projects/checked) dnl GET: svn co http://oops.math.spbu.ru/svn/checked/trunk
 AC_CHECK_CAMLP5_MODULE(ostap, pa_ostap.cmo, +camlp5 ../ostap/camlp5, http://oops.math.spbu.ru/projects/ostap) dnl GET: svn co http://oops.math.spbu.ru/svn/ostap/trunk
-AC_CHECK_CAMLP5_MODULE(MiniKanren, pa_minikanren.cmo, +camlp5 ../minikanren/camlp5, http://oops.math.spbu.ru/projects/ostap) dnl GET: svn co http://oops.math.spbu.ru/svn/ostap/trunk
 AC_CHECK_CAMLP5_MODULE(GT, pa_gt.cmo, +camlp5 ../generic-transformers/camlp5, http://oops.math.spbu.ru/projects/ostap) dnl GET: svn co http://oops.math.spbu.ru/svn/ostap/trunk
 AC_SUBST(PARSER_INCLUDES)
 fi
@@ -67,8 +66,6 @@ dnl library name, modules to open,
 dnl 1st dir <space> 2nd dir <space> etc., library homepage.
 dnl more module checks
 AC_CHECK_OCAML_LIBRARY(str, Str)
-AC_CHECK_OCAML_LIBRARY(bytes, Bytes)
-AC_CHECK_OCAML_LIBRARY(re, Re_str)
 AC_CHECK_OCAML_LIBRARY(typeutil, Compare)
 AC_CHECK_OCAML_LIBRARY(settings, Settings)
 AC_CHECK_OCAML_LIBRARY(checked, Checked)
