@@ -30,7 +30,7 @@ open GT
 
 (* Runtime values *)
 | DelLoc  of string * t
-| DelSema of string * t with show
+| DelSema of string * t with show, html
 
 module Lexer =
   struct
@@ -263,8 +263,23 @@ module Semantics =
   end
 
 let _ =
-  match fromFile (Array.get Sys.argv 1) with
+  let fin = Sys.argv.(1) in
+  let text = Ostap.Util.read fin in
+  match fromFile fin with
   | Checked.Ok ast -> 
-      Printf.printf "%s\n" (show(t) ast)
+      let fout = open_out Sys.argv.(2) in
+      Printf.fprintf fout "%s\n" (
+        HTML.toHTML (
+          HTML.html (
+            HTML.seq [
+              HTML.title (HTML.string @@ Printf.sprintf "Parsing tree for %s" fin);
+              HTML.textarea ~attrs:"readonly rows=20 cols=100" @@ HTML.string text;
+              HTML.br;
+              HTML.body @@ html(t) ast
+            ]
+          )
+	)
+      );
+      close_out fout
   | Checked.Fail [m] -> 
       Printf.eprintf "Syntax error: %s\n" (Ostap.Msg.toString m)
