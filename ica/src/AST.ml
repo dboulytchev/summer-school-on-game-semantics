@@ -205,7 +205,14 @@ module Semantics =
 
       end
 
-    let isValue (t : t) : bool = false (*TODO*)
+    let isValue = function
+      | Var _ 
+      | Lam _  
+      | True
+      | False
+      | Const _
+      | Skip     -> true
+      | _        -> false 
 
     let rec getContexts = function
       | App     (Lam (x, b), y) as t -> [Context.Hole, t] 
@@ -261,6 +268,26 @@ module Semantics =
 
       | t -> [Context.Hole, t]
 
+    let rec applyContext (c, t) =
+      match c with
+      | Context.Hole                 -> t
+      | Context.App        (c, t'  ) -> App     (applyContext (c, t), t')
+      | Context.BinopL  (s, c, t'  ) -> Binop   (s, applyContext (c, t), t')
+      | Context.BinopR  (s, t', c  ) -> Binop   (s, t', applyContext (c, t))
+      | Context.Unop    (s,     c  ) -> Unop    (s,     applyContext (c, t))
+      | Context.If      (c, t', t'') -> If      (applyContext (c, t), t', t'')
+      | Context.Seq     (c, t')      -> Seq     (applyContext (c, t), t')
+      | Context.Assn    (s, c)       -> Assn    (s, applyContext (c, t))
+      | Context.Deref       c        -> Deref   (applyContext (c, t))
+
+      | Context.ParL    (c, t')      -> Par     (applyContext (c, t), t')
+      | Context.ParR    (t', c)      -> Par     (t', applyContext (c, t))
+      | Context.Grab     c           -> Grab    (applyContext (c, t))
+      | Context.Release  c           -> Release (applyContext (c, t))
+
+      | Context.DelLoc  (s, c)       -> DelLoc  (s, applyContext (c, t))
+      | Context.DelSema (s, c)       -> DelSema (s, applyContext (c, t))
+
     let newCounter name =
       let i = ref 0 in
       fun () ->
@@ -278,11 +305,11 @@ module Semantics =
       | Binop   (s, x, y) when is_value x && is_value y -> (c, binop s x y), state 
       | Unop    (s, x) when is_value x -> (c, unop s x), state
 *)  
-      | If      (True, x, _)  -> (c, x), state
-      | If      (False, _, y) -> (c, y), state
-      | Fix      t            -> (c, App (t, Fix t)), state      
-      | Par     (Skip, Skip)  -> (c, Skip), state
-      | Seq     (Skip, t)     -> (c, t), state
+      | If      (True , x, _)  -> (c, x), state
+      | If      (False, _, y)  -> (c, y), state
+      | Fix      t             -> (c, App (t, Fix t)), state      
+      | Par     (Skip, Skip)   -> (c, Skip), state
+      | Seq     (Skip, t)      -> (c, t), state
 (*
       | New     (s, t)        -> 
       | Assn    (s, t)        -> ...
