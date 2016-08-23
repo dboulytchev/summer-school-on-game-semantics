@@ -205,26 +205,61 @@ module Semantics =
 
       end
 
+    let isValue (t : t) : bool = false (*TODO*)
+
     let rec getContexts = function
-      | App     (x, y)    -> List.map (fun (c, t) -> Context.App (c, y), t) (getContexts x)
-      | Binop   (s, x, y) -> 
-	  List.map (fun (c, t) -> Context.BinopL (s, c, y), t) (getContexts x) @
+      | App     (Lam (x, b), y) as t -> [Context.Hole, t] 
+      | App     (x         , y)      ->
+         List.map (fun (c, t) -> Context.App (c, y), t) (getContexts x)
+
+      | Binop   (s, x, y) as t when isValue x && isValue y -> [Context.Hole, t]
+      | Binop   (s, x, y)      when isValue x              ->
           List.map (fun (c, t) -> Context.BinopR (s, x, c), t) (getContexts y)
+      | Binop   (s, x, y)                                  ->
+	  List.map (fun (c, t) -> Context.BinopL (s, c, y), t) (getContexts x)
                              
-      | Unop    (s, x)    -> List.map (fun (c, t) -> Context.Unop (s, c), t)    (getContexts x)
-      | If      (x, y, z) -> List.map (fun (c, t) -> Context.If   (c, y, z), t) (getContexts x)
-      | Seq     (x, y)    -> List.map (fun (c, t) -> Context.Seq  (c, y), t)    (getContexts x)
-      | Assn    (x, y)    -> List.map (fun (c, t) -> Context.Assn (x, c), t)    (getContexts y)
-      | Deref    x        -> List.map (fun (c, t) -> Context.Deref c, t)        (getContexts x)
-      | Par     (x, y)    ->
+      | Unop    (s, x) as t when isValue x -> [Context.Hole, t]
+      | Unop    (s, x)                     ->
+         List.map (fun (c, t) -> Context.Unop (s, c), t) (getContexts x)
+
+      | If      (x, y, z) as t when isValue x -> [Context.Hole, t]
+      | If      (x, y, z)                     ->
+         List.map (fun (c, t) -> Context.If (c, y, z), t) (getContexts x)
+
+      | Seq     (Skip, y) as t -> [Context.Hole, t]
+      | Seq     (x   , y)      ->
+         List.map (fun (c, t) -> Context.Seq  (c, y), t)    (getContexts x)
+
+      | Assn    (x, y) as t when isValue y -> [Context.Hole, t]
+      | Assn    (x, y)                     ->
+         List.map (fun (c, t) -> Context.Assn (x, c), t)    (getContexts y)
+
+      | Deref    x as t when isValue x -> [Context.Hole, t]
+      | Deref    x                     ->
+         List.map (fun (c, t) -> Context.Deref c, t)        (getContexts x)
+
+      | Par     (Skip, Skip) as t -> [Context.Hole, t]
+      | Par     (x   , y   )      ->
 	  List.map (fun (c, t) -> Context.ParL (c, y), t) (getContexts x) @
           List.map (fun (c, t) -> Context.ParR (x, c), t) (getContexts y)
   
-      | Grab     x        -> List.map (fun (c, t) -> Context.Grab     c, t)      (getContexts x)
-      | Release  x        -> List.map (fun (c, t) -> Context.Release  c, t)      (getContexts x)
-      | DelLoc  (s, x)    -> List.map (fun (c, t) -> Context.DelLoc  (s, c), t)  (getContexts x)
-      | DelSema (s, x)    -> List.map (fun (c, t) -> Context.DelSema (s, c), t)  (getContexts x)
-      | t                 -> [Hole, t]
+      | Grab     x as t when isValue x -> [Context.Hole, t]
+      | Grab     x                     ->
+         List.map (fun (c, t) -> Context.Grab     c, t)      (getContexts x)
+
+      | Release  x as t when isValue x -> [Context.Hole, t]
+      | Release  x                     ->
+         List.map (fun (c, t) -> Context.Release  c, t)      (getContexts x)
+
+      | DelLoc  (s, x) as t when isValue x -> [Context.Hole, t]
+      | DelLoc  (s, x)                     ->
+         List.map (fun (c, t) -> Context.DelLoc  (s, c), t)  (getContexts x)
+
+      | DelSema (s, x) as t when isValue x -> [Context.Hole, t]
+      | DelSema (s, x)                     ->
+         List.map (fun (c, t) -> Context.DelSema (s, c), t)  (getContexts x)
+
+      | t -> [Context.Hole, t]
 
     let newCounter name =
       let i = ref 0 in
