@@ -1,36 +1,120 @@
 open GT
+open MiniKanren
 
-@type t = 
-(* Lambda part *)
-| Var     of string
-| Lam     of string * t
-| App     of t * t
+@type 'typ atyp = TVar of int | Untyped | Nat | Bool | Fun of 'typ * 'typ with gmap, html, show
 
-(* PCF part *)
-| Binop   of string * t * t
-| Unop    of string * t
-| True
-| False
-| Const   of int
-| If      of t * t * t
-| Fix     of t
+type typ  = typ atyp
+type ltyp = ltyp atyp logic
 
-(* I.A. part *)
-| Skip    
-| New     of string * t
-| Seq     of t * t
-| Assn    of t * t
-| Deref   of t
+let rec inj_typ t  = inj @@ gmap(atyp) inj_typ t
+let rec prj_typ lt = gmap(atyp) prj_typ @@ (match destruct lt with `Var (n, _) -> TVar n | `Value v -> v)
+;;
 
-(* Concurrent part *)
-| Par     of t * t
-| Sema    of string * t
-| Grab    of t
-| Release of t 
+@type ('string, 'int, 't) at = 
+  (* Lambda part *)
+  | Var     of 'string
+  | Lam     of 'string * 't
+  | App     of 't * 't
+	
+  (* PCF part *)
+  | Binop   of 'string * 't * 't
+  | Unop    of 'string * 't
+  | True
+  | False
+  | Const   of 'int
+  | If      of 't * 't * 't
+  | Fix     of 't
+	
+  (* I.A. part *)
+  | Skip    
+  | New     of 'string * 't
+  | Seq     of 't * 't
+  | Assn    of 't * 't
+  | Deref   of 't
+	
+  (* Concurrent part *)
+  | Par     of 't * 't
+  | Sema    of 'string * 't
+  | Grab    of 't
+  | Release of 't 
+	
+  (* Runtime values *)
+  | DelLoc  of 'string * 't
+  | DelSema of 'string * 't with eq, show, html, gmap
+  
+type t  = (string, int, t) at
+type lt = (string logic, int logic, lt) at logic
+      
+let rec inj_term t  = inj (gmap(at) inj inj inj_term t)
+let rec prj_term lt = gmap(at) prj prj prj_term @@ prj lt
 
-(* Runtime values *)
-| DelLoc  of string * t
-| DelSema of string * t with eq, show, html
+module Typing =
+  struct
+
+    let (!) = inj
+
+    let rec lookupo a g t =
+      fresh (a' t' tl) 
+        (g === !(a', t')%tl)
+        (conde [
+          (a' === a) &&& (t' === t);
+          lookupo a tl t
+         ])  
+
+    let rec mako gamma term typ =
+      conde [
+        fresh (name)
+          (term === !(Var name)) 
+          (lookupo name gamma typ);
+        fresh (name body targ tbody)
+          (term === !(Lam (name, body)))
+          (typ  === !(Fun (targ, tbody))) 
+          (mako (!(name, targ) % gamma) body tbody);
+        fresh (f arg ftype atype)
+          (term === !(App (f, arg)))
+          (ftype === !(Fun (atype, typ)))
+          (mako gamma f   ftype)
+          (mako gamma arg atype);
+        fresh (int)
+          (term === !(Const int))
+          (typ  === !Nat);
+        fresh (op x y)
+          (term === !(Binop (op, x, y)))
+          (List.lookupo (eqo op) (inj_list ["&&"; "!!"]) !(Some op))
+          (mako gamma x !Bool)
+          (mako gamma y !Bool)
+          (typ === !Bool);
+        fresh (op x y)
+          (term === !(Binop (op, x, y)))
+          (List.lookupo (eqo op) (inj_list ["=="; "!="; "<="; "<"; ">="; ">"]) !(Some op))
+          (mako gamma x !Nat)
+          (mako gamma y !Nat)
+          (typ === !Bool);
+        fresh (op x y)
+          (term === !(Binop (op, x, y)))
+          (List.lookupo (eqo op) (inj_list ["+"; "-"; "*"; "/"]) !(Some op))
+          (mako gamma x !Nat)
+          (mako gamma y !Nat)
+          (typ === !Nat);
+        ((term === !True) ||| (term === !False)) &&& (typ === !Bool);
+        fresh (cond th el)
+          (term === !(If (cond, th, el)))
+          (mako gamma th   typ)
+          (mako gamma el   typ)
+          (mako gamma cond !Bool);
+        fresh (unfix untyp)
+          (term === !(Fix unfix))
+          (mako gamma unfix !(Fun (typ, typ)))
+      ]
+
+    let make term = run q (fun t  -> mako nil (inj_term term) t)
+                          (fun ts ->
+			    match Stream.take ~n:1 ts with
+			    | []  -> Untyped
+                            | [t] -> prj_typ t
+                          )
+
+  end
 
 module Lexer =
   struct
@@ -181,9 +265,9 @@ module Semantics =
 	  | Grab    of e
 	  | Release of e
 	  | DelLoc  of string * e
-	  | DelSema of string * e with show
+	  | DelSema of string * e 
 
-        @type path = N | L of path | R of path with show
+        @type path = N | L of path | R of path
 
         let rec getPath = function
 	| Hole -> N
@@ -361,6 +445,7 @@ module Semantics =
   end
 
 let _ =
+  let rec fix f x = f (fix f) x in
   let fin = Sys.argv.(1) in
   let text = Ostap.Util.read fin in
   match fromFile fin with
@@ -373,7 +458,13 @@ let _ =
               HTML.title (HTML.string @@ Printf.sprintf "Parsing tree for %s" fin);
               HTML.textarea ~attrs:"readonly rows=20 cols=100" @@ HTML.string text;
               HTML.br;
-              HTML.body @@ html(t) ast
+              HTML.body (
+                HTML.seq [
+                   (fix (fun to_html -> html(at) (html string) (html int) to_html)) ast;
+                   HTML.br;
+                   (fix (fun to_html -> html(atyp) to_html)) (Typing.make ast)
+		]
+              )              
             ]
           )
 	)

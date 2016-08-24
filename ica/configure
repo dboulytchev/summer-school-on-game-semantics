@@ -4308,6 +4308,63 @@ $as_echo "$as_me: WARNING: Please, visit http://oops.math.spbu.ru/projects/ostap
 fi
 
 
+
+{ $as_echo "$as_me:${as_lineno-$LINENO}: checking for MiniKanren (pa_minikanren.cmo)" >&5
+$as_echo_n "checking for MiniKanren (pa_minikanren.cmo)... " >&6; }
+cat > conftest.ml <<EOF
+let _ = 3
+EOF
+if $CAMLP5O pa_minikanren.cmo $PARSER_INCLUDES conftest.ml > /dev/null 2>&1 ; then
+    { $as_echo "$as_me:${as_lineno-$LINENO}: result: found" >&5
+$as_echo "found" >&6; }
+else
+    unset found
+    if ! test "$use_findlib" = no ; then
+	if check_inc=`$OCAMLFIND query -i-format MiniKanren 2>/dev/null`; then
+	    if $CAMLP5R $PARSER_INCLUDES $check_inc conftest.ml > /dev/null 2>&1 ; then
+		{ $as_echo "$as_me:${as_lineno-$LINENO}: result: adding $check_inc" >&5
+$as_echo "adding $check_inc" >&6; }
+		PARSER_INCLUDES="$PARSER_INCLUDES $check_inc"
+		found=yes
+	    fi
+	fi
+    fi
+    if ! test "$found"; then
+	if test -n "$SITELIBDIR"; then
+	    dirs=" $SITELIBDIR/camlp5 $OCAMLLIB/camlp5"
+	else
+	    dirs=" $OCAMLLIB/camlp5"
+	fi
+	for check_dir in $dirs; do
+	    builddir=`pwd`
+	    case $check_dir in
+		[\\/+]*) ;;
+		[[:alpha:]]:\\*) ;;
+		*) check_dir="$builddir/$check_dir";;
+	    esac
+	    if $CAMLP5R -I $check_dir conftest.ml > /dev/null 2>&1 ; then
+		found=yes
+		break
+	    fi
+	done
+	if test "$found" ; then
+	    { $as_echo "$as_me:${as_lineno-$LINENO}: result: adding -I $check_dir" >&5
+$as_echo "adding -I $check_dir" >&6; }
+	    PARSER_INCLUDES="$PARSER_INCLUDES -I $check_dir"
+	else
+	    { $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
+$as_echo "not found" >&6; }
+	    if ! test -z ""; then
+		{ $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Please, visit " >&5
+$as_echo "$as_me: WARNING: Please, visit " >&2;}
+	    fi
+	    as_fn_error $? "Required module MiniKanren not found" "$LINENO" 5
+	fi
+    fi
+fi
+
+
+
 fi
 
 
@@ -4534,6 +4591,52 @@ $as_echo "not found" >&6; }
 $as_echo "$as_me: WARNING: Please, visit " >&2;}
 		fi
 		as_fn_error $? "Required module $module not found in library GT" "$LINENO" 5
+    fi
+done
+
+
+
+
+
+for module in MiniKanren; do
+    { $as_echo "$as_me:${as_lineno-$LINENO}: checking for MiniKanren ($module)" >&5
+$as_echo_n "checking for MiniKanren ($module)... " >&6; }
+
+    unset META
+    ocaml_compile "MiniKanren" "$module" ""
+    if test "$found" ; then
+
+cat > conftest.ml <<EOF
+open $module
+EOF
+		unset CMA
+		if test -f "$META"; then
+		    CMA=`grep "archive(byte)" $META | sed -e 's,[^=]*= *"\(.*\)",\1,g' | sed -e ':a;N;$!ba;s/\n/ /g'`
+		fi
+		test -z "$CMA" && CMA="MiniKanren.cma"
+		if ! $OCAMLC -o conftest -rectypes $MODULE_INCLUDES $CMA conftest.cmo > /dev/null 2>&1 ; then
+		    { $as_echo "$as_me:${as_lineno-$LINENO}: result: $CMA not found" >&5
+$as_echo "$CMA not found" >&6; }
+	    	    if ! test -z ""; then
+			{ $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Please, visit " >&5
+$as_echo "$as_me: WARNING: Please, visit " >&2;}
+	    	    fi
+		    as_fn_error $? "Required library MiniKanren not found" "$LINENO" 5
+		else
+		    if ! echo "$EXTRA_CMA" | grep "$CMA" > /dev/null 2>&1 ; then
+			EXTRA_CMA="$EXTRA_CMA $CMA"
+		    fi
+		    { $as_echo "$as_me:${as_lineno-$LINENO}: result: $result" >&5
+$as_echo "$result" >&6; }
+		fi
+    else
+		{ $as_echo "$as_me:${as_lineno-$LINENO}: result: not found" >&5
+$as_echo "not found" >&6; }
+		if ! test -z ""; then
+		    { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: Please, visit " >&5
+$as_echo "$as_me: WARNING: Please, visit " >&2;}
+		fi
+		as_fn_error $? "Required module $module not found in library MiniKanren" "$LINENO" 5
     fi
 done
 
