@@ -65,7 +65,7 @@ dnl usage:
 dnl library name, modules to open,
 dnl 1st dir <space> 2nd dir <space> etc., library homepage.
 dnl more module checks
-AC_CHECK_OCAML_LIBRARY(str, Str)
+AC_CHECK_OCAML_LIBRARY(re, Re_str)
 AC_CHECK_OCAML_LIBRARY(typeutil, Compare)
 AC_CHECK_OCAML_LIBRARY(settings, Settings)
 AC_CHECK_OCAML_LIBRARY(checked, Checked)
