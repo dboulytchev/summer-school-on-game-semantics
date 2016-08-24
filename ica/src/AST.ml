@@ -19,7 +19,7 @@ open GT
 | Skip    
 | New     of string * t
 | Seq     of t * t
-| Assn    of string * t
+| Assn    of t * t
 | Deref   of t
 
 (* Concurrent part *)
@@ -30,7 +30,7 @@ open GT
 
 (* Runtime values *)
 | DelLoc  of string * t
-| DelSema of string * t with show, html
+| DelSema of string * t with eq, show, html
 
 module Lexer =
   struct
@@ -143,7 +143,7 @@ module Parser =
                   | `Def e -> e
                   | `Arg   -> Var n
                  )
-	      | Some e -> Assn (n, e)
+	      | Some e -> Assn (Var n, e)
             with Not_found -> raise (Lexer.Error (Printf.sprintf "undefined identifier %s" n))
           }
         | "\\" ns:ident+ "." e:expr[List.map (fun n -> (n, `Arg)) ns @ env] {
@@ -173,7 +173,8 @@ module Semantics =
 	  | Unop    of string * e
 	  | If      of e * t * t
 	  | Seq     of e * t
-	  | Assn    of string * e
+	  | AssnL   of e * t
+	  | AssnR   of t * e
 	  | Deref   of e
 	  | ParL    of e * t
 	  | ParR    of t * e
@@ -192,7 +193,8 @@ module Semantics =
 	| Unop    (_, e)
 	| If      (e, _, _)
 	| Seq     (e, _)
-	| Assn    (_, e)
+	| AssnL   (e, _)
+	| AssnR   (_, e)
 	| Deref    e
 	| Grab     e
 	| Release  e
@@ -235,21 +237,28 @@ module Semantics =
 
       | Seq     (Skip, y) as t -> [Context.Hole, t]
       | Seq     (x   , y)      ->
-         List.map (fun (c, t) -> Context.Seq  (c, y), t)    (getContexts x)
+         List.map (fun (c, t) -> Context.Seq  (c, y), t)  (getContexts x)
 
-      | Assn    (x, y) as t when isValue y -> [Context.Hole, t]
-      | Assn    (x, y)                     ->
-         List.map (fun (c, t) -> Context.Assn (x, c), t)    (getContexts y)
+      | Assn    (x, y) as t when isValue x && isValue y -> [Context.Hole, t]
+      | Assn    (x, y) as t when isValue x              ->
+         List.map (fun (c, t) -> Context.AssnR (x, c), t) (getContexts y)
+      | Assn    (x, y)                                  ->
+         List.map (fun (c, t) -> Context.AssnL (c, y), t) (getContexts x)
 
       | Deref    x as t when isValue x -> [Context.Hole, t]
       | Deref    x                     ->
          List.map (fun (c, t) -> Context.Deref c, t)        (getContexts x)
 
-      | Par     (Skip, Skip) as t -> [Context.Hole, t]
-      | Par     (x   , y   )      ->
-	  List.map (fun (c, t) -> Context.ParL (c, y), t) (getContexts x) @
-          List.map (fun (c, t) -> Context.ParR (x, c), t) (getContexts y)
-  
+      | Par     (x, y) as t ->
+	 let lContexts = fun () -> List.map (fun (c, t) -> Context.ParL (c, y), t) (getContexts x) in
+         let rContexts = fun () -> List.map (fun (c, t) -> Context.ParR (x, c), t) (getContexts y) in
+         (match isValue x, isValue y with
+          | false, false -> lContexts () @ rContexts ()
+          | _    , false -> rContexts ()
+          | false, _     -> lContexts ()
+          | _            -> [Context.Hole, t]
+         )
+
       | Grab     x as t when isValue x -> [Context.Hole, t]
       | Grab     x                     ->
          List.map (fun (c, t) -> Context.Grab     c, t)      (getContexts x)
@@ -277,7 +286,8 @@ module Semantics =
       | Context.Unop    (s,     c  ) -> Unop    (s,     applyContext (c, t))
       | Context.If      (c, t', t'') -> If      (applyContext (c, t), t', t'')
       | Context.Seq     (c, t')      -> Seq     (applyContext (c, t), t')
-      | Context.Assn    (s, c)       -> Assn    (s, applyContext (c, t))
+      | Context.AssnL   (c, y)       -> Assn    (applyContext (c, t), y)
+      | Context.AssnR   (x, c)       -> Assn    (x, applyContext (c, t))
       | Context.Deref       c        -> Deref   (applyContext (c, t))
 
       | Context.ParL    (c, t')      -> Par     (applyContext (c, t), t')
@@ -298,11 +308,37 @@ module Semantics =
     let newLoc  = newCounter "loc"
     let newSema = newCounter "sema"
   
+    let rec subst x m = function
+      | Var      s        when s  = x -> m 
+      | Lam     (s , t)   when s != x -> Lam     (s, subst x m t)
+      | App     (t1, t2)              -> App     (subst x m t1, subst x m t2)
+
+      | Binop   (s , t1, t2)          -> Binop   (s, subst x m t1, subst x m t2)
+      | Unop    (s , t)               -> Unop    (s, subst x m t)
+      | If      (t0, t1, t2)          -> If      (subst x m t0, subst x m t1, subst x m t2)
+      | Fix      t                    -> Fix     (subst x m t)
+
+      | New     (s , t )  when s != x -> New     (s, subst x m t) 
+      | Seq     (t1, t2)              -> Seq     (subst x m t1, subst x m t2) 
+      | Assn    (t1, t2)              -> Assn    (subst x m t1, subst x m t2)
+
+      | Deref    t                    -> Deref   (subst x m t)
+      
+      | Par     (t1, t2)              -> Par     (subst x m t1, subst x m t2) 
+      | Sema    (s , t)   when s != x -> Sema    (s, subst x m t)
+      | Grab     t                    -> Grab    (subst x m t)
+      | Release  t                    -> Release (subst x m t)
+
+      | DelLoc  (s , t)               -> DelLoc  (s, subst x m t)
+      | DelSema (s , t)               -> DelSema (s, subst x m t)
+
+      | t -> t
+
     let contextStep (c, t) ((loc, sema) as state) =
       match t with
+      | App     (Lam (x, t), m) -> (c, subst x m t), state 
 (*
-      | App     (Lam (x, t), m) -> (c, subst), state 
-      | Binop   (s, x, y) when is_value x && is_value y -> (c, binop s x y), state 
+      | Binop   (s, x, y) when isValue x && isValue y -> (c, binop s x y), state 
       | Unop    (s, x) when is_value x -> (c, unop s x), state
 *)  
       | If      (True , x, _)  -> (c, x), state
