@@ -42,11 +42,34 @@ let rec prj_typ lt = gmap(atyp) prj_typ @@ (match destruct lt with `Var (n, _) -
   | DelLoc  of 'string * 't
   | DelSema of 'string * 't with eq, show, html, gmap
   
-type t  = (string, int, t) at
-type lt = (string logic, int logic, lt) at logic
+type t   = (string, int, t) at
+type lt  = (string logic, int logic, lt) at logic
+type tt  = (string, int, typ * tt) at
+type ltt = (string logic, int logic, (ltyp * ltt) logic) at logic
       
 let rec inj_term t  = inj (gmap(at) inj inj inj_term t)
 let rec prj_term lt = gmap(at) prj prj prj_term @@ prj lt
+
+let id x = x
+let rec inj_term_tterm : t -> tt = fun t ->
+  gmap(at) id id
+      (fun t -> (Untyped,
+                 inj_term_tterm t)) t
+
+let rec prj_tterm_term : tt -> t = fun t ->  
+  gmap(at) id id
+      (fun (_, t) -> prj_tterm_term t) t
+
+let rec inj_tterm_ltt : tt -> ltt = fun tt ->
+  inj @@ gmap(at) inj inj
+             (fun (typ, tt) ->
+               inj @@ (inj_typ typ, inj_tterm_ltt tt)) tt
+
+let rec prj_ltt_tterm : ltt -> tt = fun ltt ->
+  gmap(at) prj prj
+      (fun lp -> (let ltyp, ltt = prj lp in
+                  prj_typ ltyp, prj_ltt_tterm ltt))
+      @@ prj ltt
 
 module Typing =
   struct
@@ -63,40 +86,42 @@ module Typing =
 
     let removo l n l' = List.filtero (neqo n) l l'
 
-    let rec varo term vars =
-      conde [
-        fresh (name)
-          (term === !(Var name)) 
-          (vars === !< name);
-        fresh (name body tbody vbody)
-          (term === !(Lam (name, body)))
-          (removo vbody name vars) 
-          (varo tbody vbody);
-        fresh (f arg fvar avar)
-          (term === !(App (f, arg)))
-          (List.appendo fvar avar vars)
-          (varo f   fvar)
-          (varo arg avar);
-        fresh (int)
-          (term === !(Const int))
-          (vars === nil);
-        fresh (op x y xvars yvars)
-          (term === !(Binop (op, x, y)))
-          (List.appendo xvars yvars vars)
-          (varo x xvars)
-          (varo y yvars);
-        ((term === !True) ||| (term === !False)) &&& (vars === nil);
-        fresh (cond th el cvars tvars evars tevars)
-          (term === !(If (cond, th, el)))
-          (List.appendo tvars evars tevars)
-          (List.appendo cvars tevars vars)
-          (varo th   tvars)
-          (varo el   evars)
-          (varo cond cvars);
-        fresh (unfix)
-          (term === !(Fix unfix))
-          (varo unfix vars)
-      ]
+    let rec varo tterm vars =
+      fresh (typ term)
+            (tterm === !(typ, term))
+            (conde [
+                 fresh (name)
+                       (term === !(Var name)) 
+                       (vars === !< name);
+                 fresh (name body tbody vbody)
+                       (term === !(Lam (name, body)))
+                       (removo vbody name vars) 
+                       (varo tbody vbody);
+                 fresh (f arg fvar avar)
+                       (term === !(App (f, arg)))
+                       (List.appendo fvar avar vars)
+                       (varo f   fvar)
+                       (varo arg avar);
+                 fresh (int)
+                       (term === !(Const int))
+                       (vars === nil);
+                 fresh (op x y xvars yvars)
+                       (term === !(Binop (op, x, y)))
+                       (List.appendo xvars yvars vars)
+                       (varo x xvars)
+                       (varo y yvars);
+                 ((term === !True) ||| (term === !False)) &&& (vars === nil);
+                 fresh (cond th el cvars tvars evars tevars)
+                       (term === !(If (cond, th, el)))
+                       (List.appendo tvars evars tevars)
+                       (List.appendo cvars tevars vars)
+                       (varo th   tvars)
+                       (varo el   evars)
+                       (varo cond cvars);
+                 fresh (unfix)
+                       (term === !(Fix unfix))
+                       (varo unfix vars)
+            ])
 
     let splito gamma term yes no =
       fresh (vars)
@@ -126,59 +151,90 @@ module Typing =
            no
         )
  
-    let rec mako gamma term typ =
-      conde [
-        fresh (name)
-          (term === !(Var name)) 
-          (lookupo name gamma typ);
-        fresh (name body targ tbody)
-          (term === !(Lam (name, body)))
-          (typ  === !(Fun (targ, tbody))) 
-          (mako (!(name, targ) % gamma) body tbody);
-        fresh (f arg ftype atype fgamma agamma)
-          (term === !(App (f, arg)))
-          (ftype === !(Fun (atype, typ)))
-	  (splito gamma f fgamma agamma)
-          (mako fgamma f   ftype)
-          (mako agamma arg atype);
-        fresh (int)
-          (term === !(Const int))
-          (typ  === !Nat);
-        fresh (op x y)
-          (term === !(Binop (op, x, y)))
-          (List.lookupo (eqo op) (inj_list ["&&"; "!!"]) !(Some op))
-          (mako gamma x !Bool)
-          (mako gamma y !Bool)
-          (typ === !Bool);
-        fresh (op x y)
-          (term === !(Binop (op, x, y)))
-          (List.lookupo (eqo op) (inj_list ["=="; "!="; "<="; "<"; ">="; ">"]) !(Some op))
-          (mako gamma x !Nat)
-          (mako gamma y !Nat)
-          (typ === !Bool);
-        fresh (op x y)
-          (term === !(Binop (op, x, y)))
-          (List.lookupo (eqo op) (inj_list ["+"; "-"; "*"; "/"]) !(Some op))
-          (mako gamma x !Nat)
-          (mako gamma y !Nat)
-          (typ === !Nat);
-        ((term === !True) ||| (term === !False)) &&& (typ === !Bool);
-        fresh (cond th el)
-          (term === !(If (cond, th, el)))
-          (mako gamma th   typ)
-          (mako gamma el   typ)
-          (mako gamma cond !Bool);
-        fresh (unfix untyp)
-          (term === !(Fix unfix))
-          (mako gamma unfix !(Fun (typ, typ)))
-      ]
+    (* term'  --- term w/ untyped tags along the tree;
+       term'' --- the properly annotated term'.
+     *)
+    let rec mako gamma term' term'' =
+      fresh (term typ typ')
+            (term'  === !(typ', term))
+            (conde [
+                 fresh (name)
+                       (term   === !(Var name)) 
+                       (lookupo name gamma typ)
+                       (term'' === !(typ, term));
 
-    let make term = run q (fun t  -> mako nil (inj_term term) t)
-                          (fun ts ->
-			    match Stream.take ~n:1 ts with
-			    | []  -> Untyped
-                            | [t] -> prj_typ t
-                          )
+                 fresh (name body targ tbody_type tbody_term)
+                       (term   === !(Lam (name, body)))
+                       (mako (!(name, targ) % gamma)
+                             body
+                             !(tbody_type, tbody_term))
+                       (term'' ===
+                          !(!(Fun (targ, tbody_type)),
+                            !(Lam (name, !(tbody_type, tbody_term)))));
+
+                 fresh (f arg ftype fterm atype aterm fgamma agamma)
+                       (term   === !(App (f, arg)))
+	               (splito gamma f fgamma agamma)
+
+                       (ftype  === !(Fun (atype, typ)))
+                       (mako fgamma f   !(ftype, fterm))
+                       (mako agamma arg !(atype, aterm))
+                       (term'' === !(typ, !(App (!(ftype, fterm),
+                                                 !(atype, aterm)))));
+
+                 fresh (int)
+                       (term   === !(Const int))
+                       (term'' === !(!Nat, term));
+
+                 fresh (op x y xt yt)
+                       (term   === !(Binop (op, x, y)))
+                       (List.lookupo (eqo op) (inj_list ["&&"; "!!"]) !(Some op))
+                       (mako gamma x !(!Bool, xt))
+                       (mako gamma y !(!Bool, yt))
+                       (term'' === !(!Bool, !(Binop (op, !(!Bool, xt), !(!Bool, yt)))));
+
+                 fresh (op x y xt yt)
+                       (term   === !(Binop (op, x, y)))
+                       (List.lookupo
+                          (eqo op)
+                          (inj_list ["=="; "!="; "<="; "<"; ">="; ">"]) !(Some op))
+                       (mako gamma x !(!Nat, xt))
+                       (mako gamma y !(!Nat, yt))
+                       (term'' === !(!Bool, !(Binop (op, !(!Nat, xt), !(!Nat, yt)))));
+
+                 fresh (op x y xt yt)
+                       (term   === !(Binop (op, x, y)))
+                       (List.lookupo
+                          (eqo op)
+                          (inj_list ["+"; "-"; "*"; "/"]) !(Some op))
+                       (mako gamma x !(!Nat, xt))
+                       (mako gamma y !(!Nat, yt))
+                       (term'' === !(!Nat, !(Binop (op, !(!Nat, xt), !(!Nat, yt)))));
+
+                 ((term === !True) ||| (term === !False)) &&& (term'' === !(!Bool, term));
+
+                 fresh (cond th el condt tht elt)
+                       (term   === !(If (cond, th, el)))
+                       (mako gamma th !(typ, tht))
+                       (mako gamma el !(typ, elt))
+                       (mako gamma cond !(!Bool, condt))
+                       (term'' === !(typ, !(If (!(!Bool, condt), !(typ, tht), !(typ, elt)))));
+
+                 fresh (unfix untyp unfixt)
+                       (term   === !(Fix unfix))
+                       (mako gamma unfix !(!(Fun (typ, typ)), unfixt))
+                       (term'' === !(typ, !(Fix !(!(Fun (typ, typ)), unfixt))))
+            ])
+
+    let make term : typ =
+      run q (fun t -> mako nil
+                           !(!Untyped,
+                             inj_tterm_ltt (inj_term_tterm term)) t)
+          (fun ts ->
+	    match Stream.take ~n:1 ts with
+	    | []  -> Untyped
+            | [t] -> prj_typ @@ fst (prj t)
+          )
 
   end
 
