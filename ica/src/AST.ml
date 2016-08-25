@@ -61,6 +61,71 @@ module Typing =
           lookupo a tl t
          ])  
 
+    let removo l n l' = List.filtero (neqo n) l l'
+
+    let rec varo term vars =
+      conde [
+        fresh (name)
+          (term === !(Var name)) 
+          (vars === !< name);
+        fresh (name body tbody vbody)
+          (term === !(Lam (name, body)))
+          (removo vbody name vars) 
+          (varo tbody vbody);
+        fresh (f arg fvar avar)
+          (term === !(App (f, arg)))
+          (List.appendo fvar avar vars)
+          (varo f   fvar)
+          (varo arg avar);
+        fresh (int)
+          (term === !(Const int))
+          (vars === nil);
+        fresh (op x y xvars yvars)
+          (term === !(Binop (op, x, y)))
+          (List.appendo xvars yvars vars)
+          (varo x xvars)
+          (varo y yvars);
+        ((term === !True) ||| (term === !False)) &&& (vars === nil);
+        fresh (cond th el cvars tvars evars tevars)
+          (term === !(If (cond, th, el)))
+          (List.appendo tvars evars tevars)
+          (List.appendo cvars tevars vars)
+          (varo th   tvars)
+          (varo el   evars)
+          (varo cond cvars);
+        fresh (unfix)
+          (term === !(Fix unfix))
+          (varo unfix vars)
+      ]
+
+    let splito gamma term yes no =
+      fresh (vars)
+        (varo term vars)       
+        (List.filtero 
+           (fun p f ->
+              fresh (name typ)
+                 (p === !(name, typ))
+                 (conde [
+                   List.lookupo (eqo name) vars !(Some name) &&& (f === !true);
+                   List.lookupo (eqo name) vars !None &&& (f === !false)
+                 ]) 
+           ) 
+           gamma 
+           yes
+        )
+	(List.filtero 
+           (fun p f ->
+              fresh (name typ)
+                 (p === !(name, typ))
+                 (conde [
+                   List.lookupo (eqo name) vars !(Some name) &&& (f === !false);
+                   List.lookupo (eqo name) vars !None &&& (f === !true)
+                 ]) 
+           ) 
+           gamma 
+           no
+        )
+ 
     let rec mako gamma term typ =
       conde [
         fresh (name)
@@ -70,11 +135,12 @@ module Typing =
           (term === !(Lam (name, body)))
           (typ  === !(Fun (targ, tbody))) 
           (mako (!(name, targ) % gamma) body tbody);
-        fresh (f arg ftype atype)
+        fresh (f arg ftype atype fgamma agamma)
           (term === !(App (f, arg)))
           (ftype === !(Fun (atype, typ)))
-          (mako gamma f   ftype)
-          (mako gamma arg atype);
+	  (splito gamma f fgamma agamma)
+          (mako fgamma f   ftype)
+          (mako agamma arg atype);
         fresh (int)
           (term === !(Const int))
           (typ  === !Nat);

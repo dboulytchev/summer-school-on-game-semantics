@@ -1,2 +1,2 @@
-def fact = fix \f n . if n < 2 then 1 else n * (f n-1) fi in
+def fact = fix \f n . if n < 2 then 1 else n * (f (f n-1)) fi in
 fact
