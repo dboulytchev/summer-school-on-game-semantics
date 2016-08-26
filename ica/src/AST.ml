@@ -584,8 +584,6 @@ let _ =
               HTML.br;
               HTML.body (
                 HTML.seq [
-                   (* (fix (fun to_html -> html(at) (html string) (html int) to_html)) ast; *)
-                   (* HTML.br; *)
                     html(option)
                         (fix (fun to_html_p ->
                              (html(pair)
