@@ -2,7 +2,7 @@ PACKAGE := ica
 SUBDIRS = 
 
 # type in sources here
-SOURCES = AST.ml
+SOURCES = AST.ml Compile.ml
 MLI = 
 
 include $(top_srcdir)/m4/Makefile.am.vars
