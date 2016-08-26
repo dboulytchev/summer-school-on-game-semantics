@@ -226,14 +226,16 @@ module Typing =
                        (term'' === !(typ, !(Fix !(!(Fun (typ, typ)), unfixt))))
             ])
 
-    let make term : typ =
+    let make term : (typ * tt) option =
       run q (fun t -> mako nil
                            !(!Untyped,
                              inj_tterm_ltt (inj_term_tterm term)) t)
           (fun ts ->
 	    match Stream.take ~n:1 ts with
-	    | []  -> Untyped
-            | [t] -> prj_typ @@ fst (prj t)
+	    | []  -> None
+            | [t] ->
+               let (typ, tt) = prj t in
+               Some (prj_typ typ, prj_ltt_tterm tt)
           )
 
   end
@@ -582,9 +584,14 @@ let _ =
               HTML.br;
               HTML.body (
                 HTML.seq [
-                   (fix (fun to_html -> html(at) (html string) (html int) to_html)) ast;
-                   HTML.br;
-                   (fix (fun to_html -> html(atyp) to_html)) (Typing.make ast)
+                   (* (fix (fun to_html -> html(at) (html string) (html int) to_html)) ast; *)
+                   (* HTML.br; *)
+                    html(option)
+                        (fix (fun to_html_p ->
+                             (html(pair)
+                                  (fun typ -> (fix (fun to_html -> html(atyp) to_html) typ))
+                                  (html(at) (html(string)) (html(int)) to_html_p))))
+                      (Typing.make ast)
 		]
               )              
             ]
