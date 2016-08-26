@@ -142,9 +142,9 @@ let rec compilo gamma (ltyp_ltt : (ltyp * ltt) logic) (lport : lport) box =
 let _ =
   run q (fun q ->
         fresh (lport)
-              compilo nil !(!Nat, !(Binop (!"+", !(!Nat, !(Const !2)), !(!Nat, !(Const !2))))) lport q)
+              (compilo nil !(!Nat, !(Binop (!"+", !(!Nat, !(Const !2)), !(!Nat, !(Const !2))))) lport q))
       (fun qs ->
-        match Stream.take ~n:1 ts with
+        match Stream.take ~n:1 qs with
 	| []  -> Printf.printf "Problem\n"
         | [t] -> Printf.printf "Ok\n"
       )
