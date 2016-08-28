@@ -75,7 +75,7 @@ let rec compilo gamma (ltyp_ltt : (ltyp * ltt) logic) (lport : lport) box =
                    (box   === !(Label inp) %
                                 (!(Mov (!(Lit n), !Acc)) %
                                    (!(Jmp outp) % nil)));
-                   
+             
              fresh (n inp outp)
                    (((ltt === !True) &&& (n === !1)) |||
                       ((ltt === !False) &&& (n === !0)))
@@ -84,16 +84,21 @@ let rec compilo gamma (ltyp_ltt : (ltyp * ltt) logic) (lport : lport) box =
                                 (!(Mov (!(Lit n), !Acc)) %
                                    (!(Jmp outp) % nil)));
 
-             (* fresh (name inp outp) *)
-             (*       (ltt === !(Var name)) *)
-             (*       (Typing.lookupo gamma name box) *)
              (* TODO: remove copying of the box. *)
-                   
-              fresh (op l r inp outp
-                        lbox rbox
-                        inl outl
-                        inr outr
-                        r0)
+             (* fresh (name) *)
+             (*       (ltt === !(Var name)) *)
+                   (* TODO: connect lport and box. *)
+                   (* (Typing.lookupo gamma name box); *)
+             
+             (* fresh (arg body) *)
+             (*       (ltt === !(Lambda (arg, body))) *)
+             (*       () *)
+             
+             fresh (op l r inp outp
+                       lbox rbox
+                       inl outl
+                       inr outr
+                       r0)
                    (ltt   === !(Binop (op, l, r)))
                    (lport === !(N (inp, outp)))
                    (box   === !(Label inp) %
@@ -108,23 +113,22 @@ let rec compilo gamma (ltyp_ltt : (ltyp * ltt) logic) (lport : lport) box =
                    (compilo gamma l !(N (inl, outl)) lbox)
                    (compilo gamma r !(N (inr, outr)) rbox);
 
-               fresh (c the els inp outp
-                        cbox thebox elsbox
-                        cport theport elsport
-                        inc outc
-                        inthe outthe
-                        inels outels)
+             fresh (c the els inp outp
+                      cbox thebox elsbox
+                      cport theport elsport
+                      inc outc
+                      inthe outthe
+                      inels outels)
                    (ltt   === !(If (c, the, els)))
-                   
                    (box   === !(Label inp) %
                                 (!(Jmp inc) %
                                    (!(Label outc) %
                                       (!(JmpZ (!Acc, inels)) %
-                                        (!(Jmp inthe) %
-                                          (!(Label outthe) %
-                                             (!(Jmp outp) %
-                                                (!(Label outels) %
-                                                   (!(Jmp outp) % nil)))))))))
+                                         (!(Jmp inthe) %
+                                            (!(Label outthe) %
+                                               (!(Jmp outp) %
+                                                  (!(Label outels) %
+                                                     (!(Jmp outp) % nil)))))))))
                    
                    (in_out_porto inels outels elsport)
                    (in_out_porto inthe outthe theport)
@@ -132,7 +136,7 @@ let rec compilo gamma (ltyp_ltt : (ltyp * ltt) logic) (lport : lport) box =
                    (compilo gamma c   cport   cbox)
                    (compilo gamma the theport thebox)
                    (compilo gamma els elsport elsbox);
-                   
+             
         ])
 
   (* | Var     of 'string *)
